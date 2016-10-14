@@ -50,7 +50,7 @@ issue: #{issue}
       head = frontmatter(date, issue)
       content = newsletter(slug)
 
-      if issue < 60 && issue != nil
+      if issue != nil && issue.to_i > 59
         puts "writing  : source/archive" + name
 
         File.open("source/archive" + name, "a+") { |f|
