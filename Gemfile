@@ -11,3 +11,8 @@ gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 # Middleman Gems
 gem 'middleman', '>= 4.0.0'
 gem 'middleman-livereload', '>= 3.4.6'
+
+# Scripting
+gem 'httparty', '>= 0.14.0'
+gem 'nokogiri', '>= 1.6.8.1'
+gem 'pry', '~> 0.10.4'
