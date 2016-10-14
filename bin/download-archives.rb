@@ -19,12 +19,6 @@ class BiotechWeeklyArchive
     end
   end
 
-  def newsletter(slug)
-    # Downloads and parses the newsletter
-    page = self.class.get("/" + slug)
-    parsed = Nokogiri::HTML(page).css('.landing-site-email-content')
-  end
-
   def frontmatter(date, issue)
     # Generates YAML frontmatter for an issue
    %{- - -
@@ -34,6 +28,12 @@ issue: #{issue}
 - - -
 
 }
+  end
+
+  def fetch_newsletter!(slug)
+    # Downloads and parses the newsletter
+    page = self.class.get("/" + slug)
+    parsed = Nokogiri::HTML(page).css('.landing-site-email-content')
   end
 
   def filename(slug)
@@ -48,10 +48,11 @@ issue: #{issue}
       date = slug.scan(/\d{4}\/\d{2}\/\d{2}/)[0]
       issue = slug.scan(/\d+$/)[0]
       head = frontmatter(date, issue)
-      content = newsletter(slug)
 
       if issue != nil && issue.to_i > 59
         puts "writing  : source/archive" + name
+
+        content = fetch_newsletter!(slug)
 
         File.open("source/archive" + name, "a+") { |f|
           f << head
