@@ -50,7 +50,7 @@ issue: #{issue}
       head = frontmatter(date, issue)
 
       if issue != nil && issue.to_i > 59
-        puts "writing  : source/archive" + name
+        puts "writing: source/archive" + name
 
         content = fetch_newsletter!(slug)
 
@@ -58,8 +58,6 @@ issue: #{issue}
           f << head
           f << content
         }
-      else
-        puts "skipping : source/archive" + name
       end
     end
   end
