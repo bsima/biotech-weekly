@@ -38,7 +38,7 @@ Images:
 }
 
 #logo {
-    padding: 2em 0;
+    padding: 4em 0;
 }
 
 h2#description {
@@ -69,4 +69,13 @@ h2#description {
             transition: all 0.15s linear;
         }
     }
+}
+
+
+.glob {
+    padding: 0 .5em 4em 0;
+}
+
+#latest {
+    margin-top: 2em;
 }

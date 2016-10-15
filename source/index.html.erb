@@ -32,7 +32,20 @@ title: Biotech Weekly :: The best biotech news of the week!
 </div><!-- #cells -->
 
 <div class="container">
-    <div id="archives">
-        <p> content </p>
+    <div class="row">
+        <article id="latest" class="col-sm-12 glob">
+            <h2>Read the Latest</h2>
+            <% blog.articles[0..0].each do |article| %>
+                <%= article.render %>
+            <% end %>
+        </article>
+        <div id="archives" class="col-md-6 offset-md-3 glob">
+            <h2>Or browse the archives:</h2>
+            <div class="m-x-auto">
+                <% blog.articles.each do |article| %>
+                    <a href="<%= article.url %>"><%= article.data.issue %></a>, 
+                <% end %>
+            </div>
+        </div>
     </div>
 </div>
