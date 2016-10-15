@@ -18,6 +18,12 @@ page '/*.txt', layout: false
 
 # General configuration
 activate :livereload
+
+activate :blog do |blog|
+  blog.sources = "archive/{year}-{month}-{day}-{issue}.html"
+  blog.permalink = "archive/{year}/{month}/{day}/{issue}.html"
+end
+
 ###
 # Helpers
 ###
