@@ -21,11 +21,11 @@ class BiotechWeeklyArchive
 
   def frontmatter(date, issue)
     # Generates YAML frontmatter for an issue
-   %{- - -
+   %{---
 title: Biotech Weekly ##{issue}
 date: #{date}
 issue: #{issue}
-- - -
+---
 
 }
   end
