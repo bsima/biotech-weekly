@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta name="viewport" content="initial-scale = 1, width = device-width">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@biotechweekly">
+    <meta name="twitter:title" content="$if(hasTitle)$$title$ :: $endif$Biotech Weekly">
+    <meta name="twitter:description" content="$summary$">
+    <meta name="twitter:image" content="https://biotechweekly.com/images/twitter-card.png">
+    <meta name="og:image" content="https://biotechweekly.com/images/twitter-card.png">
+    
+
+    <title>$if(hasTitle)$$title$ :: $endif$Biotech Weekly</title>
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
+
+    <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+
+    <style>$partial("templates/base.css")$</style>
+    <link href="/biotech-weekly.atom" rel="alternate" title="Biotech Weekly" type="application/atom+xml">
+    <link href="/images/favicon.ico" rel="shortcut icon">
+    <link href="$url$" rel="canonical">
+  </head>
+
+  <body>
+    <main>
+      $body$
+    </main>
+
+    <footer>
+      <p>
+        Content on this site is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International license</a>.
+        The source code for this site is available <a href="https://github.com/bsima/biotech-weekly">on GitHub</a>.
+      </p>
+    </footer>
+
+    <!-- boostrap javascripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script>$partial("templates/base.js")$</script>
+  </body>
+</html>

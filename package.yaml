@@ -1,0 +1,27 @@
+name: biotech-weekly
+version: '0.0.0'
+
+category: Web
+extra-source-files: content/**/*
+github: bsima/biotech-weekly
+license: MIT
+maintainer: Ben Sima
+
+dependencies: base
+ghc-options: -Wall
+
+library:
+  dependencies:
+    - hakyll
+    - tagsoup
+  source-dirs: lib
+
+executables:
+  biotech-weekly:
+    dependencies: biotech-weekly
+    ghc-options:
+      - -rtsopts
+      - -threaded
+      - -with-rtsopts=-N
+    main: biotech-weekly.hs
+    source-dirs: exe

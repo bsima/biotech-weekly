@@ -1,0 +1,34 @@
+<div id="cells">
+    <div id="welcome">
+        <div id="logo">
+	    <img src="/images/BWlogoWhite.png" />
+        </div>
+        <h2 id="description">
+            <p>A weekly email of the best news and articles on all things biotech. Stories are picked by hand from popular biotech sites.</p>
+            <p>Delivered every week.</p>
+        </h2>
+
+	$partial("templates/form.html")$
+
+    </div><!-- .welcome -->
+</div><!-- #cells -->
+
+<div class="container">
+    <div class="row">
+        <!--<article id="latest" class="col-sm-12 glob">
+            <h2>Read the Latest</h2>
+        </article>-->
+        <div id="archives" class="col-md-6 offset-md-3 glob">
+            <h2>Browse the archives:</h2>
+            <div class="m-x-auto">
+	      <ul>
+	        $for(issues)$
+		<li>
+		  $isoDate$: <a href="$url$">$title$</a>
+		</li>
+		$endfor$
+	      </ul>
+            </div>
+        </div>
+    </div>
+</div>

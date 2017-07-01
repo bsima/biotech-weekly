@@ -1,0 +1,92 @@
+@charset "utf-8";
+@import "normalize";
+
+
+body 
+{ text-align: center
+; font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif
+; font-size: 1em
+}
+
+
+.logo img 
+{ height: 18.75em
+; margin-top: 6em
+}
+
+
+/*
+Image sources:
+
+1 https://moodle.kent.ac.uk/external/course/view.php?id=172
+2 http://www.elsacker.org/2014/05/the-biology-of-cancer-stem-cells-cscs.html
+3 https://resources.oncourse.iu.edu/access/content/user/jefflmil/Biology_X.htm
+4 https://www.bumc.bu.edu/busm-pm/research/laboratories/lccb/
+5 https://botany.biology.ufl.edu/courses/undergrad/bot-3023-essential-cell-biology/
+6 https://www.ucl.ac.uk/lmcb/users/alison-lloyd
+7 http://www.mwrif.org/82/reproductive-physiology-gonadal-biology-fertility
+8 https://www.google.com/search?tbm=isch&q=biology%20cells&tbs=imgo:1#q=biology+cells&tbs=imgo:1,isz:l&tbm=isch&imgrc=9EqlbIRUCIzc_M%3A
+ */
+#cells
+{ background: url("/images/bkgd.jpg") transparent no-repeat center/cover
+}
+
+
+#welcome 
+{ background-color: rgba(15,25,50,0.7)
+; display: flex
+; flex-direction: column
+; flex-wrap: no-wrap
+; justify-content: center
+; align-items: center
+}
+
+
+#logo 
+{ padding: 4em 0
+}
+
+
+h2#description 
+{ color: rgba(255,255,255,0.9)
+; font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif
+; font-size: 1.8em
+; font-weight: 400
+; margin: 0
+; max-width: 770px
+}
+
+
+#signup
+{ margin: 3em 0
+; font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif
+; font-size: 1.1em
+; font-weight: 300
+}
+
+
+#signup a
+{ border: 1px solid white
+; border-radius: 3px
+; padding: 0.75em 0.7em
+; color: white
+; text-decoration: none
+; transition: color 0.1s linear
+}
+
+
+#signup a:hover
+{ background: rgba(0,0,0,0.2)
+; color: white
+; transition: all 0.15s linear
+}
+
+
+.glob
+{ padding: 0 .5em 4em 0
+}
+
+
+#latest
+{ margin-top: 2em
+}

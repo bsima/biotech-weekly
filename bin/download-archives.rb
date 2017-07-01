@@ -1,4 +1,10 @@
 #!/usr/bin/env ruby
+#
+# A quick script to download all the articles from the old Goodbits
+# website. To use, simply do:
+#
+#     bin/download-archives.rb
+
 
 require 'httparty'
 require 'nokogiri'
@@ -50,11 +56,11 @@ issue: #{issue}
       head = frontmatter(date, issue)
 
       if issue != nil && issue.to_i > 59
-        puts "writing: source/archive" + name
+        puts "writing: content/archive" + name
 
         content = fetch_newsletter!(slug)
 
-        File.open("source/archive" + name, "a+") { |f|
+        File.open("content/archive" + name, "a+") { |f|
           f << head
           f << content
         }
@@ -63,5 +69,5 @@ issue: #{issue}
   end
 end
 
-bw = BiotechWeeklyArchive.new()
-bw.download_all_emails()
+main = BiotechWeeklyArchive.new()
+main.download_all_emails()
