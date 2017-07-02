@@ -24,7 +24,7 @@ main = do
   Monad.guard (branch == "v2")
   Monad.guard (isPullRequest == "false")
 
-  Directory.setCurrentDirectory (FilePath.joinPath ["_hakyll_", "site"])
+  Directory.setCurrentDirectory (FilePath.joinPath ["_hakyll", "site"])
   writeFile "CNAME" "biotechweekly.com"
   let git = Process.callProcess "git"
 
@@ -35,4 +35,3 @@ main = do
   git ["commit", "--author", "Biotech Weekly <info@biotechweekly.com>", "--message", "Automatic deploy of " ++ commit]
   git ["remote", "add", "origin", "https://" ++ token ++ "@github.com/bsima/biotech-weekly.git"]
   git ["push", "--force", "--quiet", "origin", "master"]
-
