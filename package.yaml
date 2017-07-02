@@ -1,9 +1,11 @@
 name: biotech-weekly
 version: '0.0.0'
+description: A weekly email of the best news and articles on all things biotech. Stories are picked by hand from popular biotech sites.
 
 category: Web
 extra-source-files: content/**/*
 github: bsima/biotech-weekly
+license-file: LICENSE
 license: MIT
 maintainer: Ben Sima
 
