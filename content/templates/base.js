@@ -1,6 +1,6 @@
 window.ga = function(){ ga.q.push(arguments) }
 ga.l = +new Date
-ga.q = [['create', 'FIXME', 'auto'], ['send', 'pageview']]
+ga.q = [['create', 'UA-66903227-1', 'auto'], ['send', 'pageview']]
 
 
 function rand(min, max)
