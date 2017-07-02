@@ -10,7 +10,7 @@ function rand(min, max)
 
 
 var i = rand(1, 8);
-var img = '/images/cells.' + i + '.jpg';
+var img = 'images/cells.' + i + '.jpg';
 
 
 window.onload = function()
