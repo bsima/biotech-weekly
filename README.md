@@ -1,8 +1,6 @@
 # Biotech Weekly website code
 
-[**Newsletter Signup**](http://biotechweekly.com) | \
-[**Twitter**](https://twitter.com/BiotechWeekly) | \
-[**Instagram**](https://instagram.com/biotechweekly)
+> [**Newsletter Signup**](http://biotechweekly.com) | [**Twitter**](https://twitter.com/BiotechWeekly) | [**Instagram**](https://instagram.com/biotechweekly)
 
 [![Build Status](https://travis-ci.org/bsima/biotech-weekly.svg?branch=v2)](https://travis-ci.org/bsima/biotech-weekly)
 
