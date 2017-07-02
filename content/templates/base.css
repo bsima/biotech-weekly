@@ -3,15 +3,8 @@
 
 
 body 
-{ text-align: center
-; font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif
+{ font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif
 ; font-size: 1em
-}
-
-
-.logo img 
-{ height: 18.75em
-; margin-top: 6em
 }
 
 
@@ -29,39 +22,68 @@ Image sources:
  */
 #cells
 { background: url("/images/bkgd.jpg") transparent no-repeat center/cover
+; border-bottom: 3px solid rgba(15,25,50, 1)
 }
 
 
 #welcome 
-{ background-color: rgba(15,25,50,0.7)
+{ background-color: rgba(15,25,50,0.8)
 ; display: flex
-; flex-direction: column
-; flex-wrap: no-wrap
-; justify-content: center
+; flex-direction: row
+; flex-wrap: nowrap
+; justify-content: space-around
 ; align-items: center
+; padding: 2em 1em
 }
 
-
-#logo 
-{ padding: 4em 0
+#logo img 
+{ max-width: 100%
+; max-height: 250px
 }
-
 
 h2#description 
 { color: rgba(255,255,255,0.9)
 ; font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif
 ; font-size: 1.8em
 ; font-weight: 400
-; margin: 0
+; margin: 0 
+; margin-left: 2rem
 ; max-width: 770px
 }
 
 
+#main-page
+{ display: flex
+; flex-direction: row-reverse
+; flex-wrap: wrap
+; justify-content: space-around
+; align-items: flex-start
+; align-content: space-around
+}
+
+/* Portable device styles */
+@media only screen
+  and (max-device-width: 568px)
+  and (min-device-width: 320px)
+{
+    #welcome
+    { flex-direction: column
+    }
+
+    #logo img
+    { margin-bottom: 2rem
+    }
+
+    #main-page
+    { justify-content: center
+    }
+}
+
 #signup
-{ margin: 3em 0
-; font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif
+{ font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif
 ; font-size: 1.1em
 ; font-weight: 300
+; margin-bottom: 2rem
 }
 
 
@@ -79,14 +101,4 @@ h2#description
 { background: rgba(0,0,0,0.2)
 ; color: white
 ; transition: all 0.15s linear
-}
-
-
-.glob
-{ padding: 0 .5em 4em 0
-}
-
-
-#latest
-{ margin-top: 2em
 }
