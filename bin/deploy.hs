@@ -25,7 +25,7 @@ main = do
   Monad.guard (isPullRequest == "false")
 
   Directory.setCurrentDirectory (FilePath.joinPath ["_hakyll_", "site"])
-  --writeFile "CNAME" "biotechweekly.com"
+  writeFile "CNAME" "biotechweekly.com"
   let git = Process.callProcess "git"
 
   git ["init"]
