@@ -24,6 +24,7 @@ rules = do
   match "templates/*" templateRules
   match "images/*" imageRules
   match "issues/*" issueRules
+  match "archive/*" archiveRules
   create ["biotech-weekly.atom"] (feedRules renderAtom)
   create ["biotech-weekly.rss"] (feedRules renderRss)
   match "pages/index.html" indexRules
@@ -45,6 +46,16 @@ issueRules = do
   compile (pandocCompiler
     >>= saveSnapshot "content"
     >>= loadAndApplyTemplate "templates/issue.html" issueContext
+    >>= loadAndApplyTemplate "templates/base.html" issueContext
+    >>= relativizeUrls)
+
+
+archiveRules :: Rules ()
+archiveRules = do
+  route (setExtension ".html")
+  compile (pandocCompiler
+    >>= saveSnapshot "content"
+    >>= loadAndApplyTemplate "templates/archive.html" issueContext
     >>= loadAndApplyTemplate "templates/base.html" issueContext
     >>= relativizeUrls)
 
