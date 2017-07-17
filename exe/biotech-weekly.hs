@@ -1,4 +1,4 @@
 module Main (module BiotechWeekly) where
 
-import           BiotechWeekly (main)
+import BiotechWeekly (main)
 

@@ -1,8 +1,8 @@
 {-# LANGUAGE OverloadedStrings #-}
 module BiotechWeekly (main) where
 
-import           Data.Maybe        (mapMaybe)
-import           Hakyll
+import Data.Maybe (mapMaybe)
+import Hakyll
 import qualified Text.HTML.TagSoup as Html
 
 

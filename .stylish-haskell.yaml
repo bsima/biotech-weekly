@@ -1,0 +1,18 @@
+# stylish-haskell configuration file
+# ==================================
+# For docs, use `stylish-haskell --defaults > .stylish-haskell.yaml`
+steps:
+  - simple_align:
+      cases: true
+      top_level_patterns: true
+      records: false
+  - imports:
+      align: none
+  - language_pragmas:
+      style: vertical
+      align: true
+      remove_redundant: true
+  - tabs:
+      spaces: 8  # s/\t/[ ]{8}/ -- as specified in the Haskell report
+  - trailing_whitespace: {}  # Remove trailing whitespace
+columns: 80
