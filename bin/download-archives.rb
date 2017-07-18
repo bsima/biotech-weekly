@@ -12,6 +12,7 @@ require 'nokogiri'
 class BiotechWeeklyArchive
   include HTTParty
   base_uri 'www.biotechweekly.com'
+  out_dir "content/archive/"
 
   def archive
     self.class.get("/archive")
@@ -31,6 +32,7 @@ class BiotechWeeklyArchive
 title: Biotech Weekly ##{issue}
 date: #{date}
 issue: #{issue}
+goodbits: true
 ---
 
 }
@@ -56,11 +58,11 @@ issue: #{issue}
       head = frontmatter(date, issue)
 
       if issue != nil && issue.to_i > 59
-        puts "writing: content/archive" + name
+        puts "writing: " + out_dir + name
 
         content = fetch_newsletter!(slug)
 
-        File.open("content/archive" + name, "a+") { |f|
+        File.open(out_dir + name, "a+") { |f|
           f << head
           f << content
         }
