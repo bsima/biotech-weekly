@@ -11,6 +11,8 @@
   --package flow
 -}
 
+-- | One-off script to download and cleanup all the newsletter issues
+-- on biotechweekly.com
 
 import qualified Data.List as List
 import Data.Maybe (catMaybes)
@@ -87,10 +89,11 @@ getIssue url =
 
 
 -- | Gets the articles linked to from each newsletter
-selectMaskedLinks :: Html -> [ Html ]
+selectMaskedLinks :: Html -> Html
 selectMaskedLinks html =
   html
   |> sections (~/= "<a>")
+  |> concat
 
 
 -- | Simply strips out images from the Html
@@ -101,6 +104,11 @@ removeImages html =
 
 -- | Makes an HTTP request and then gets the `canonical` link from the
 -- `head` of the document.
-getCanonicalUrl :: String -> String
+getCanonicalUrl :: String -> IO String
 getCanonicalUrl url =
-  undefined
+  do html <- openUrl url
+     let can = fromAttrib "href"
+               $ head
+               $ dropWhile (~/= "<link ref=canonical>")
+               $ parseTags html
+     return can
