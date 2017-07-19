@@ -19,13 +19,18 @@ import qualified Network.HTTP as Http
 import Text.HTML.TagSoup
 
 
+-- | Convenience type
+type Html =
+  [Tag String]
+
+
 main :: IO ()
-main = do
-  src <- openUrl (baseUri ++ "/archive")
-  let parsed = parseTags src
-  let hrefs = getIndexLinks parsed
-  archives <- mapM downloadIssue hrefs
-  putStrLn $ show $ length archives
+main =
+  do src <- openUrl (baseUri ++ "/archive")
+     let parsed = parseTags src
+     let hrefs = selectIndexLinks parsed
+     archives <- mapM getIssue hrefs
+     putStrLn $ show $ length archives
 
 
 baseUri :: String
@@ -50,8 +55,10 @@ safeHead ls =
     []    -> Nothing
 
 
-getIndexLinks :: [Tag String] -> [String]
-getIndexLinks tags =
+-- | Isolates only the links to newsletter archive pages and returns a
+-- list of fully-qualified URLs to each of the archived newsletter issues.
+selectIndexLinks :: Html -> [String]
+selectIndexLinks tags =
   sections (~/= "<a>") tags
   |> map (filter isTagOpen)
   |> map safeHead
@@ -62,17 +69,19 @@ getIndexLinks tags =
   |> map (baseUri ++)
 
 
-getIssueContent :: [Tag String] -> [Tag String]
-getIssueContent html =
+-- | Selects only the content of the newsletter
+selectIssueContent :: Html -> Html
+selectIssueContent html =
   html
   |> dropWhile (~/= "<center>")
   |> takeWhile (~/= "</center>")
 
 
-downloadIssue :: String -> IO [Tag String]
-downloadIssue url =
+-- | Retrieves the newsletter content from the `url`
+getIssue :: String -> IO Html
+getIssue url =
   do src <- openUrl url
-     let content = getIssueContent <| parseTags src
+     let content = selectIssueContent <| parseTags src
      return content
 
 
