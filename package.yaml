@@ -16,6 +16,8 @@ library:
   dependencies:
     - hakyll
     - tagsoup
+    - HTTP
+    - flow
   source-dirs: lib
 
 executables:
