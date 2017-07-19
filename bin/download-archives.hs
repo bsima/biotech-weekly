@@ -74,6 +74,7 @@ selectIssueContent :: Html -> Html
 selectIssueContent html =
   html
   |> dropWhile (~/= "<center>")
+  |> removeImages
   |> takeWhile (~/= "</center>")
 
 
@@ -85,6 +86,21 @@ getIssue url =
      return content
 
 
+-- | Gets the articles linked to from each newsletter
+selectMaskedLinks :: Html -> [ Html ]
+selectMaskedLinks html =
+  html
+  |> sections (~/= "<a>")
+
+
+-- | Simply strips out images from the Html
+removeImages :: Html -> Html
+removeImages html =
+  takeWhile (~/= "<img>") html
+
+
+-- | Makes an HTTP request and then gets the `canonical` link from the
+-- `head` of the document.
 getCanonicalUrl :: String -> String
-getCanonicalUrl _ =
+getCanonicalUrl url =
   undefined
