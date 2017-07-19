@@ -57,7 +57,7 @@ getIndexLinks tags =
   |> map safeHead
   |> catMaybes
   |> map (fromAttrib "href")
-  |> filter (\x -> (not (x == "")))
+  |> filter (/= "")
   |> filter (List.isPrefixOf "/20")
   |> map (baseUri ++)
 
