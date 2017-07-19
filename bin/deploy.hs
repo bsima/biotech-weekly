@@ -1,18 +1,18 @@
 #!/usr/bin/env stack
 {-
   stack
-  --resolver lts-8.0
+  --resolver lts-8.23
   script
   --package directory
   --package filepath
   --package process
 -}
 
-import qualified Control.Monad      as Monad
-import qualified System.Directory   as Directory
+import qualified Control.Monad as Monad
+import qualified System.Directory as Directory
 import qualified System.Environment as Environment
-import qualified System.FilePath    as FilePath
-import qualified System.Process     as Process
+import qualified System.FilePath as FilePath
+import qualified System.Process as Process
 
 main :: IO ()
 main = do
