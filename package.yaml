@@ -18,6 +18,7 @@ library:
     - tagsoup
     - HTTP
     - flow
+    - async
   source-dirs: lib
 
 executables:

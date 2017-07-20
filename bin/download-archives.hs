@@ -9,11 +9,13 @@
   --package HTTP
   --package tagsoup
   --package flow
+  --package async
 -}
 
 -- | One-off script to download and cleanup all the newsletter issues
 -- on biotechweekly.com
 
+import qualified Control.Concurrent.Async as Async
 import qualified Data.List as List
 import Data.Maybe (catMaybes)
 import Flow
@@ -31,7 +33,7 @@ main =
   do src <- openUrl (baseUri ++ "/archive")
      let parsed = parseTags src
      let hrefs = selectIndexLinks parsed
-     archives <- mapM getIssue hrefs
+     archives <- Async.mapConcurrently getIssue hrefs
      putStrLn $ show $ length archives
 
 
