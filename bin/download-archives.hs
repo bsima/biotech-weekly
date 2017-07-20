@@ -88,7 +88,7 @@ getIssue url =
      return content
 
 
--- | Gets the articles linked to from each newsletter
+-- | Returns the articles linked to from each newsletter
 selectMaskedLinks :: Html -> Html
 selectMaskedLinks html =
   html
