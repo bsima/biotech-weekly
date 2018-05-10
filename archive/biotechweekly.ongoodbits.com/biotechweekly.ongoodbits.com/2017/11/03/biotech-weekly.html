@@ -1,0 +1,1085 @@
+<!DOCTYPE html style="height: 100%">
+<!--[if lt IE 7 ]> <html class="ie6 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8 lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9]>     <html class="ie9 lt-ie10" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+
+<!-- Nice to see you took a peek here, hello -->
+<!-- send us an email at hello at goodbits dot io if you want to talk tech -->
+
+  
+<!-- Mirrored from biotechweekly.ongoodbits.com/2017/11/03/biotech-weekly by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 10 May 2018 17:28:31 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# business: http://ogp.me/ns/business#">
+    <meta http-equiv="x-ua-compatible" content="IE=Edge"/>
+    <meta charset="utf-8" />
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"e5eada5cb5","applicationID":"3840607","transactionName":"JlhZTRYNCFsBExtYVBJEW1wQFgFFOw1VWFUMWVBmFwsQUksIR0VEAA==","queueTime":0,"applicationTime":95,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+
+    <title>Biotech Weekly</title>
+    <meta name="description" content="A weekly newsletter of the best news and articles on all things biotech. Stories are picked by hand from popular biotech sites.
+
+Delivered every week.
+" />
+    <meta name="author"      content="Ben Sima">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta property="og:site_name"   content="Biotech Weekly">
+    <meta property="og:title"       content="Biotech Weekly">
+    <meta property="og:description" content="A weekly newsletter of the best news and articles on all things biotech. Stories are picked by hand from popular biotech sites.
+
+Delivered every week.
+">
+    <meta property="og:type"        content="website">
+      <meta property="og:image"     content="https://uploads.goodbits.io/uploads/landing_site/logo/3648/20542c59-f6de-4dc6-a892-dd20af11f19a.png">
+
+    <meta property="business:contact_data:street_address" content="2111 Manchester Ave" >
+    <meta property="business:contact_data:locality"       content="Encinitas" >
+    <meta property="business:contact_data:postal_code"    content="92007" >
+    <meta property="business:contact_data:country_name"   content="US" >
+
+    <meta name="twitter:title"       content="Biotech Weekly">
+    <meta name="twitter:description" content="A weekly newsletter of the best news and articles on all things biotech. Stories are picked by hand from popular biotech sites.
+
+Delivered every week.
+">
+      <meta name="twitter:image:src" content="https://uploads.goodbits.io/uploads/landing_site/logo/3648/20542c59-f6de-4dc6-a892-dd20af11f19a.png">
+
+
+    <link id="feedLink" rel="alternate" type="application/rss+xml" title="RSS" href="../../../feed">
+
+      <link rel="shortcut icon" href="https://uploads.goodbits.io/uploads/landing_site/favicon/3648/6bd37a5d-b422-427a-aabc-be1c3c9be32f.png" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="https://uploads.goodbits.io/uploads/landing_site/favicon/3648/6bd37a5d-b422-427a-aabc-be1c3c9be32f.png" />
+  <link rel="apple-touch-icon" sizes="57x57" href="https://uploads.goodbits.io/uploads/landing_site/favicon/3648/6bd37a5d-b422-427a-aabc-be1c3c9be32f.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="https://uploads.goodbits.io/uploads/landing_site/favicon/3648/6bd37a5d-b422-427a-aabc-be1c3c9be32f.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="https://uploads.goodbits.io/uploads/landing_site/favicon/3648/6bd37a5d-b422-427a-aabc-be1c3c9be32f.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="https://uploads.goodbits.io/uploads/landing_site/favicon/3648/6bd37a5d-b422-427a-aabc-be1c3c9be32f.png" />
+  <link rel="apple-touch-icon" sizes="57x57" href="https://uploads.goodbits.io/uploads/landing_site/favicon/3648/6bd37a5d-b422-427a-aabc-be1c3c9be32f.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="https://uploads.goodbits.io/uploads/landing_site/favicon/3648/6bd37a5d-b422-427a-aabc-be1c3c9be32f.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="https://uploads.goodbits.io/uploads/landing_site/favicon/3648/6bd37a5d-b422-427a-aabc-be1c3c9be32f.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="https://uploads.goodbits.io/uploads/landing_site/favicon/3648/6bd37a5d-b422-427a-aabc-be1c3c9be32f.png" />
+  <meta name="msapplication-square70x70logo" content="https://uploads.goodbits.io/uploads/landing_site/favicon/3648/6bd37a5d-b422-427a-aabc-be1c3c9be32f.png" />
+  <meta name="msapplication-square150x150logo" content="https://uploads.goodbits.io/uploads/landing_site/favicon/3648/6bd37a5d-b422-427a-aabc-be1c3c9be32f.png" />
+  <meta name="msapplication-wide310x150logo" content="https://uploads.goodbits.io/uploads/landing_site/favicon/3648/6bd37a5d-b422-427a-aabc-be1c3c9be32f.png" />
+  <meta name="msapplication-square310x310logo" content="https://uploads.goodbits.io/uploads/landing_site/favicon/3648/6bd37a5d-b422-427a-aabc-be1c3c9be32f.png" />
+
+
+    <link rel="stylesheet" media="screen" href="https://assets.goodbits.io/assets/landing-sites-manifest-91c61c0a741c6e77b030758ee71dbbd6.css" />
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="k603iCy4/jdur9cpePSIUxYVWzwgSWPOJFYWtvqlUTwcX4EfvR47tr/M4l6gJ7KPUvSQI+/Y1V8HW0jWXe8iDw==" />
+
+    <style>
+      .subscribe-form--image-wrapper {
+        background-image: url('https://uploads.goodbits.io/uploads/landing_site/background/3648/2ec06367-b55b-4c42-9d66-d88f3dcecca8.jpg');
+      }
+      .primary-background-color {
+        background-color: #0C99CC !important;
+      }
+      .primary-text-color {
+        color: #0C99CC !important;
+      }
+      .primary-border-color {
+        border-color: #0C99CC !important;
+      }
+      .secondary-background-color {
+        background-color: #ffffff !important;
+      }
+      .secondary-text-color {
+        color: #ffffff !important;
+      }
+      .secondary-border-color {
+        border-color: #ffffff !important;
+      }
+
+        .subscribe-form--image-wrapper:before {
+          opacity: 1;
+        }
+    </style>
+  </head>
+  <body class="newsletter_landing_site_issue newsletter_landing_site issue">
+    <div class="container-fluid">
+      
+
+      <div class="top">
+        <header>
+          <div class="row">
+            <div class="col-xs-2 col-sm-3 col-md-3">
+            </div>
+
+            <div class="col-xs-8 col-sm-6 col-md-6 text-center hidden-until-sticky mobile-hidden">
+              <p class="newsletter--name primary-text-color">
+                <a href="../../../index.html">Biotech Weekly</a>
+              </p>
+            </div>
+
+            <div class="col-xs-10 col-sm-3 col-md-3 text-right hidden-until-sticky mobile-pull-right">
+                <a href="#subscribe-form" class="internal btn btn-primary btn-highlight primary-background-color secondary-text-color">Subscribe</a>
+            </div>
+          </div>
+        </header>
+
+        <div id="subscribe-form" class="row newsletter-header primary-background-color ">
+          <div class="subscribe-form--image-wrapper">
+          </div>
+
+          <div class="newsletter-header--content">
+            <div class="clearfix">
+              <div class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8 col-xl-offset-3 col-xl-6 text-center">
+                <h1 class="newsletter-header--name secondary-text-color">
+
+                      <img id="landing-site-logo" class="img-responsive newsletter-header--logo" src="https://uploads.goodbits.io/uploads/landing_site/logo/3648/20542c59-f6de-4dc6-a892-dd20af11f19a.png" alt="20542c59 f6de 4dc6 a892 dd20af11f19a" />
+
+                </h1>
+                <hr>
+                <h2 class="newsletter-header--description secondary-text-color">
+                  <p>A weekly newsletter of the best news and articles on all things biotech. Stories are picked by hand from popular biotech sites.</p>
+
+<p>Delivered every week.</p>
+
+                </h2>
+              </div>
+            </div>
+
+
+
+
+
+
+              <div class="subscribe-form-wrapper text-center">
+                <div class="subscribe-form-push">
+
+                  <form class="simple_form form-inline" novalidate="novalidate" id="new_subscriber" action="https://biotechweekly.ongoodbits.com/subscribe" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="ymnVoJd1JMz82+SQ1MxAXgT2s6MrzZGB/z1iPQS4RExFm2M3BtPhTS240ecMH3qCQBd4vORcJxDcMDxdo/I3fw==" />
+
+                    <div class="input string optional subscriber_name form-group"><input class="string optional form-control secondary-text-color secondary-border-color" placeholder="Your Name" type="text" value="" name="subscriber[name]" id="subscriber_name" /></div>
+
+                    <div class="input email optional subscriber_email form-group"><input class="string email optional form-control secondary-text-color secondary-border-color" placeholder="Your Email" type="email" name="subscriber[email]" id="subscriber_email" /></div>
+
+                    <input type="submit" name="commit" value="Subscribe" class="btn btn btn-default btn-subscribe primary-text-color secondary-background-color secondary-border-color" />
+
+</form>                </div>
+              </div>
+
+
+              <div class="social_sharing secondary-background-color">
+                <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://biotechweekly.ongoodbits.com/2017/11/03/biotech-weekly">
+                  <i class="fi icon-facebook primary-text-color"></i>
+</a>                <a target="_blank" href="https://twitter.com/intent/tweet?text=Read+newsletter+Biotech+Weekly+--++https://biotechweekly.ongoodbits.com/2017/11/03/biotech-weekly">
+                  <i class="fi icon-twitter-bird primary-text-color"></i>
+</a>              </div>
+
+              <div class="archive-link-wrapper text-center">
+                <a class="secondary-text-color" href="../../../archive.html">Browse Previous Issues</a>
+              </div>
+          </div>
+        </div>
+
+        <div id="public-issue-reader">
+    <div class="row">
+      <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6 text-center">
+          <a rel="prev" class="prev-issue primary-text-color" href="../../10/27/biotech-weekly.html">Oct 27</a>
+
+          <a rel="next" class="next-issue primary-text-color" href="../10/biotech-weekly.html">Nov 10</a>
+
+        <h2 class="content-title primary-text-color">
+          <a href="biotech-weekly.html">Nov  3 2017</a>
+        </h2>
+
+
+        <hr class="content-seperator">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6 text-center landing-site-email-content">
+          
+  
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+  <tbody>
+    <tr>
+      <td bgcolor="#ffffff" align="center" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 30px 15px 40px; ">
+        <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+          <tbody>
+            <tr>
+              <td style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt">
+                
+                
+                <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%" align="center" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+                  <tbody>
+                    <tr>
+                      <td style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding-top: 40px; " align="center">
+                        <img src="https://uploads.goodbits.io/uploads/content_block/image/77352/bf138c86-b5de-4893-ba69-2cd19a371f64.png" border="0" width="100%" class="img-max" style="-ms-interpolation-mode:bicubic;border:0;height:auto;line-height:100%;outline:none;text-decoration:none">
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                
+                
+                <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%" align="center" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+                  <tbody>
+                    <tr>
+                      <td style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 39px; font-weight: bold; color: #454545; padding-bottom: 10px; text-align: center; padding-top: 25px; word-break: break-word;">Biotech Weekly</td>
+                    </tr>
+                  </tbody>
+                </table>
+                
+                
+                <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%" align="center" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+                  <tbody>
+                    <tr>
+                      <td style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 15px; line-height: 1.7; color: #868686; padding-bottom: 10px; padding-top: 20px; text-align: center; word-break: break-word;"><div>This weekend, I'm visiting the BODIES Exhibit in LA. If you've never heard, it's a showcase of preserved human bodies dissected to display bodily systems!</div></td>
+                    </tr>
+                  </tbody>
+                </table>
+                
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+  <tbody>
+    <tr>
+      <td bgcolor="#ffffff" align="center" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 40px 15px 15px; ">
+        <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+          <tbody>
+            <tr>
+              <td style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt">
+                <div style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 20px; font-weight: bold; color: #4E4E4E; border-bottom: 1px solid #ebebeb; padding-bottom: 10px; word-break: break-word;">Favorites</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+  <tbody>
+    <tr>
+      <td bgcolor="#ffffff" align="center" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 15px 15px; ">
+        <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+          <tbody>
+            <tr>
+              <td style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 0; ">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+                  <tbody>
+                    <tr>
+                      <td align="left" valign="top" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 0; ">
+                        <div style="margin-bottom: 15px; padding-top: 0; font-size: 16px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: bold; word-break: break-word;"><a href="http://www.cell.com/cell/fulltext/S0092-8674(17)31253-9" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;color:#528de6;text-decoration:none;color: #2196f3;" target="_blank">SnapShot: Discovering Genetic Regulatory Variants by QTL Analysis // Cell</a></div>
+                        
+                        <div style="display: block; font-size: 14px; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; margin-top: 0; margin-bottom: 15px; line-height: 1.5; color: #4E4E4E; word-break: break-word;"><div>Expression quantitative trait locus (eQTL) analysis is an approach for identifying how genetic variation between individuals contributes to inter-individual differences in gene expression. This "SnapShot" describes the basic principles of eQTL analysis and its applications to diverse molecular traits of the cell measured by genomics and proteomics assays.<br><br>
+</div></div>
+                        
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+  <tbody>
+    <tr>
+      <td bgcolor="#ffffff" align="center" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 15px 15px; ">
+        <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+          <tbody>
+            <tr>
+              <td style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 0; ">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+                  <tbody>
+                    <tr>
+                      <td align="left" valign="top" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 0; ">
+                        <div style="margin-bottom: 15px; padding-top: 0; font-size: 16px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: bold; word-break: break-word;"><a href="http://onlinelibrary.wiley.com/doi/10.1002/stem.2732/abstract" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;color:#528de6;text-decoration:none;color: #2196f3;" target="_blank">Passive Stretch Induces Structural and Functional Maturation of Engineered Heart Muscle as Predicted by Computational Modeling // STEM CELLS</a></div>
+                        
+                        <div style="display: block; font-size: 14px; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; margin-top: 0; margin-bottom: 15px; line-height: 1.5; color: #4E4E4E; word-break: break-word;"><p>Passive stretch affects the structural and functional maturation of EHMs. Based on our predictive computational modeling, we show how to optimize cell alignment and calcium dynamics within EHMs. These findings provide a basis for the rational design of EHMs, which enables future scale-up productions for clinical use in cardiovascular tissue engineering.</p></div>
+                        
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+  <tbody>
+    <tr>
+      <td bgcolor="#ffffff" align="center" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 40px 15px 15px; ">
+        <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+          <tbody>
+            <tr>
+              <td style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt">
+                <div style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 20px; font-weight: bold; color: #4E4E4E; border-bottom: 1px solid #ebebeb; padding-bottom: 10px; word-break: break-word;">Stem Cells</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+  <tbody>
+    <tr>
+      <td bgcolor="#ffffff" align="center" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 15px 15px; ">
+        <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+          <tbody>
+            <tr>
+              <td style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 0; ">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+                  <tbody>
+                    <tr>
+                      <td align="left" valign="top" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 0; ">
+                        <div style="margin-bottom: 15px; padding-top: 0; font-size: 16px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: bold; word-break: break-word;"><a href="http://stm.sciencemag.org/content/9/414/eaan1145" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;color:#528de6;text-decoration:none;color: #2196f3;" target="_blank">A distinct hematopoietic stem cell population for rapid multilineage engraftment in nonhuman primates // Science Translational Medicine</a></div>
+                        
+                        <div style="display: block; font-size: 14px; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; margin-top: 0; margin-bottom: 15px; line-height: 1.5; color: #4E4E4E; word-break: break-word;"><p>CD34-positive hematopoietic cells are the gold standard for stem cell therapy and transplantation of stem cell–enriched grafts. However, most of the cells within this population will not contribute to engraftment. Using a robust nonhuman primate transplantation model, Radtke et al. identified a stem cell–enriched subpopulation of CD34-positive cells that was exclusively responsible for multilineage engraftment. </p></div>
+                        
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+  <tbody>
+    <tr>
+      <td bgcolor="#ffffff" align="center" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 15px 15px; ">
+        <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+          <tbody>
+            <tr>
+              <td style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 0; ">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+                  <tbody>
+                    <tr>
+                      <td align="left" valign="top" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 0; ">
+                        <div style="margin-bottom: 15px; padding-top: 0; font-size: 16px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: bold; word-break: break-word;"><a href="https://www.signalsblog.ca/engineered-stem-cell-platform-gives-new-insights-into-beginnings-of-human-development/" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;color:#528de6;text-decoration:none;color: #2196f3;" target="_blank">Engineered stem cell platform gives new insights into beginnings of human development // Signals Blog</a></div>
+                        
+                        <div style="display: block; font-size: 14px; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; margin-top: 0; margin-bottom: 15px; line-height: 1.5; color: #4E4E4E; word-break: break-word;"><p>Believed to be the first of its kind in Canada, the technology enables human embryonic stem cells to self-organize into a structure with embryo-like features, including the early precursors of organs such as the brain, the heart and the liver.
+</p></div>
+                        
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+  <tbody>
+    <tr>
+      <td bgcolor="#ffffff" align="center" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 15px 15px; ">
+        <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+          <tbody>
+            <tr>
+              <td style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 0; ">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+                  <tbody>
+                    <tr>
+                      <td align="left" valign="top" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 0; ">
+                        <div style="margin-bottom: 15px; padding-top: 0; font-size: 16px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: bold; word-break: break-word;"><a href="https://www.vetmeduni.ac.at/en/infoservice/news/detail/artikel/2017/10/31/stammzellentherapie/" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;color:#528de6;text-decoration:none;color: #2196f3;" target="_blank">Stem cells conduct cartilage regeneration but are not directly involved // Vetmeduni Vienna</a></div>
+                        
+                        <div style="display: block; font-size: 14px; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; margin-top: 0; margin-bottom: 15px; line-height: 1.5; color: #4E4E4E; word-break: break-word;">
+<div>Stem cell therapy has great potential for curing cartilage damage. However, it has remained unclear whether stem cells are responsible for regeneration or whether they trigger the process. Researchers at the Vetmeduni Vienna have been able to resolve this issue by tracking the effects in a new, natural model. After injection, stem cells orchestrate the healing effect of endogenous cells but are not responsible for cartilage regeneration. The breakthrough is published in JCI-Insight and was enabled by preventing the normal immune response to the molecule required to trace the injected cells.<br><br>
+</div>
+<div>OA | <a href="https://insight.jci.org/articles/view/87322" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;color:#528de6;text-decoration:none" target="_blank">Tracking mesenchymal stem cell contributions to regeneration in an immunocompetent cartilage regeneration model</a><br><br>
+</div>
+</div>
+                        
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+  <tbody>
+    <tr>
+      <td bgcolor="#ffffff" align="center" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 15px 15px; ">
+        <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+          <tbody>
+            <tr>
+              <td style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 0; ">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+                  <tbody>
+                    <tr>
+                      <td align="left" valign="top" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 0; ">
+                        <div style="margin-bottom: 15px; padding-top: 0; font-size: 16px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: bold; word-break: break-word;"><a href="http://news.unchealthcare.org/news/2017/november/how-do-adult-brain-circuits-regulate-new-neuron-production" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;color:#528de6;text-decoration:none;color: #2196f3;" target="_blank">How do adult brain circuits regulate new neuron production? // UNC Health Care</a></div>
+                        
+                        <div style="display: block; font-size: 14px; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; margin-top: 0; margin-bottom: 15px; line-height: 1.5; color: #4E4E4E; word-break: break-word;">
+<div>In a new study published in Cell Stem Cell, UNC School of Medicine neuroscientist Juan Song and colleagues discovered a long-distance brain circuit that controls the production of new neurons in the hippocampus.<br><br>
+</div>
+<div>Non-OA | <a href="http://www.cell.com/cell-stem-cell/fulltext/S1934-5909(17)30420-4" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;color:#528de6;text-decoration:none" target="_blank">Long-Range GABAergic Inputs Regulate Neural Stem Cell Quiescence and Control Adult Hippocampal Neurogenesis</a><br><br>
+</div>
+</div>
+                        
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+  <tbody>
+    <tr>
+      <td bgcolor="#ffffff" align="center" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 15px 15px; ">
+        <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+          <tbody>
+            <tr>
+              <td style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 0; ">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+                  <tbody>
+                    <tr>
+                      <td align="left" valign="top" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 0; ">
+                        <div style="margin-bottom: 15px; padding-top: 0; font-size: 16px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: bold; word-break: break-word;"><a href="http://news.emory.edu/stories/2017/10/yoon_circulation_endothelial/" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;color:#528de6;text-decoration:none;color: #2196f3;" target="_blank">Long-lasting blood vessel repair in animals via stem cells // Emory University</a></div>
+                        
+                        <div style="display: block; font-size: 14px; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; margin-top: 0; margin-bottom: 15px; line-height: 1.5; color: #4E4E4E; word-break: break-word;">
+<div>A team led by Young-sup Yoon, MD, PhD developed a new method for generating endothelial cells, which make up the lining of blood vessels, from human induced pluripotent stem cells.. When endothelial cells are surrounded by a supportive gel and implanted into mice with damaged blood vessels, they become part of the animals' blood vessels, surviving for more than 10 months.<br><br>
+</div>
+<div>Non-OA | <a href="http://circ.ahajournals.org/content/early/2017/09/27/CIRCULATIONAHA.116.026329" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;color:#528de6;text-decoration:none" target="_blank">Enhanced Therapeutic and Long-Term Dynamic Vascularization Effects of Human Pluripotent Stem Cell-Derived Endothelial Cells Encapsulated in a Nanomatrix Gel</a><br><br>
+</div>
+</div>
+                        
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+  <tbody>
+    <tr>
+      <td bgcolor="#ffffff" align="center" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 15px 15px; ">
+        <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+          <tbody>
+            <tr>
+              <td style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 0; ">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+                  <tbody>
+                    <tr>
+                      <td align="left" valign="top" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 0; ">
+                        <div style="margin-bottom: 15px; padding-top: 0; font-size: 16px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: bold; word-break: break-word;"><a href="http://onlinelibrary.wiley.com/doi/10.1002/stem.2729/abstract;jsessionid=DD21F548E093DFAF01E49360EAF50F95.f03t01" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;color:#528de6;text-decoration:none;color: #2196f3;" target="_blank">Brief Report: 3D Culture Reduces Cell Size By Increasing Vesicle Excretion // STEM CELLS</a></div>
+                        
+                        <div style="display: block; font-size: 14px; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; margin-top: 0; margin-bottom: 15px; line-height: 1.5; color: #4E4E4E; word-break: break-word;"><p>Our previous study has shown that three-dimensional (3D) culture decreases mesenchymal stem cell (MSC) size, leading to enhanced trafficking ability and reduced lung vascular obstructions. However, the underlying mechanisms are unclear. In this study, we proposed that 3D culture reduces MSC size by increasing vesicle excretion.</p></div>
+                        
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+  <tbody>
+    <tr>
+      <td bgcolor="#ffffff" align="center" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 15px 15px; ">
+        <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+          <tbody>
+            <tr>
+              <td style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 0; ">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+                  <tbody>
+                    <tr>
+                      <td align="left" valign="top" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 0; ">
+                        <div style="margin-bottom: 15px; padding-top: 0; font-size: 16px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: bold; word-break: break-word;"><a href="https://news.uoguelph.ca/2017/11/geckostail/" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;color:#528de6;text-decoration:none;color: #2196f3;" target="_blank">U of G Study First to Identify Cells Driving Gecko’s Ability to Regrow Its Tail</a></div>
+                        
+                        <div style="display: block; font-size: 14px; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; margin-top: 0; margin-bottom: 15px; line-height: 1.5; color: #4E4E4E; word-break: break-word;">
+<div>“We knew the gecko’s spinal cord could regenerate, but we didn’t know which cells were playing a key role,” said Vickaryous, lead author of the study recently published in the Journal of Comparative Neurology. “Humans are notoriously bad at dealing with spinal cord injuries, so I’m hoping we can use what we learn from geckos to coax human spinal cord injuries into repairing themselves.”<br><br>
+</div>
+<div>Non-OA | <a href="http://onlinelibrary.wiley.com/doi/10.1002/cne.24335/abstract " style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;color:#528de6;text-decoration:none" target="_blank">Neural stem/progenitor cells are activated during tail regeneration in the leopard gecko (Eublepharis macularius)</a><br><br>
+</div>
+</div>
+                        
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+  <tbody>
+    <tr>
+      <td bgcolor="#ffffff" align="center" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 40px 15px 15px; ">
+        <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+          <tbody>
+            <tr>
+              <td style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt">
+                <div style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 20px; font-weight: bold; color: #4E4E4E; border-bottom: 1px solid #ebebeb; padding-bottom: 10px; word-break: break-word;">Genetics</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+  <tbody>
+    <tr>
+      <td bgcolor="#ffffff" align="center" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 15px 15px; ">
+        <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+          <tbody>
+            <tr>
+              <td style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 0; ">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+                  <tbody>
+                    <tr>
+                      <td align="left" valign="top" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 0; ">
+                        <div style="margin-bottom: 15px; padding-top: 0; font-size: 16px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: bold; word-break: break-word;"><a href="https://www.nature.com/news/geneticists-are-starting-to-unravel-evolution-s-role-in-mental-illness-1.22914" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;color:#528de6;text-decoration:none;color: #2196f3;" target="_blank">Geneticists are starting to unravel evolution's role in mental illness // Nature News &amp; Comment</a></div>
+                        
+                        <div style="display: block; font-size: 14px; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; margin-top: 0; margin-bottom: 15px; line-height: 1.5; color: #4E4E4E; word-break: break-word;"><p>Psychiatric disorders can be debilitating and often involve a genetic component, yet, evolution hasn’t weeded them out. Now, recent work is beginning to reveal the role of natural selection — offering a peek at how the genetic underpinnings of mental illness has changed over time.</p></div>
+                        
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+  <tbody>
+    <tr>
+      <td bgcolor="#ffffff" align="center" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 15px 15px; ">
+        <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+          <tbody>
+            <tr>
+              <td style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 0; ">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+                  <tbody>
+                    <tr>
+                      <td align="left" valign="top" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 0; ">
+                        <div style="margin-bottom: 15px; padding-top: 0; font-size: 16px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: bold; word-break: break-word;"><a href="https://www.nature.com/news/genomic-studies-track-early-hints-of-cancer-1.22911" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;color:#528de6;text-decoration:none;color: #2196f3;" target="_blank">Genomic studies track early hints of cancer // Nature News &amp; Comment</a></div>
+                        
+                        <div style="display: block; font-size: 14px; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; margin-top: 0; margin-bottom: 15px; line-height: 1.5; color: #4E4E4E; word-break: break-word;"><p>After years of studying advanced cancers, researchers are now training their DNA sequencers on precancerous growths to learn more about how they develop into the full-blown disease.</p></div>
+                        
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+  <tbody>
+    <tr>
+      <td bgcolor="#ffffff" align="center" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 15px 15px; ">
+        <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+          <tbody>
+            <tr>
+              <td style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 0; ">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+                  <tbody>
+                    <tr>
+                      <td align="left" valign="top" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 0; ">
+                        <div style="margin-bottom: 15px; padding-top: 0; font-size: 16px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: bold; word-break: break-word;"><a href="http://genesdev.cshlp.org/content/31/19/1933.short?rss=1" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;color:#528de6;text-decoration:none;color: #2196f3;" target="_blank">Genetic interrogation of replicative senescence uncovers a dual role for USP28 in coordinating the p53 and GATA4 branches of the senescence program // Genes Dev</a></div>
+                        
+                        <div style="display: block; font-size: 14px; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; margin-top: 0; margin-bottom: 15px; line-height: 1.5; color: #4E4E4E; word-break: break-word;"><p>Senescence is a terminal differentiation program that halts the growth of damaged cells and must be circumvented for cancer to arise. Here we describe a panel of genetic screens to identify genes required for replicative senescence. We uncover a role in senescence for the potent tumor suppressor and ATM substrate USP28. </p></div>
+                        
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+  <tbody>
+    <tr>
+      <td bgcolor="#ffffff" align="center" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 15px 15px; ">
+        <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+          <tbody>
+            <tr>
+              <td style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 0; ">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+                  <tbody>
+                    <tr>
+                      <td align="left" valign="top" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 0; ">
+                        <div style="margin-bottom: 15px; padding-top: 0; font-size: 16px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: bold; word-break: break-word;"><a href="https://www.biorxiv.org/content/early/2017/11/03/213587.full.pdf+html" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;color:#528de6;text-decoration:none;color: #2196f3;" target="_blank">Adapting machine-learning algorithms to design gene circuits // bioRxiv</a></div>
+                        
+                        <div style="display: block; font-size: 14px; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; margin-top: 0; margin-bottom: 15px; line-height: 1.5; color: #4E4E4E; word-break: break-word;"><div>Biological systems rely on complex networks, such as transcriptional circuits and protein-protein interaction networks, to perform a variety of functions e.g. responding to stimuli, directing cell fate, or patterning an embryo. Mathematical models are often used to ask: given some network, what function does it perform? However, we often want precisely the opposite i.e. given some circuit - either observed in vivo, or desired for some engineering objective - what biological networks could execute this function? Here, we adapt optimization algorithms from machine learning to rapidly screen and design gene circuits capable of performing arbitrary functions. We demonstrate the power of this approach by designing circuits (1) that recapitulate important in vivo phenomena, such as oscillators, and (2) to perform complex tasks for synthetic biology, such as counting noisy biological events. Our method can be readily applied to biological networks of any type and size, and is provided as an open-source and easy-to-use python module, GeneNet.<br><br>
+</div></div>
+                        
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+  <tbody>
+    <tr>
+      <td bgcolor="#ffffff" align="center" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 40px 15px 15px; ">
+        <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+          <tbody>
+            <tr>
+              <td style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt">
+                <div style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 20px; font-weight: bold; color: #4E4E4E; border-bottom: 1px solid #ebebeb; padding-bottom: 10px; word-break: break-word;">Cell and Molecular</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+  <tbody>
+    <tr>
+      <td bgcolor="#ffffff" align="center" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 15px 15px; ">
+        <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+          <tbody>
+            <tr>
+              <td style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 0; ">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+                  <tbody>
+                    <tr>
+                      <td align="left" valign="top" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 0; ">
+                        <div style="margin-bottom: 15px; padding-top: 0; font-size: 16px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: bold; word-break: break-word;"><a href="http://www.cell.com/cell/fulltext/S0092-8674(17)31005-X" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;color:#528de6;text-decoration:none;color: #2196f3;" target="_blank">Intestinal Epithelial and Intraepithelial T Cell Crosstalk Mediates a Dynamic Response to Infection // Cell</a></div>
+                        
+                        <div style="display: block; font-size: 14px; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; margin-top: 0; margin-bottom: 15px; line-height: 1.5; color: #4E4E4E; word-break: break-word;"><div>Our mucosal tissues represent the first barrier against microbial invaders. Using advanced intravital live imaging, researchers discover a sophisticated system regulating the dynamic behavior of IELs, the most common type of immune cells surveying the gut mucosa. <br><br>This one comes with a <a href="https://www.youtube.com/watch?v=frsYEt3GAhA" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;color:#528de6;text-decoration:none" target="_blank">video abstract! </a>
+</div></div>
+                        
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+  <tbody>
+    <tr>
+      <td bgcolor="#ffffff" align="center" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 15px 15px; ">
+        <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+          <tbody>
+            <tr>
+              <td style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 0; ">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+                  <tbody>
+                    <tr>
+                      <td align="left" valign="top" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 0; ">
+                        <div style="margin-bottom: 15px; padding-top: 0; font-size: 16px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: bold; word-break: break-word;"><a href="http://www.cell.com/cell/fulltext/S0092-8674(17)31246-1" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;color:#528de6;text-decoration:none;color: #2196f3;" target="_blank">Synaptic Neurexin Complexes: A Molecular Code for the Logic of Neural Circuits // Cell</a></div>
+                        
+                        <div style="display: block; font-size: 14px; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; margin-top: 0; margin-bottom: 15px; line-height: 1.5; color: #4E4E4E; word-break: break-word;"><div>Synapses are specialized junctions between neurons in brain that transmit and compute information, thereby connecting neurons into millions of overlapping and interdigitated neural circuits. Here, we posit that the establishment, properties, and dynamics of synapses are governed by a molecular logic that is controlled by diverse <em>trans</em>-synaptic signaling molecules. Neurexins, expressed in thousands of alternatively spliced isoforms, are central components of this dynamic code. Presynaptic neurexins regulate synapse properties via differential binding to multifarious postsynaptic ligands, such as neuroligins, cerebellin/GluD complexes, and latrophilins, thereby shaping the input/output relations of their resident neural circuits. Mutations in genes encoding neurexins and their ligands are associated with diverse neuropsychiatric disorders, especially schizophrenia, autism, and Tourette syndrome. Thus, neurexins nucleate an overall <em>trans</em>-synaptic signaling network that controls synapse properties, which thereby determines the precise responses of synapses to spike patterns in a neuron and circuit and which is vulnerable to impairments in neuropsychiatric disorders.</div></div>
+                        
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+  <tbody>
+    <tr>
+      <td bgcolor="#ffffff" align="center" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 40px 15px 15px; ">
+        <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+          <tbody>
+            <tr>
+              <td style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt">
+                <div style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 20px; font-weight: bold; color: #4E4E4E; border-bottom: 1px solid #ebebeb; padding-bottom: 10px; word-break: break-word;">General Science</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+  <tbody>
+    <tr>
+      <td bgcolor="#ffffff" align="center" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 15px 15px; ">
+        <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+          <tbody>
+            <tr>
+              <td style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 0; ">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+                  <tbody>
+                    <tr>
+                      <td align="left" valign="top" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 0; ">
+                        <div style="margin-bottom: 15px; padding-top: 0; font-size: 16px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: bold; word-break: break-word;"><a href="http://www.science20.com/news_staff/darwins_aliens_extraterrestrials_could_be_more_like_us_than_we_think-227923" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;color:#528de6;text-decoration:none;color: #2196f3;" target="_blank">Darwin's Aliens: Extraterrestrials Could Be More Like Us Than We Think // Science 2.0</a></div>
+                        
+                        <div style="display: block; font-size: 14px; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; margin-top: 0; margin-bottom: 15px; line-height: 1.5; color: #4E4E4E; word-break: break-word;"><p>Using alien natural selection as a framework, the authors of a new paper in International Journal of Astrobiology speculated about how complexity will arise in space. Species complexity has increased on the Earth as a result of a handful of events, known as major transitions. These transitions occur when a group of separate organisms evolve into a higher-level organism - when cells become multi-cellular organisms, for example. Both theory and empirical data suggest that extreme conditions are required for major transitions to occur. </p></div>
+                        
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+  <tbody>
+    <tr>
+      <td bgcolor="#ffffff" align="center" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 15px 15px; ">
+        <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+          <tbody>
+            <tr>
+              <td style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 0; ">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+                  <tbody>
+                    <tr>
+                      <td align="left" valign="top" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 0; ">
+                        <div style="margin-bottom: 15px; padding-top: 0; font-size: 16px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: bold; word-break: break-word;"><a href="https://www.nature.com/news/the-new-thermodynamics-how-quantum-physics-is-bending-the-rules-1.22937" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;color:#528de6;text-decoration:none;color: #2196f3;" target="_blank">The new thermodynamics: how quantum physics is bending the rules // Nature News &amp; Comment</a></div>
+                        
+                        <div style="display: block; font-size: 14px; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; margin-top: 0; margin-bottom: 15px; line-height: 1.5; color: #4E4E4E; word-break: break-word;"><p>The team has found preliminary evidence of an effect that was theorized only a few years ago1: a quantum boost that would push the diamond's power output above the level prescribed by classical thermodynamics. If the results hold up, they will be a tangible boon for the study of quantum thermodynamics, a relatively new field that aims to uncover the rules that govern heat and energy flow at the atomic scale.</p></div>
+                        
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+  <tbody>
+    <tr>
+      <td bgcolor="#ffffff" align="center" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 40px 15px 15px; ">
+        <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+          <tbody>
+            <tr>
+              <td style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt">
+                <div style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 20px; font-weight: bold; color: #4E4E4E; border-bottom: 1px solid #ebebeb; padding-bottom: 10px; word-break: break-word;">In Other News...</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+  <tbody>
+    <tr>
+      <td bgcolor="#ffffff" align="center" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 15px 15px; ">
+        <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+          <tbody>
+            <tr>
+              <td style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 0; ">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+                  <tbody>
+                    <tr>
+                      <td align="left" valign="top" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 0; ">
+                        <div style="margin-bottom: 15px; padding-top: 0; font-size: 16px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: bold; word-break: break-word;"><a href="http://sandwalk.blogspot.com/2017/10/the-history-of-dna-sequencing.html" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;color:#528de6;text-decoration:none;color: #2196f3;" target="_blank">The history of DNA sequencing // Sandwalk</a></div>
+                        
+                        <div style="display: block; font-size: 14px; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; margin-top: 0; margin-bottom: 15px; line-height: 1.5; color: #4E4E4E; word-break: break-word;"><p>This year marks the 40th anniversary of DNA sequencing technology (Gilbert and Maxam, 1977; Sanger et al., 1977)1 The Sanger technique soon took over and by the 1990s it was the only technique used to sequence DNA. The development of reliable sequencing machines meant the end of those large polyacrylamide gels that we all hated. 
+</p></div>
+                        
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+  <tbody>
+    <tr>
+      <td bgcolor="#ffffff" align="center" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 15px 15px; ">
+        <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+          <tbody>
+            <tr>
+              <td style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 0; ">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+                  <tbody>
+                    <tr>
+                      <td align="left" valign="top" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 0; ">
+                        <div style="margin-bottom: 15px; padding-top: 0; font-size: 16px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: bold; word-break: break-word;"><a href="http://www.nikonsmallworld.com/galleries/photo/2017-photomicrography-competition" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;color:#528de6;text-decoration:none;color: #2196f3;" target="_blank">2017 Photomicrography Competition // Nikon’s Small World</a></div>
+                        
+                        <div style="display: block; font-size: 14px; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; margin-top: 0; margin-bottom: 15px; line-height: 1.5; color: #4E4E4E; word-break: break-word;"><p>Beautiful photographs from microscopes!</p></div>
+                        
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+  <tbody>
+    <tr>
+      <td bgcolor="#ffffff" align="center" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 15px 15px; ">
+        <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+          <tbody>
+            <tr>
+              <td style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 0; ">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+                  <tbody>
+                    <tr>
+                      <td align="left" valign="top" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 0; ">
+                        <div style="margin-bottom: 15px; padding-top: 0; font-size: 16px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: bold; word-break: break-word;"><a href="http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002614" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;color:#528de6;text-decoration:none;color: #2196f3;" target="_blank">Imagining the “open” university: Sharing scholarship to improve research and education // PLoS Biology</a></div>
+                        
+                        <div style="display: block; font-size: 14px; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; margin-top: 0; margin-bottom: 15px; line-height: 1.5; color: #4E4E4E; word-break: break-word;"><p>Open scholarship, such as the sharing of articles, code, data, and educational resources, has the potential to improve university research and education as well as increase the impact universities can have beyond their own walls. To support this perspective, I present evidence from case studies, published literature, and personal experiences as a practicing open scholar. </p></div>
+                        
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+  <tbody>
+    <tr>
+      <td bgcolor="#ffffff" align="center" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 15px 15px; ">
+        <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+          <tbody>
+            <tr>
+              <td style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 0; ">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+                  <tbody>
+                    <tr>
+                      <td align="left" valign="top" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 0; ">
+                        <div style="margin-bottom: 15px; padding-top: 0; font-size: 16px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: bold; word-break: break-word;"><a href="http://www.virology.ws/2017/10/19/from-cell-proteins-to-viral-capsids/" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;color:#528de6;text-decoration:none;color: #2196f3;" target="_blank">From cell proteins to viral capsids // virology blog</a></div>
+                        
+                        <div style="display: block; font-size: 14px; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; margin-top: 0; margin-bottom: 15px; line-height: 1.5; color: #4E4E4E; word-break: break-word;"><p>Three ideas have emerged to explain the origin of viruses: 1. viruses evolved first on Earth, before cells, and when cells evolved, the viruses became their genetic parasites; 2. viruses are cells that lost many genes and became intracellular parasites; 3. viruses are collections of genes that escaped from cells. Missing from these hypothesis is how nucleic acids became virus particles – that is, how they acquired structural proteins. It seems likely that viral structural proteins originated from cellular genes.</p></div>
+                        
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+  <tbody>
+    <tr>
+      <td bgcolor="#ffffff" align="center" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 0 15px 60px; ">
+        <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+          <tbody>
+            <tr>
+              <td style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt">
+                <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+                  <tbody>
+                    <tr>
+                      <td style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding-bottom: 25px; padding-top: 25px; ">
+                        <div style="margin: 0; border: 0; background-color: #ebebeb;  "></div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                
+                <table align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+                  <tbody>
+                    <tr>
+                      <td style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 15px; line-height: 1.7; color: #868686; padding-bottom: 30px; text-align: center; word-break: break-word">Hope you enjoyed your week and this issue of Biotech Weekly!  If you think someone would like this collection of biotech related news and recent research publications, just forward them this email. Thank you!  - Kate the Great</td>
+                    </tr>
+                  </tbody>
+                </table>
+                
+                <table align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important">
+                  <tbody>
+                    <tr>
+                      <td style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;font-size: 12px; color: #868686; font-family: Tahoma, Arial, Helvetica, sans-serif; text-align: center; padding-bottom: 8px; ">
+                        Kate Busse · 2111 Manchester Ave · Encinitas CA 92007 · USA
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;font-size: 12px; color: #868686; font-family: Tahoma, Arial, Helvetica, sans-serif; text-align: center; padding-bottom: 8px; ">
+                        <a href="https://goodbits.io/unsubscribe/%7B%7Buuid%7D%7D" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;color:#528de6;text-decoration:none;color: #868686; " target="_blank">Unsubscribe</a>
+                        | <a href="https://goodbits.io/emails/5de92781-3654-48e0-9d76-a6920d347ad1" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;color:#528de6;text-decoration:none;color: #868686; " target="_blank">View in browser</a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<style type="text/css">
+  @media screen and (max-width: 600px) {  
+
+  table.responsive-table {
+    width:100%!important;
+  }
+
+  img.img-max {
+    max-width: 100% !important;
+    height:auto !important;
+  }
+
+}
+</style>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6 text-center">
+          <a rel="prev" class="prev-issue primary-text-color" href="../../10/27/biotech-weekly.html">Oct 27</a>
+
+        <a class="all-issues primary-text-color" href="../../../archive.html">Archive</a>
+
+          <a rel="next" class="next-issue primary-text-color" href="../10/biotech-weekly.html">Nov 10</a>
+      </div>
+    </div>
+</div>
+
+      </div>
+
+        <footer>
+          <div class="row">
+            <div class="col-xs-offset-1 col-xs-10 col-md-offset-2 col-md-8 text-center">
+                <p>© 2015-2018 Biotech Weekly</p>
+
+            </div>
+          </div>
+        </footer>
+    </div>
+
+    <script src="https://assets.goodbits.io/assets/landing_sites_manifest-a9ba3b95c04e1aa54c3376074d57d994.js"></script>
+      <script data-turbolinks-eval="false">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', "UA-66903227-1", 'auto');
+    ga('send', 'pageview');
+</script>
+
+  </body>
+
+<!-- Mirrored from biotechweekly.ongoodbits.com/2017/11/03/biotech-weekly by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 10 May 2018 17:28:31 GMT -->
+</html>

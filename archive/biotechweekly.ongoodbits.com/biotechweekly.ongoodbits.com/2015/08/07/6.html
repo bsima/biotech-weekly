@@ -1,0 +1,1138 @@
+<!DOCTYPE html style="height: 100%">
+<!--[if lt IE 7 ]> <html class="ie6 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8 lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9]>     <html class="ie9 lt-ie10" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+
+<!-- Nice to see you took a peek here, hello -->
+<!-- send us an email at hello at goodbits dot io if you want to talk tech -->
+
+  
+<!-- Mirrored from biotechweekly.ongoodbits.com/2015/08/07/6 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 10 May 2018 17:28:40 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# business: http://ogp.me/ns/business#">
+    <meta http-equiv="x-ua-compatible" content="IE=Edge"/>
+    <meta charset="utf-8" />
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"e5eada5cb5","applicationID":"3840607","transactionName":"JlhZTRYNCFsBExtYVBJEW1wQFgFFOw1VWFUMWVBmFwsQUksIR0VEAA==","queueTime":0,"applicationTime":91,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+
+    <title>Biotech Weekly #6</title>
+    <meta name="description" content="A weekly newsletter of the best news and articles on all things biotech. Stories are picked by hand from popular biotech sites.
+
+Delivered every week.
+" />
+    <meta name="author"      content="Ben Sima">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta property="og:site_name"   content="Biotech Weekly">
+    <meta property="og:title"       content="Biotech Weekly #6">
+    <meta property="og:description" content="A weekly newsletter of the best news and articles on all things biotech. Stories are picked by hand from popular biotech sites.
+
+Delivered every week.
+">
+    <meta property="og:type"        content="website">
+      <meta property="og:image"     content="https://uploads.goodbits.io/uploads/landing_site/logo/3648/20542c59-f6de-4dc6-a892-dd20af11f19a.png">
+
+    <meta property="business:contact_data:street_address" content="2111 Manchester Ave" >
+    <meta property="business:contact_data:locality"       content="Encinitas" >
+    <meta property="business:contact_data:postal_code"    content="92007" >
+    <meta property="business:contact_data:country_name"   content="US" >
+
+    <meta name="twitter:title"       content="Biotech Weekly #6">
+    <meta name="twitter:description" content="A weekly newsletter of the best news and articles on all things biotech. Stories are picked by hand from popular biotech sites.
+
+Delivered every week.
+">
+      <meta name="twitter:image:src" content="https://uploads.goodbits.io/uploads/landing_site/logo/3648/20542c59-f6de-4dc6-a892-dd20af11f19a.png">
+
+
+    <link id="feedLink" rel="alternate" type="application/rss+xml" title="RSS" href="../../../feed">
+
+      <link rel="shortcut icon" href="https://uploads.goodbits.io/uploads/landing_site/favicon/3648/6bd37a5d-b422-427a-aabc-be1c3c9be32f.png" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="https://uploads.goodbits.io/uploads/landing_site/favicon/3648/6bd37a5d-b422-427a-aabc-be1c3c9be32f.png" />
+  <link rel="apple-touch-icon" sizes="57x57" href="https://uploads.goodbits.io/uploads/landing_site/favicon/3648/6bd37a5d-b422-427a-aabc-be1c3c9be32f.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="https://uploads.goodbits.io/uploads/landing_site/favicon/3648/6bd37a5d-b422-427a-aabc-be1c3c9be32f.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="https://uploads.goodbits.io/uploads/landing_site/favicon/3648/6bd37a5d-b422-427a-aabc-be1c3c9be32f.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="https://uploads.goodbits.io/uploads/landing_site/favicon/3648/6bd37a5d-b422-427a-aabc-be1c3c9be32f.png" />
+  <link rel="apple-touch-icon" sizes="57x57" href="https://uploads.goodbits.io/uploads/landing_site/favicon/3648/6bd37a5d-b422-427a-aabc-be1c3c9be32f.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="https://uploads.goodbits.io/uploads/landing_site/favicon/3648/6bd37a5d-b422-427a-aabc-be1c3c9be32f.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="https://uploads.goodbits.io/uploads/landing_site/favicon/3648/6bd37a5d-b422-427a-aabc-be1c3c9be32f.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="https://uploads.goodbits.io/uploads/landing_site/favicon/3648/6bd37a5d-b422-427a-aabc-be1c3c9be32f.png" />
+  <meta name="msapplication-square70x70logo" content="https://uploads.goodbits.io/uploads/landing_site/favicon/3648/6bd37a5d-b422-427a-aabc-be1c3c9be32f.png" />
+  <meta name="msapplication-square150x150logo" content="https://uploads.goodbits.io/uploads/landing_site/favicon/3648/6bd37a5d-b422-427a-aabc-be1c3c9be32f.png" />
+  <meta name="msapplication-wide310x150logo" content="https://uploads.goodbits.io/uploads/landing_site/favicon/3648/6bd37a5d-b422-427a-aabc-be1c3c9be32f.png" />
+  <meta name="msapplication-square310x310logo" content="https://uploads.goodbits.io/uploads/landing_site/favicon/3648/6bd37a5d-b422-427a-aabc-be1c3c9be32f.png" />
+
+
+    <link rel="stylesheet" media="screen" href="https://assets.goodbits.io/assets/landing-sites-manifest-91c61c0a741c6e77b030758ee71dbbd6.css" />
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="/3or94SjAbYSlow52S8NuBx3p6KqKw3NtFfb3pyQx+pwiJ1gFQXEN8P1uU4B/DdkWJZsvWW6u1yXWoW+O9q02Q==" />
+
+    <style>
+      .subscribe-form--image-wrapper {
+        background-image: url('https://uploads.goodbits.io/uploads/landing_site/background/3648/2ec06367-b55b-4c42-9d66-d88f3dcecca8.jpg');
+      }
+      .primary-background-color {
+        background-color: #0C99CC !important;
+      }
+      .primary-text-color {
+        color: #0C99CC !important;
+      }
+      .primary-border-color {
+        border-color: #0C99CC !important;
+      }
+      .secondary-background-color {
+        background-color: #ffffff !important;
+      }
+      .secondary-text-color {
+        color: #ffffff !important;
+      }
+      .secondary-border-color {
+        border-color: #ffffff !important;
+      }
+
+        .subscribe-form--image-wrapper:before {
+          opacity: 1;
+        }
+    </style>
+  </head>
+  <body class="newsletter_landing_site_issue newsletter_landing_site issue">
+    <div class="container-fluid">
+      
+
+      <div class="top">
+        <header>
+          <div class="row">
+            <div class="col-xs-2 col-sm-3 col-md-3">
+            </div>
+
+            <div class="col-xs-8 col-sm-6 col-md-6 text-center hidden-until-sticky mobile-hidden">
+              <p class="newsletter--name primary-text-color">
+                <a href="../../../index.html">Biotech Weekly</a>
+              </p>
+            </div>
+
+            <div class="col-xs-10 col-sm-3 col-md-3 text-right hidden-until-sticky mobile-pull-right">
+                <a href="#subscribe-form" class="internal btn btn-primary btn-highlight primary-background-color secondary-text-color">Subscribe</a>
+            </div>
+          </div>
+        </header>
+
+        <div id="subscribe-form" class="row newsletter-header primary-background-color ">
+          <div class="subscribe-form--image-wrapper">
+          </div>
+
+          <div class="newsletter-header--content">
+            <div class="clearfix">
+              <div class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8 col-xl-offset-3 col-xl-6 text-center">
+                <h1 class="newsletter-header--name secondary-text-color">
+
+                      <img id="landing-site-logo" class="img-responsive newsletter-header--logo" src="https://uploads.goodbits.io/uploads/landing_site/logo/3648/20542c59-f6de-4dc6-a892-dd20af11f19a.png" alt="20542c59 f6de 4dc6 a892 dd20af11f19a" />
+
+                </h1>
+                <hr>
+                <h2 class="newsletter-header--description secondary-text-color">
+                  <p>A weekly newsletter of the best news and articles on all things biotech. Stories are picked by hand from popular biotech sites.</p>
+
+<p>Delivered every week.</p>
+
+                </h2>
+              </div>
+            </div>
+
+
+
+
+
+
+              <div class="subscribe-form-wrapper text-center">
+                <div class="subscribe-form-push">
+
+                  <form class="simple_form form-inline" novalidate="novalidate" id="new_subscriber" action="https://biotechweekly.ongoodbits.com/subscribe" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="XbyCjx5HyC7SMCeR2T+Y3X0C/9QS5g4VglzSo9Y1oSnSTjQYj+ENrwNTEuYB7KIBOeM0y913uIShUYzDcX/SGg==" />
+
+                    <div class="input string optional subscriber_name form-group"><input class="string optional form-control secondary-text-color secondary-border-color" placeholder="Your Name" type="text" value="" name="subscriber[name]" id="subscriber_name" /></div>
+
+                    <div class="input email optional subscriber_email form-group"><input class="string email optional form-control secondary-text-color secondary-border-color" placeholder="Your Email" type="email" name="subscriber[email]" id="subscriber_email" /></div>
+
+                    <input type="submit" name="commit" value="Subscribe" class="btn btn btn-default btn-subscribe primary-text-color secondary-background-color secondary-border-color" />
+
+</form>                </div>
+              </div>
+
+
+              <div class="social_sharing secondary-background-color">
+                <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://biotechweekly.ongoodbits.com/2015/08/07/6">
+                  <i class="fi icon-facebook primary-text-color"></i>
+</a>                <a target="_blank" href="https://twitter.com/intent/tweet?text=Read+newsletter+Biotech+Weekly+--++%236+https://biotechweekly.ongoodbits.com/2015/08/07/6">
+                  <i class="fi icon-twitter-bird primary-text-color"></i>
+</a>              </div>
+
+              <div class="archive-link-wrapper text-center">
+                <a class="secondary-text-color" href="../../../archive.html">Browse Previous Issues</a>
+              </div>
+          </div>
+        </div>
+
+        <div id="public-issue-reader">
+    <div class="row">
+      <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6 text-center">
+          <a rel="prev" class="prev-issue primary-text-color" href="../../07/30/biotech-weekly.html">Jul 30</a>
+
+          <a rel="next" class="next-issue primary-text-color" href="../14/7.html">Aug 14</a>
+
+        <h2 class="content-title primary-text-color">
+          <a href="6.html">Aug  7 2015</a>
+        </h2>
+
+          <h3 class="content-subtitle">
+            <a href="6.html"> #6</a>
+          </h3>
+
+        <hr class="content-seperator">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6 text-center landing-site-email-content">
+          
+    <table class="body" border="0" cellpadding="0" cellspacing="0" style='-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;color:#565656;font-family:"Helvetica Neue", "Helvetica", "Helvetica", "Arial", sans-serif;font-style:normal;font-weight:300;min-width:100%;margin:25px 0;padding:0;width:94% !important'>
+      <tr>
+        <td class="center" align="center" valign="top">
+
+          <center>
+            <!-- content -->
+            <table class="container" border="0" cellpadding="0" cellspacing="0" width="100%" style="margin:0 auto;width:580px">
+              <tr>
+                <td>
+
+                  <!-- title -->
+                  <table class="row" border="0" cellpadding="0" cellspacing="0" width="100%" style="width:100% !important">
+                    <tr>
+                      <td>
+
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" align="left" class="row subheader-container" style="margin-bottom:20px;width:100% !important">
+                          <tr>
+                            <td>
+                              <!-- left column -->
+                              <table width="100%" border="0" cellspacing="0" cellpadding="0" align="left" class="mobile-center subheader-container-left" style="width:67%">
+                                <tr>
+                                  <td class="mobile-center">
+                                    <h4 class="subheader" style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;margin-top:10px;margin-bottom:10px;font-size:14px;line-height:19px;margin-bottom:4px">Issue #6</h4>
+                                  </td>
+                                </tr>
+                              </table>
+
+                              <!-- right column -->
+                              
+                            </td>
+                          </tr>
+                        </table>
+
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                          <tr>
+                            <td class="alignable-paragraph" style="text-align:left">
+                              
+                                <img id="logo-url" src="https://goodbits-production.s3.amazonaws.com/uploads/newsletter_settings/logo/4013/2f3ef878-ec8d-4d27-8fcc-ed109617b7a7.JPG" alt="Logo for Biotech Weekly" style="float:none;margin-bottom:4px;width: 100%;">
+                              
+                            </td>
+                          </tr>
+                        </table>
+
+                      </td>
+                    </tr>
+                  </table>
+
+                  <!-- description -->
+                  
+                    <table class="row" border="0" cellpadding="0" cellspacing="0" width="100%" style="width:100% !important">
+                      <tr>
+                        <td>
+                          <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                              <td class="description alignable-paragraph" style="padding-bottom:30px;text-align:left">
+                                <p style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;line-height:26px;margin-top:4px;margin-bottom:21px">This week in biotechnology: We've learned how a human DNA repair enzyme works and the reasoning behind why the human heart cannot regenerate. Microbial biosensors were developed to communicate with bacteria along with nanoparticle glue for wound closure. <em>The trick is to get that ever elusive FDA approval.</em> Cell reprogramming using purely chemical means is leading a brighter path towards process scale-up. We also have a look at some industry trends pertaining to our lives, and some analysis on reversing the ageing process. </p>
+
+<p style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;line-height:26px;margin-top:4px;margin-bottom:21px">Happy Sciencing!</p>
+
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  
+
+                  <!-- links / content -->
+                  
+                    
+                      <table class="row section-content" border="0" cellpadding="0" cellspacing="0" style="width:100% !important">
+                        <tr>
+                          <td>
+                            <table class="full-width" align="left" border="0" cellpadding="0" cellspacing="0" style="width:100%">
+                              <tr>
+                                <td>
+                                  <h2 class="section-title" style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:22px;font-weight:300;margin-bottom:15px;border-bottom:1px solid #e3e3e3;margin-top:30px;padding-bottom:3px;border-color:#C0D7E3 !important;color:#45394D !important">Research</h2>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    
+
+                    
+                      <table width="100%" border="0" cellpadding="0" cellspacing="0" class="w100percent">
+                        <tr>
+                          <td class="align-top link-content" style="vertical-align:top;padding-bottom:20px">
+
+                            <!-- left column -->
+                            
+                            
+                              <table width="140" border="0" cellspacing="0" cellpadding="0" align="left" class="w270">
+                                <tr>
+                                  <td>
+                                    
+                                      <a href="https://www.fau.eu/2015/08/06/news/research/why-the-human-heart-cannot-regenerate/" target="_blank"><img class="thumbnail" src="https://goodbits-production.s3.amazonaws.com/uploads/link/thumbnail/2496034/Herzmuskelzellen_Urheber-David-C.-Zebrowski-and-Felix-B.-Engel1-245x200.jpg" alt="Why the human heart cannot regenerate // FAU" style="float:none;max-width:120px;max-height:120px;padding-right:10px;margin-bottom:10px"></a>
+                                    
+                                  </td>
+                                </tr>
+                              </table>
+                            
+                            <!-- end left column -->
+
+                            <!-- right column -->
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="left" class="w270">
+                              <tr>
+                                <td>
+                                  <h3 class="title seriously-break-word" style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:18px;line-height:26px;margin-bottom:10px;word-wrap:break-word;word-break:break-word;white-space:normal;margin-top:0;margin-bottom:0;color:#1FB1D0 !important"><a href="https://www.fau.eu/2015/08/06/news/research/why-the-human-heart-cannot-regenerate/" style="color:#328EF5;text-decoration:none;color:#1FB1D0 !important" target="_blank">Why the human heart cannot regenerate // FAU</a></h3>
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td>
+                                  <span class="link-description seriously-break-word" style="word-wrap:break-word;word-break:break-word;white-space:normal"><p style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;line-height:26px;margin-top:4px;margin-bottom:21px">The ability of most cardiac muscle cells to reproduce disappears in humans and all other mammals shortly after birth. FAU researchers speculate that the centrosome in cardiac muscle cells undergoes a process of disassembly which is completed shortly after birth, causing the cell to lose its ability to reproduce.</p>
+
+<p style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;line-height:26px;margin-top:4px;margin-bottom:21px"><a href="http://dx.doi.org/10.7554/eLife.05563" style="color:#1FB1D0 !important" target="_blank">Developmental alterations in centrosome integrity contribute to the post-mitotic state of mammalian cardiomyocytes</a> <strong>OA</strong></p>
+</span>
+                                </td>
+                              </tr>
+                            </table>
+                            <!-- end right column -->
+
+                          </td>
+                        </tr>
+                      </table>
+                    
+                      <table width="100%" border="0" cellpadding="0" cellspacing="0" class="w100percent">
+                        <tr>
+                          <td class="align-top link-content" style="vertical-align:top;padding-bottom:20px">
+
+                            <!-- left column -->
+                            
+                            
+                              <table width="140" border="0" cellspacing="0" cellpadding="0" align="left" class="w270">
+                                <tr>
+                                  <td>
+                                    
+                                      <a href="http://www.en.uni-muenchen.de/news/newsarchiv/2015/sadhegian_dnarepair.html" target="_blank"><img class="thumbnail" src="https://goodbits-production.s3.amazonaws.com/uploads/link/thumbnail/2496036/dna_norman-blue_260_web.png" alt="Pincer attack // LMU Munich" style="float:none;max-width:120px;max-height:120px;padding-right:10px;margin-bottom:10px"></a>
+                                    
+                                  </td>
+                                </tr>
+                              </table>
+                            
+                            <!-- end left column -->
+
+                            <!-- right column -->
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="left" class="w270">
+                              <tr>
+                                <td>
+                                  <h3 class="title seriously-break-word" style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:18px;line-height:26px;margin-bottom:10px;word-wrap:break-word;word-break:break-word;white-space:normal;margin-top:0;margin-bottom:0;color:#1FB1D0 !important"><a href="http://www.en.uni-muenchen.de/news/newsarchiv/2015/sadhegian_dnarepair.html" style="color:#328EF5;text-decoration:none;color:#1FB1D0 !important" target="_blank">Pincer attack // LMU Munich</a></h3>
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td>
+                                  <span class="link-description seriously-break-word" style="word-wrap:break-word;word-break:break-word;white-space:normal"><p style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;line-height:26px;margin-top:4px;margin-bottom:21px">LMU researchers have explained for the first time in detail how a human DNA repair enzyme works: First the scaffold is cracked, then defective parts are removed. </p>
+
+<p style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;line-height:26px;margin-top:4px;margin-bottom:21px"><a href="http://www.nature.com/srep/2015/150527/srep10369/full/srep10369.html" style="color:#1FB1D0 !important" target="_blank">A Base-Independent Repair Mechanism for DNA Glycosylase—No Discrimination Within the Active Site</a> <strong>OA</strong></p>
+</span>
+                                </td>
+                              </tr>
+                            </table>
+                            <!-- end right column -->
+
+                          </td>
+                        </tr>
+                      </table>
+                    
+                      <table width="100%" border="0" cellpadding="0" cellspacing="0" class="w100percent">
+                        <tr>
+                          <td class="align-top link-content" style="vertical-align:top;padding-bottom:20px">
+
+                            <!-- left column -->
+                            
+                            
+                              <table width="140" border="0" cellspacing="0" cellpadding="0" align="left" class="w270">
+                                <tr>
+                                  <td>
+                                    
+                                      <a href="http://www.douglas.qc.ca/news/1361?locale=en" target="_blank"><img class="thumbnail" src="https://goodbits-production.s3.amazonaws.com/uploads/link/thumbnail/2496156/print-header.png" alt="Understanding the molecular mechanism leading to addiction in humans // Douglas Mental Health University Institute" style="float:none;max-width:120px;max-height:120px;padding-right:10px;margin-bottom:10px"></a>
+                                    
+                                  </td>
+                                </tr>
+                              </table>
+                            
+                            <!-- end left column -->
+
+                            <!-- right column -->
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="left" class="w270">
+                              <tr>
+                                <td>
+                                  <h3 class="title seriously-break-word" style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:18px;line-height:26px;margin-bottom:10px;word-wrap:break-word;word-break:break-word;white-space:normal;margin-top:0;margin-bottom:0;color:#1FB1D0 !important"><a href="http://www.douglas.qc.ca/news/1361?locale=en" style="color:#328EF5;text-decoration:none;color:#1FB1D0 !important" target="_blank">Understanding the molecular mechanism leading to addiction in humans // Douglas Mental Health University Institute</a></h3>
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td>
+                                  <span class="link-description seriously-break-word" style="word-wrap:break-word;word-break:break-word;white-space:normal"><p style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;line-height:26px;margin-top:4px;margin-bottom:21px">El Mestikawy and his colleagues found that in order to regulate our reward behaviours, a small population of neurons in our reward centre are able to respond with both “yes” and “no”.</p>
+
+<p style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;line-height:26px;margin-top:4px;margin-bottom:21px"><a href="http://www.nature.com/mp/journal/vaop/ncurrent/full/mp2015104a.html" style="color:#1FB1D0 !important" target="_blank">The absence of VGLUT3 predisposes to cocaine abuse by increasing dopamine and glutamate signaling in the nucleus accumbens.</a><br>
+<strong>NON-OA</strong></p>
+</span>
+                                </td>
+                              </tr>
+                            </table>
+                            <!-- end right column -->
+
+                          </td>
+                        </tr>
+                      </table>
+                    
+                      <table width="100%" border="0" cellpadding="0" cellspacing="0" class="w100percent">
+                        <tr>
+                          <td class="align-top link-content" style="vertical-align:top;padding-bottom:20px">
+
+                            <!-- left column -->
+                            
+                            
+                              <table width="140" border="0" cellspacing="0" cellpadding="0" align="left" class="w270">
+                                <tr>
+                                  <td>
+                                    
+                                      <a href="http://www.mdanderson.org/newsroom/news-releases/2015/new-therapy-reverse-kidney-damage-identified.html" target="_blank"><img class="thumbnail" src="https://goodbits-production.s3.amazonaws.com/uploads/link/thumbnail/2496206/kalluri.jpg" alt="Potential new therapy approaches to reverse kidney damage identified // MD Anderson Cancer Center" style="float:none;max-width:120px;max-height:120px;padding-right:10px;margin-bottom:10px"></a>
+                                    
+                                  </td>
+                                </tr>
+                              </table>
+                            
+                            <!-- end left column -->
+
+                            <!-- right column -->
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="left" class="w270">
+                              <tr>
+                                <td>
+                                  <h3 class="title seriously-break-word" style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:18px;line-height:26px;margin-bottom:10px;word-wrap:break-word;word-break:break-word;white-space:normal;margin-top:0;margin-bottom:0;color:#1FB1D0 !important"><a href="http://www.mdanderson.org/newsroom/news-releases/2015/new-therapy-reverse-kidney-damage-identified.html" style="color:#328EF5;text-decoration:none;color:#1FB1D0 !important" target="_blank">Potential new therapy approaches to reverse kidney damage identified // MD Anderson Cancer Center</a></h3>
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td>
+                                  <span class="link-description seriously-break-word" style="word-wrap:break-word;word-break:break-word;white-space:normal"><p style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;line-height:26px;margin-top:4px;margin-bottom:21px">Adults who are worried or terrified sometimes curl up into a fetal position. Likewise, adult cells that are injured, including genetic injury leading to cancer, initiate a process that was present during embryonic development.</p>
+
+<p style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;line-height:26px;margin-top:4px;margin-bottom:21px"><a href="http://www.nature.com/nm/journal/vaop/ncurrent/full/nm.3902.html" style="color:#1FB1D0 !important" target="_blank">Epithelial-to-mesenchymal transition induces cell cycle arrest and parenchymal damage in renal fibrosis</a><br>
+<strong>NON-OA</strong></p>
+</span>
+                                </td>
+                              </tr>
+                            </table>
+                            <!-- end right column -->
+
+                          </td>
+                        </tr>
+                      </table>
+                    
+                  
+                    
+                      <table class="row section-content" border="0" cellpadding="0" cellspacing="0" style="width:100% !important">
+                        <tr>
+                          <td>
+                            <table class="full-width" align="left" border="0" cellpadding="0" cellspacing="0" style="width:100%">
+                              <tr>
+                                <td>
+                                  <h2 class="section-title" style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:22px;font-weight:300;margin-bottom:15px;border-bottom:1px solid #e3e3e3;margin-top:30px;padding-bottom:3px;border-color:#C0D7E3 !important;color:#45394D !important">Tools and Gadgets  </h2>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    
+
+                    
+                      <table width="100%" border="0" cellpadding="0" cellspacing="0" class="w100percent">
+                        <tr>
+                          <td class="align-top link-content" style="vertical-align:top;padding-bottom:20px">
+
+                            <!-- left column -->
+                            
+                            
+                              <table width="140" border="0" cellspacing="0" cellpadding="0" align="left" class="w270">
+                                <tr>
+                                  <td>
+                                    
+                                      <a href="http://wyss.harvard.edu/viewpressrelease/213/" target="_blank"><img class="thumbnail" src="https://goodbits-production.s3.amazonaws.com/uploads/link/thumbnail/2489691/ecoli-400.png" alt="New biosensors for managing microbial ‘workers’ // Wyss Institute at Harvard" style="float:none;max-width:120px;max-height:120px;padding-right:10px;margin-bottom:10px"></a>
+                                    
+                                  </td>
+                                </tr>
+                              </table>
+                            
+                            <!-- end left column -->
+
+                            <!-- right column -->
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="left" class="w270">
+                              <tr>
+                                <td>
+                                  <h3 class="title seriously-break-word" style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:18px;line-height:26px;margin-bottom:10px;word-wrap:break-word;word-break:break-word;white-space:normal;margin-top:0;margin-bottom:0;color:#1FB1D0 !important"><a href="http://wyss.harvard.edu/viewpressrelease/213/" style="color:#328EF5;text-decoration:none;color:#1FB1D0 !important" target="_blank">New biosensors for managing microbial ‘workers’ // Wyss Institute at Harvard</a></h3>
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td>
+                                  <span class="link-description seriously-break-word" style="word-wrap:break-word;word-break:break-word;white-space:normal"><p style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;line-height:26px;margin-top:4px;margin-bottom:21px">Researchers at Harvard’s Wyss Institute have unveiled new biosensors that enable scientists to more effectively control and 'communicate with' engineered bacteria.</p>
+
+<p style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;line-height:26px;margin-top:4px;margin-bottom:21px"><a href="http://nar.oxfordjournals.org/content/early/2015/07/07/nar.gkv616.full.pdf+html" style="color:#1FB1D0 !important" target="_blank">Synthetic biosensors for precise gene control and real-time monitoring of metabolites</a> <strong>OA</strong></p>
+</span>
+                                </td>
+                              </tr>
+                            </table>
+                            <!-- end right column -->
+
+                          </td>
+                        </tr>
+                      </table>
+                    
+                      <table width="100%" border="0" cellpadding="0" cellspacing="0" class="w100percent">
+                        <tr>
+                          <td class="align-top link-content" style="vertical-align:top;padding-bottom:20px">
+
+                            <!-- left column -->
+                            
+                            
+                              <table width="140" border="0" cellspacing="0" cellpadding="0" align="left" class="w270">
+                                <tr>
+                                  <td>
+                                    
+                                      <a href="http://news.psu.edu/story/365048/2015/08/06/research/flexible-dielectric-polymer-can-stand-heat" target="_blank"><img class="thumbnail" src="https://goodbits-production.s3.amazonaws.com/uploads/link/thumbnail/2496033/flexible_20dielectric.jpg" alt="Flexible dielectric polymer can stand the heat // Penn State University" style="float:none;max-width:120px;max-height:120px;padding-right:10px;margin-bottom:10px"></a>
+                                    
+                                  </td>
+                                </tr>
+                              </table>
+                            
+                            <!-- end left column -->
+
+                            <!-- right column -->
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="left" class="w270">
+                              <tr>
+                                <td>
+                                  <h3 class="title seriously-break-word" style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:18px;line-height:26px;margin-bottom:10px;word-wrap:break-word;word-break:break-word;white-space:normal;margin-top:0;margin-bottom:0;color:#1FB1D0 !important"><a href="http://news.psu.edu/story/365048/2015/08/06/research/flexible-dielectric-polymer-can-stand-heat" style="color:#328EF5;text-decoration:none;color:#1FB1D0 !important" target="_blank">Flexible dielectric polymer can stand the heat // Penn State University</a></h3>
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td>
+                                  <span class="link-description seriously-break-word" style="word-wrap:break-word;word-break:break-word;white-space:normal"><p style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;line-height:26px;margin-top:4px;margin-bottom:21px">Easily manufactured, low cost, lightweight, flexible dielectric polymers that can operate at high temperatures may be the solution to energy storage and power conversion.</p>
+
+<p style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;line-height:26px;margin-top:4px;margin-bottom:21px"><a href="http://www.nature.com/nature/journal/v523/n7562/full/nature14647.html" style="color:#1FB1D0 !important" target="_blank">Flexible high-temperature dielectric materials from polymer nanocomposites</a> <strong>NON-OA</strong></p>
+</span>
+                                </td>
+                              </tr>
+                            </table>
+                            <!-- end right column -->
+
+                          </td>
+                        </tr>
+                      </table>
+                    
+                      <table width="100%" border="0" cellpadding="0" cellspacing="0" class="w100percent">
+                        <tr>
+                          <td class="align-top link-content" style="vertical-align:top;padding-bottom:20px">
+
+                            <!-- left column -->
+                            
+                            
+                              <table width="140" border="0" cellspacing="0" cellpadding="0" align="left" class="w270">
+                                <tr>
+                                  <td>
+                                    
+                                      <a href="http://www.technologyreview.com/news/539801/tiny-glue-guns-to-patch-surgical-holes/#comments" target="_blank"><img class="thumbnail" src="https://goodbits-production.s3.amazonaws.com/uploads/link/thumbnail/2496150/tinygluex392.jpg" alt="An Injectable Surgical Glue Could Reduce Complications of Minimally Invasive Surgery | MIT Technology Review" style="float:none;max-width:120px;max-height:120px;padding-right:10px;margin-bottom:10px"></a>
+                                    
+                                  </td>
+                                </tr>
+                              </table>
+                            
+                            <!-- end left column -->
+
+                            <!-- right column -->
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="left" class="w270">
+                              <tr>
+                                <td>
+                                  <h3 class="title seriously-break-word" style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:18px;line-height:26px;margin-bottom:10px;word-wrap:break-word;word-break:break-word;white-space:normal;margin-top:0;margin-bottom:0;color:#1FB1D0 !important"><a href="http://www.technologyreview.com/news/539801/tiny-glue-guns-to-patch-surgical-holes/#comments" style="color:#328EF5;text-decoration:none;color:#1FB1D0 !important" target="_blank">An Injectable Surgical Glue Could Reduce Complications of Minimally Invasive Surgery | MIT Technology Review</a></h3>
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td>
+                                  <span class="link-description seriously-break-word" style="word-wrap:break-word;word-break:break-word;white-space:normal"><p style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;line-height:26px;margin-top:4px;margin-bottom:21px">Glue made of nanoparticles, delivered by a needle, can be a better replacement for sutures and surgical staples.</p>
+
+<p style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;line-height:26px;margin-top:4px;margin-bottom:21px"><a href="http://onlinelibrary.wiley.com/doi/10.1002/adhm.201500419/abstract" style="color:#1FB1D0 !important" target="_blank">Bioinspired Nanoparticulate Medical Glues for Minimally Invasive Tissue Repair</a><br>
+<strong>NON-OA</strong></p>
+</span>
+                                </td>
+                              </tr>
+                            </table>
+                            <!-- end right column -->
+
+                          </td>
+                        </tr>
+                      </table>
+                    
+                      <table width="100%" border="0" cellpadding="0" cellspacing="0" class="w100percent">
+                        <tr>
+                          <td class="align-top link-content" style="vertical-align:top;padding-bottom:20px">
+
+                            <!-- left column -->
+                            
+                            
+                              <table width="140" border="0" cellspacing="0" cellpadding="0" align="left" class="w270">
+                                <tr>
+                                  <td>
+                                    
+                                      <a href="http://www.worldscientific.com/page/pressroom/2015-07-30-02" target="_blank"><img class="thumbnail" src="https://goodbits-production.s3.amazonaws.com/uploads/link/thumbnail/2496155/2015-07-30-S2339547815500065.jpg" alt="Microchips for Tumor Cell Attachment and Xenograft Formation // World Scientific" style="float:none;max-width:120px;max-height:120px;padding-right:10px;margin-bottom:10px"></a>
+                                    
+                                  </td>
+                                </tr>
+                              </table>
+                            
+                            <!-- end left column -->
+
+                            <!-- right column -->
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="left" class="w270">
+                              <tr>
+                                <td>
+                                  <h3 class="title seriously-break-word" style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:18px;line-height:26px;margin-bottom:10px;word-wrap:break-word;word-break:break-word;white-space:normal;margin-top:0;margin-bottom:0;color:#1FB1D0 !important"><a href="http://www.worldscientific.com/page/pressroom/2015-07-30-02" style="color:#328EF5;text-decoration:none;color:#1FB1D0 !important" target="_blank">Microchips for Tumor Cell Attachment and Xenograft Formation // World Scientific</a></h3>
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td>
+                                  <span class="link-description seriously-break-word" style="word-wrap:break-word;word-break:break-word;white-space:normal"><p style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;line-height:26px;margin-top:4px;margin-bottom:21px">An integrated microfluidic chip design with an embedded 3D hydrogel scaffold provides a transfer-rable microenvironment for the recovery and longitudinal study of captured circulating tumor cells.</p>
+
+<p style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;line-height:26px;margin-top:4px;margin-bottom:21px"><a href="http://www.worldscientific.com/doi/10.1142/S2339547815500065" style="color:#1FB1D0 !important" target="_blank">Scaffold-integrated microchips for end-to-endin vitrotumor cell attachment and xenograft formation</a><br>
+<strong>NON-OA</strong></p>
+</span>
+                                </td>
+                              </tr>
+                            </table>
+                            <!-- end right column -->
+
+                          </td>
+                        </tr>
+                      </table>
+                    
+                  
+                    
+                      <table class="row section-content" border="0" cellpadding="0" cellspacing="0" style="width:100% !important">
+                        <tr>
+                          <td>
+                            <table class="full-width" align="left" border="0" cellpadding="0" cellspacing="0" style="width:100%">
+                              <tr>
+                                <td>
+                                  <h2 class="section-title" style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:22px;font-weight:300;margin-bottom:15px;border-bottom:1px solid #e3e3e3;margin-top:30px;padding-bottom:3px;border-color:#C0D7E3 !important;color:#45394D !important">Tissue Engineering </h2>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    
+
+                    
+                      <table width="100%" border="0" cellpadding="0" cellspacing="0" class="w100percent">
+                        <tr>
+                          <td class="align-top link-content" style="vertical-align:top;padding-bottom:20px">
+
+                            <!-- left column -->
+                            
+                            
+                              <table width="140" border="0" cellspacing="0" cellpadding="0" align="left" class="w270">
+                                <tr>
+                                  <td>
+                                    
+                                      <a href="http://www.eurekalert.org/pub_releases/2015-08/cp-ccr073015.php" target="_blank"><img class="thumbnail" src="https://goodbits-production.s3.amazonaws.com/uploads/link/thumbnail/2496030/96531_web.jpg" alt="Chemical-only cell reprogramming transforms human and mouse skin cells into neurons // EurekAlert! Science News" style="float:none;max-width:120px;max-height:120px;padding-right:10px;margin-bottom:10px"></a>
+                                    
+                                  </td>
+                                </tr>
+                              </table>
+                            
+                            <!-- end left column -->
+
+                            <!-- right column -->
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="left" class="w270">
+                              <tr>
+                                <td>
+                                  <h3 class="title seriously-break-word" style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:18px;line-height:26px;margin-bottom:10px;word-wrap:break-word;word-break:break-word;white-space:normal;margin-top:0;margin-bottom:0;color:#1FB1D0 !important"><a href="http://www.eurekalert.org/pub_releases/2015-08/cp-ccr073015.php" style="color:#328EF5;text-decoration:none;color:#1FB1D0 !important" target="_blank">Chemical-only cell reprogramming transforms human and mouse skin cells into neurons // EurekAlert! Science News</a></h3>
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td>
+                                  <span class="link-description seriously-break-word" style="word-wrap:break-word;word-break:break-word;white-space:normal"><p style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;line-height:26px;margin-top:4px;margin-bottom:21px">Two independent labs have transformed skin cells into neurons using only a cocktail of chemicals. The two studies reinforce the idea that a purely chemical approach is a promising way to scale up cell reprogramming research that may avoid the technical challenges and safety concerns associated with the more popular method of using transcription factors.</p>
+
+<p style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;line-height:26px;margin-top:4px;margin-bottom:21px"><a href="http://www.cell.com/cell-stem-cell/fulltext/S1934-5909(15)00305-7" style="color:#1FB1D0 !important" target="_blank">Direct Conversion of Normal and Alzheimer’s Disease Human Fibroblasts into Neuronal Cells by Small Molecules</a> <strong>OA</strong></p>
+
+<p style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;line-height:26px;margin-top:4px;margin-bottom:21px"><a href="http://www.cell.com/cell-stem-cell/fulltext/S1934-5909(15)00263-5" style="color:#1FB1D0 !important" target="_blank">Small-Molecule-Driven Direct Reprogramming of Mouse Fibroblasts into Functional Neurons</a> <strong>OA</strong></p>
+</span>
+                                </td>
+                              </tr>
+                            </table>
+                            <!-- end right column -->
+
+                          </td>
+                        </tr>
+                      </table>
+                    
+                      <table width="100%" border="0" cellpadding="0" cellspacing="0" class="w100percent">
+                        <tr>
+                          <td class="align-top link-content" style="vertical-align:top;padding-bottom:20px">
+
+                            <!-- left column -->
+                            
+                            
+                              <table width="140" border="0" cellspacing="0" cellpadding="0" align="left" class="w270">
+                                <tr>
+                                  <td>
+                                    
+                                      <a href="https://www.mailman.columbia.edu/public-health-now/news/enthusiasm-personalized-medicine-premature" target="_blank"><img class="thumbnail" src="https://goodbits-production.s3.amazonaws.com/uploads/link/thumbnail/2496087/population-health-1500x632.jpg" alt="Enthusiasm for Personalized Medicine is Premature // Columbia University Mailman School of Public Health" style="float:none;max-width:120px;max-height:120px;padding-right:10px;margin-bottom:10px"></a>
+                                    
+                                  </td>
+                                </tr>
+                              </table>
+                            
+                            <!-- end left column -->
+
+                            <!-- right column -->
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="left" class="w270">
+                              <tr>
+                                <td>
+                                  <h3 class="title seriously-break-word" style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:18px;line-height:26px;margin-bottom:10px;word-wrap:break-word;word-break:break-word;white-space:normal;margin-top:0;margin-bottom:0;color:#1FB1D0 !important"><a href="https://www.mailman.columbia.edu/public-health-now/news/enthusiasm-personalized-medicine-premature" style="color:#328EF5;text-decoration:none;color:#1FB1D0 !important" target="_blank">Enthusiasm for Personalized Medicine is Premature // Columbia University Mailman School of Public Health</a></h3>
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td>
+                                  <span class="link-description seriously-break-word" style="word-wrap:break-word;word-break:break-word;white-space:normal"><p style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;line-height:26px;margin-top:4px;margin-bottom:21px">Increasing national focus on personalized or ‘precision’ medicine is misguided, distracting from broader investments to reduce health inequities and address the social factors that affect population health, two leading public health scholars argue in the New England Journal of Medicine.</p>
+
+<p style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;line-height:26px;margin-top:4px;margin-bottom:21px"><a href="http://www.nejm.org/doi/full/10.1056/NEJMp1506241" style="color:#1FB1D0 !important" target="_blank">Perspective: Public Health in the Precision-Medicine Era</a> <strong>OA</strong></p>
+</span>
+                                </td>
+                              </tr>
+                            </table>
+                            <!-- end right column -->
+
+                          </td>
+                        </tr>
+                      </table>
+                    
+                      <table width="100%" border="0" cellpadding="0" cellspacing="0" class="w100percent">
+                        <tr>
+                          <td class="align-top link-content" style="vertical-align:top;padding-bottom:20px">
+
+                            <!-- left column -->
+                            
+                            
+                              <table width="140" border="0" cellspacing="0" cellpadding="0" align="left" class="w270">
+                                <tr>
+                                  <td>
+                                    
+                                      <a href="http://www.researchsea.com/html/article.php/aid/8978/cid/1/research/science/the_agency_for_science__technology_and_research__a_star_/singapore_scientists_discover_molecular_cell_cycle_clock_that_controls_stem_cell_potency__.html" target="_blank"><img class="thumbnail" src="https://goodbits-production.s3.amazonaws.com/uploads/link/thumbnail/2496089/2949.jpg" alt="Singapore scientists discover molecular cell cycle clock // A*STAR" style="float:none;max-width:120px;max-height:120px;padding-right:10px;margin-bottom:10px"></a>
+                                    
+                                  </td>
+                                </tr>
+                              </table>
+                            
+                            <!-- end left column -->
+
+                            <!-- right column -->
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="left" class="w270">
+                              <tr>
+                                <td>
+                                  <h3 class="title seriously-break-word" style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:18px;line-height:26px;margin-bottom:10px;word-wrap:break-word;word-break:break-word;white-space:normal;margin-top:0;margin-bottom:0;color:#1FB1D0 !important"><a href="http://www.researchsea.com/html/article.php/aid/8978/cid/1/research/science/the_agency_for_science__technology_and_research__a_star_/singapore_scientists_discover_molecular_cell_cycle_clock_that_controls_stem_cell_potency__.html" style="color:#328EF5;text-decoration:none;color:#1FB1D0 !important" target="_blank">Singapore scientists discover molecular cell cycle clock // A*STAR</a></h3>
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td>
+                                  <span class="link-description seriously-break-word" style="word-wrap:break-word;word-break:break-word;white-space:normal"><p style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;line-height:26px;margin-top:4px;margin-bottom:21px">Further evidence of how the differentiation of pluripotent cells is tied to and controlled by the cell cycle clock. This deeper understanding of how cells become differentiated is extremely important when considering therapeutic potentials.</p>
+
+<p style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;line-height:26px;margin-top:4px;margin-bottom:21px"><a href="http://www.sciencedirect.com/science/article/pii/S0092867415008387" style="color:#1FB1D0 !important" target="_blank">Deterministic Restriction on Pluripotent State Dissolution by Cell-Cycle Pathways.</a><br>
+<strong>NON-OA</strong></p>
+</span>
+                                </td>
+                              </tr>
+                            </table>
+                            <!-- end right column -->
+
+                          </td>
+                        </tr>
+                      </table>
+                    
+                      <table width="100%" border="0" cellpadding="0" cellspacing="0" class="w100percent">
+                        <tr>
+                          <td class="align-top link-content" style="vertical-align:top;padding-bottom:20px">
+
+                            <!-- left column -->
+                            
+                            
+                              <table width="140" border="0" cellspacing="0" cellpadding="0" align="left" class="w270">
+                                <tr>
+                                  <td>
+                                    
+                                      <a href="http://presse-inserm.fr/en/from-pluripotency-to-totipotency/20082/" target="_blank"><img class="thumbnail" src="https://goodbits-production.s3.amazonaws.com/uploads/link/thumbnail/2496151/inserm_45838-150x150.jpg" alt="From pluripotency to totipotency // INSERM" style="float:none;max-width:120px;max-height:120px;padding-right:10px;margin-bottom:10px"></a>
+                                    
+                                  </td>
+                                </tr>
+                              </table>
+                            
+                            <!-- end left column -->
+
+                            <!-- right column -->
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="left" class="w270">
+                              <tr>
+                                <td>
+                                  <h3 class="title seriously-break-word" style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:18px;line-height:26px;margin-bottom:10px;word-wrap:break-word;word-break:break-word;white-space:normal;margin-top:0;margin-bottom:0;color:#1FB1D0 !important"><a href="http://presse-inserm.fr/en/from-pluripotency-to-totipotency/20082/" style="color:#328EF5;text-decoration:none;color:#1FB1D0 !important" target="_blank">From pluripotency to totipotency // INSERM</a></h3>
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td>
+                                  <span class="link-description seriously-break-word" style="word-wrap:break-word;word-break:break-word;white-space:normal"><p style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;line-height:26px;margin-top:4px;margin-bottom:21px">Researchers from Maria-Elena Torres-Padilla’s team have pushed the limits of science even further by obtaining totipotent cells with the same characteristics as those of the earliest embryonic stages and with even more interesting properties. </p>
+
+<p style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;line-height:26px;margin-top:4px;margin-bottom:21px"><a href="http://www.nature.com/nsmb/journal/vaop/ncurrent/full/nsmb.3066.html" style="color:#1FB1D0 !important" target="_blank">Early embryonic-like cells are induced by downregulating replication-dependent chromatin assembly</a><br>
+<strong>NON-OA</strong></p>
+</span>
+                                </td>
+                              </tr>
+                            </table>
+                            <!-- end right column -->
+
+                          </td>
+                        </tr>
+                      </table>
+                    
+                  
+                    
+                      <table class="row section-content" border="0" cellpadding="0" cellspacing="0" style="width:100% !important">
+                        <tr>
+                          <td>
+                            <table class="full-width" align="left" border="0" cellpadding="0" cellspacing="0" style="width:100%">
+                              <tr>
+                                <td>
+                                  <h2 class="section-title" style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:22px;font-weight:300;margin-bottom:15px;border-bottom:1px solid #e3e3e3;margin-top:30px;padding-bottom:3px;border-color:#C0D7E3 !important;color:#45394D !important">Notable Longreads</h2>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    
+
+                    
+                      <table width="100%" border="0" cellpadding="0" cellspacing="0" class="w100percent">
+                        <tr>
+                          <td class="align-top link-content" style="vertical-align:top;padding-bottom:20px">
+
+                            <!-- left column -->
+                            
+                            
+                              <table width="140" border="0" cellspacing="0" cellpadding="0" align="left" class="w270">
+                                <tr>
+                                  <td>
+                                    
+                                      <a href="http://www.theguardian.com/science/2015/aug/04/can-we-reverse-ageing-process-young-blood-older-people?utm_source=nextdraft&amp;utm_medium=email" target="_blank"><img class="thumbnail" src="https://goodbits-production.s3.amazonaws.com/uploads/link/thumbnail/2495956/5146.jpg" alt="Can we reverse the ageing process by putting young blood into older people? // The Guardian" style="float:none;max-width:120px;max-height:120px;padding-right:10px;margin-bottom:10px"></a>
+                                    
+                                  </td>
+                                </tr>
+                              </table>
+                            
+                            <!-- end left column -->
+
+                            <!-- right column -->
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="left" class="w270">
+                              <tr>
+                                <td>
+                                  <h3 class="title seriously-break-word" style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:18px;line-height:26px;margin-bottom:10px;word-wrap:break-word;word-break:break-word;white-space:normal;margin-top:0;margin-bottom:0;color:#1FB1D0 !important"><a href="http://www.theguardian.com/science/2015/aug/04/can-we-reverse-ageing-process-young-blood-older-people?utm_source=nextdraft&amp;utm_medium=email" style="color:#328EF5;text-decoration:none;color:#1FB1D0 !important" target="_blank">Can we reverse the ageing process by putting young blood into older people? // The Guardian</a></h3>
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td>
+                                  <span class="link-description seriously-break-word" style="word-wrap:break-word;word-break:break-word;white-space:normal"><p style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;line-height:26px;margin-top:4px;margin-bottom:21px">A series of experiments has produced incredible results by giving young blood to old mice. Now the findings are being tested on humans. Ian Sample meets the scientists whose research could transform our lives.</p>
+</span>
+                                </td>
+                              </tr>
+                            </table>
+                            <!-- end right column -->
+
+                          </td>
+                        </tr>
+                      </table>
+                    
+                      <table width="100%" border="0" cellpadding="0" cellspacing="0" class="w100percent">
+                        <tr>
+                          <td class="align-top link-content" style="vertical-align:top;padding-bottom:20px">
+
+                            <!-- left column -->
+                            
+                            
+                              <table width="140" border="0" cellspacing="0" cellpadding="0" align="left" class="w270">
+                                <tr>
+                                  <td>
+                                    
+                                      <a href="http://www.us.jll.com/united-states/en-us/services/industries/life-sciences-companies/life-sciences-trends-2015" target="_blank"><img class="thumbnail" src="https://goodbits-production.s3.amazonaws.com/uploads/link/thumbnail/2496090/logo-noReg1.png" alt="Rising rents, growing salaries and larger ranks: Biotech industry trends // JLL" style="float:none;max-width:120px;max-height:120px;padding-right:10px;margin-bottom:10px"></a>
+                                    
+                                  </td>
+                                </tr>
+                              </table>
+                            
+                            <!-- end left column -->
+
+                            <!-- right column -->
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="left" class="w270">
+                              <tr>
+                                <td>
+                                  <h3 class="title seriously-break-word" style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:18px;line-height:26px;margin-bottom:10px;word-wrap:break-word;word-break:break-word;white-space:normal;margin-top:0;margin-bottom:0;color:#1FB1D0 !important"><a href="http://www.us.jll.com/united-states/en-us/services/industries/life-sciences-companies/life-sciences-trends-2015" style="color:#328EF5;text-decoration:none;color:#1FB1D0 !important" target="_blank">Rising rents, growing salaries and larger ranks: Biotech industry trends // JLL</a></h3>
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td>
+                                  <span class="link-description seriously-break-word" style="word-wrap:break-word;word-break:break-word;white-space:normal"><p style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;line-height:26px;margin-top:4px;margin-bottom:21px">A new survey from the property analysts at JLL, or Jones Lang LaSalle, ranked Beantown as the top biotech cluster in America, followed by Raleigh-Durham, San Francisco, San Diego and New York City.</p>
+</span>
+                                </td>
+                              </tr>
+                            </table>
+                            <!-- end right column -->
+
+                          </td>
+                        </tr>
+                      </table>
+                    
+                      <table width="100%" border="0" cellpadding="0" cellspacing="0" class="w100percent">
+                        <tr>
+                          <td class="align-top link-content" style="vertical-align:top;padding-bottom:20px">
+
+                            <!-- left column -->
+                            
+                            
+                              <table width="140" border="0" cellspacing="0" cellpadding="0" align="left" class="w270">
+                                <tr>
+                                  <td>
+                                    
+                                      <a href="http://www.ipscell.com/2015/08/cealoring/" target="_blank"><img class="thumbnail" src="https://goodbits-production.s3.amazonaws.com/uploads/link/thumbnail/2496147/Lewy_Body_alphaSynuclein.jpg" alt="Michael Cea’s conversation with Jeanne Loring: frank views on all things stem cell // Knoepfler Lab Stem Cell Blog" style="float:none;max-width:120px;max-height:120px;padding-right:10px;margin-bottom:10px"></a>
+                                    
+                                  </td>
+                                </tr>
+                              </table>
+                            
+                            <!-- end left column -->
+
+                            <!-- right column -->
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="left" class="w270">
+                              <tr>
+                                <td>
+                                  <h3 class="title seriously-break-word" style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:18px;line-height:26px;margin-bottom:10px;word-wrap:break-word;word-break:break-word;white-space:normal;margin-top:0;margin-bottom:0;color:#1FB1D0 !important"><a href="http://www.ipscell.com/2015/08/cealoring/" style="color:#328EF5;text-decoration:none;color:#1FB1D0 !important" target="_blank">Michael Cea’s conversation with Jeanne Loring: frank views on all things stem cell // Knoepfler Lab Stem Cell Blog</a></h3>
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td>
+                                  <span class="link-description seriously-break-word" style="word-wrap:break-word;word-break:break-word;white-space:normal"><p style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;line-height:26px;margin-top:4px;margin-bottom:21px">Jeanne Loring of the Scripps Research Institute in La Jolla, California kindly sat down with me [Cea] at the ISSCR annual meeting for a broad discussion of her history, views on the field and developments in the science.</p>
+</span>
+                                </td>
+                              </tr>
+                            </table>
+                            <!-- end right column -->
+
+                          </td>
+                        </tr>
+                      </table>
+                    
+                      <table width="100%" border="0" cellpadding="0" cellspacing="0" class="w100percent">
+                        <tr>
+                          <td class="align-top link-content" style="vertical-align:top;padding-bottom:20px">
+
+                            <!-- left column -->
+                            
+                            
+                              <table width="140" border="0" cellspacing="0" cellpadding="0" align="left" class="w270">
+                                <tr>
+                                  <td>
+                                    
+                                      <a href="http://www.technologyreview.com/featuredstory/540001/teaching-machines-to-understand-us/" target="_blank"><img class="thumbnail" src="https://goodbits-production.s3.amazonaws.com/uploads/link/thumbnail/2496149/facebook.thumb_.gradientx392.png" alt="Inside Facebook’s Quest for Software That Understands You // MIT Technology Review" style="float:none;max-width:120px;max-height:120px;padding-right:10px;margin-bottom:10px"></a>
+                                    
+                                  </td>
+                                </tr>
+                              </table>
+                            
+                            <!-- end left column -->
+
+                            <!-- right column -->
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="left" class="w270">
+                              <tr>
+                                <td>
+                                  <h3 class="title seriously-break-word" style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:18px;line-height:26px;margin-bottom:10px;word-wrap:break-word;word-break:break-word;white-space:normal;margin-top:0;margin-bottom:0;color:#1FB1D0 !important"><a href="http://www.technologyreview.com/featuredstory/540001/teaching-machines-to-understand-us/" style="color:#328EF5;text-decoration:none;color:#1FB1D0 !important" target="_blank">Inside Facebook’s Quest for Software That Understands You // MIT Technology Review</a></h3>
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td>
+                                  <span class="link-description seriously-break-word" style="word-wrap:break-word;word-break:break-word;white-space:normal"><p style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;line-height:26px;margin-top:4px;margin-bottom:21px">A reincarnation of one of the oldest ideas in artificial intelligence could finally make it possible to truly converse with our computers. And Facebook has a chance to make it happen first.</p>
+</span>
+                                </td>
+                              </tr>
+                            </table>
+                            <!-- end right column -->
+
+                          </td>
+                        </tr>
+                      </table>
+                    
+                  
+                  
+
+                  <!-- footer -->
+                  
+                    <table class="row" border="0" cellpadding="0" cellspacing="0" width="100%" style="width:100% !important">
+                      <tr>
+                        <td>
+                          <table class="row" border="0" cellpadding="0" cellspacing="0" width="100%" style="width:100% !important">
+                            <tr>
+                              <td class="description alignable-paragraph" style="padding-bottom:30px;text-align:left">
+                                <p style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;line-height:26px;margin-top:4px;margin-bottom:21px"><em>Thanks for reading!  Do you know someone that would like Biotech Weekly? Share the science by forwarding them this email or just sending a link to <a href="http://www.biotechweekly.com/" style="color:#1FB1D0 !important" target="_blank">www.biotechweekly.com</a></em></p>
+
+<p style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;line-height:26px;margin-top:4px;margin-bottom:21px"><em>—Kate, <a href="https://twitter.com/KaatieLyn" style="color:#1FB1D0 !important" target="_blank">@kaatielyn</a></em></p>
+
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  
+
+                  <!-- social links -->
+                  
+
+                  <br>
+                  <br>
+                  
+                    
+                  
+
+                  
+                    
+                  
+
+                  
+                    
+                  
+
+                </td>
+              </tr>
+            </table>
+            <!-- end content -->
+
+          </center>
+
+        </td>
+      </tr>
+    </table>
+  <style type="text/css">
+  @media only screen and (max-width: 580px) {
+        table[class="body"] table[class="container"] {
+          width: 90% !important;
+        }
+        table[class*="w100percent"] {
+          width: 100% !important;
+        }
+        table[class*="w270"] {
+          float: none;
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+          width: 270px !important;
+        }
+        table[class*="mobile-center"] {
+          text-align: center !important;
+          width: 100% !important;
+        }
+        h4[class*="right"] {
+          text-align: center !important;
+        }
+        table[class="row subheader-container"] {
+          margin-bottom: 20px !important;
+        }
+        h4[class*="subheader"] {
+          margin-top: 8px !important;
+          margin-bottom: 6px !important;
+          margin-left: 0 !important;
+          margin-right: 0 !important;
+
+          font-size: 13px !important;
+          line-height: 20px !important;
+          text-align: center !important;
+        }
+      }
+</style>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6 text-center">
+          <a rel="prev" class="prev-issue primary-text-color" href="../../07/30/biotech-weekly.html">Jul 30</a>
+
+        <a class="all-issues primary-text-color" href="../../../archive.html">Archive</a>
+
+          <a rel="next" class="next-issue primary-text-color" href="../14/7.html">Aug 14</a>
+      </div>
+    </div>
+</div>
+
+      </div>
+
+        <footer>
+          <div class="row">
+            <div class="col-xs-offset-1 col-xs-10 col-md-offset-2 col-md-8 text-center">
+                <p>© 2015-2018 Biotech Weekly</p>
+
+            </div>
+          </div>
+        </footer>
+    </div>
+
+    <script src="https://assets.goodbits.io/assets/landing_sites_manifest-a9ba3b95c04e1aa54c3376074d57d994.js"></script>
+      <script data-turbolinks-eval="false">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', "UA-66903227-1", 'auto');
+    ga('send', 'pageview');
+</script>
+
+  </body>
+
+<!-- Mirrored from biotechweekly.ongoodbits.com/2015/08/07/6 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 10 May 2018 17:28:40 GMT -->
+</html>

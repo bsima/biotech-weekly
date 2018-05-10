@@ -1,0 +1,1138 @@
+<!DOCTYPE html style="height: 100%">
+<!--[if lt IE 7 ]> <html class="ie6 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8 lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9]>     <html class="ie9 lt-ie10" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+
+<!-- Nice to see you took a peek here, hello -->
+<!-- send us an email at hello at goodbits dot io if you want to talk tech -->
+
+  
+<!-- Mirrored from biotechweekly.ongoodbits.com/2015/09/25/14 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 10 May 2018 17:28:35 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# business: http://ogp.me/ns/business#">
+    <meta http-equiv="x-ua-compatible" content="IE=Edge"/>
+    <meta charset="utf-8" />
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"e5eada5cb5","applicationID":"3840607","transactionName":"JlhZTRYNCFsBExtYVBJEW1wQFgFFOw1VWFUMWVBmFwsQUksIR0VEAA==","queueTime":0,"applicationTime":91,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+
+    <title>Biotech Weekly #14</title>
+    <meta name="description" content="A weekly newsletter of the best news and articles on all things biotech. Stories are picked by hand from popular biotech sites.
+
+Delivered every week.
+" />
+    <meta name="author"      content="Ben Sima">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta property="og:site_name"   content="Biotech Weekly">
+    <meta property="og:title"       content="Biotech Weekly #14">
+    <meta property="og:description" content="A weekly newsletter of the best news and articles on all things biotech. Stories are picked by hand from popular biotech sites.
+
+Delivered every week.
+">
+    <meta property="og:type"        content="website">
+      <meta property="og:image"     content="https://uploads.goodbits.io/uploads/landing_site/logo/3648/20542c59-f6de-4dc6-a892-dd20af11f19a.png">
+
+    <meta property="business:contact_data:street_address" content="2111 Manchester Ave" >
+    <meta property="business:contact_data:locality"       content="Encinitas" >
+    <meta property="business:contact_data:postal_code"    content="92007" >
+    <meta property="business:contact_data:country_name"   content="US" >
+
+    <meta name="twitter:title"       content="Biotech Weekly #14">
+    <meta name="twitter:description" content="A weekly newsletter of the best news and articles on all things biotech. Stories are picked by hand from popular biotech sites.
+
+Delivered every week.
+">
+      <meta name="twitter:image:src" content="https://uploads.goodbits.io/uploads/landing_site/logo/3648/20542c59-f6de-4dc6-a892-dd20af11f19a.png">
+
+
+    <link id="feedLink" rel="alternate" type="application/rss+xml" title="RSS" href="../../../feed">
+
+      <link rel="shortcut icon" href="https://uploads.goodbits.io/uploads/landing_site/favicon/3648/6bd37a5d-b422-427a-aabc-be1c3c9be32f.png" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="https://uploads.goodbits.io/uploads/landing_site/favicon/3648/6bd37a5d-b422-427a-aabc-be1c3c9be32f.png" />
+  <link rel="apple-touch-icon" sizes="57x57" href="https://uploads.goodbits.io/uploads/landing_site/favicon/3648/6bd37a5d-b422-427a-aabc-be1c3c9be32f.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="https://uploads.goodbits.io/uploads/landing_site/favicon/3648/6bd37a5d-b422-427a-aabc-be1c3c9be32f.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="https://uploads.goodbits.io/uploads/landing_site/favicon/3648/6bd37a5d-b422-427a-aabc-be1c3c9be32f.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="https://uploads.goodbits.io/uploads/landing_site/favicon/3648/6bd37a5d-b422-427a-aabc-be1c3c9be32f.png" />
+  <link rel="apple-touch-icon" sizes="57x57" href="https://uploads.goodbits.io/uploads/landing_site/favicon/3648/6bd37a5d-b422-427a-aabc-be1c3c9be32f.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="https://uploads.goodbits.io/uploads/landing_site/favicon/3648/6bd37a5d-b422-427a-aabc-be1c3c9be32f.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="https://uploads.goodbits.io/uploads/landing_site/favicon/3648/6bd37a5d-b422-427a-aabc-be1c3c9be32f.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="https://uploads.goodbits.io/uploads/landing_site/favicon/3648/6bd37a5d-b422-427a-aabc-be1c3c9be32f.png" />
+  <meta name="msapplication-square70x70logo" content="https://uploads.goodbits.io/uploads/landing_site/favicon/3648/6bd37a5d-b422-427a-aabc-be1c3c9be32f.png" />
+  <meta name="msapplication-square150x150logo" content="https://uploads.goodbits.io/uploads/landing_site/favicon/3648/6bd37a5d-b422-427a-aabc-be1c3c9be32f.png" />
+  <meta name="msapplication-wide310x150logo" content="https://uploads.goodbits.io/uploads/landing_site/favicon/3648/6bd37a5d-b422-427a-aabc-be1c3c9be32f.png" />
+  <meta name="msapplication-square310x310logo" content="https://uploads.goodbits.io/uploads/landing_site/favicon/3648/6bd37a5d-b422-427a-aabc-be1c3c9be32f.png" />
+
+
+    <link rel="stylesheet" media="screen" href="https://assets.goodbits.io/assets/landing-sites-manifest-91c61c0a741c6e77b030758ee71dbbd6.css" />
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="cJoQY/KLHW+mcX/E4FkqV95Y2cKXO7dM1HkzaoVZnCT/aKb0Yy3Y7ncSSrM4ihCLmrkS3ViqAd33dG0KIhPvFw==" />
+
+    <style>
+      .subscribe-form--image-wrapper {
+        background-image: url('https://uploads.goodbits.io/uploads/landing_site/background/3648/2ec06367-b55b-4c42-9d66-d88f3dcecca8.jpg');
+      }
+      .primary-background-color {
+        background-color: #0C99CC !important;
+      }
+      .primary-text-color {
+        color: #0C99CC !important;
+      }
+      .primary-border-color {
+        border-color: #0C99CC !important;
+      }
+      .secondary-background-color {
+        background-color: #ffffff !important;
+      }
+      .secondary-text-color {
+        color: #ffffff !important;
+      }
+      .secondary-border-color {
+        border-color: #ffffff !important;
+      }
+
+        .subscribe-form--image-wrapper:before {
+          opacity: 1;
+        }
+    </style>
+  </head>
+  <body class="newsletter_landing_site_issue newsletter_landing_site issue">
+    <div class="container-fluid">
+      
+
+      <div class="top">
+        <header>
+          <div class="row">
+            <div class="col-xs-2 col-sm-3 col-md-3">
+            </div>
+
+            <div class="col-xs-8 col-sm-6 col-md-6 text-center hidden-until-sticky mobile-hidden">
+              <p class="newsletter--name primary-text-color">
+                <a href="../../../index.html">Biotech Weekly</a>
+              </p>
+            </div>
+
+            <div class="col-xs-10 col-sm-3 col-md-3 text-right hidden-until-sticky mobile-pull-right">
+                <a href="#subscribe-form" class="internal btn btn-primary btn-highlight primary-background-color secondary-text-color">Subscribe</a>
+            </div>
+          </div>
+        </header>
+
+        <div id="subscribe-form" class="row newsletter-header primary-background-color ">
+          <div class="subscribe-form--image-wrapper">
+          </div>
+
+          <div class="newsletter-header--content">
+            <div class="clearfix">
+              <div class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8 col-xl-offset-3 col-xl-6 text-center">
+                <h1 class="newsletter-header--name secondary-text-color">
+
+                      <img id="landing-site-logo" class="img-responsive newsletter-header--logo" src="https://uploads.goodbits.io/uploads/landing_site/logo/3648/20542c59-f6de-4dc6-a892-dd20af11f19a.png" alt="20542c59 f6de 4dc6 a892 dd20af11f19a" />
+
+                </h1>
+                <hr>
+                <h2 class="newsletter-header--description secondary-text-color">
+                  <p>A weekly newsletter of the best news and articles on all things biotech. Stories are picked by hand from popular biotech sites.</p>
+
+<p>Delivered every week.</p>
+
+                </h2>
+              </div>
+            </div>
+
+
+
+
+
+
+              <div class="subscribe-form-wrapper text-center">
+                <div class="subscribe-form-push">
+
+                  <form class="simple_form form-inline" novalidate="novalidate" id="new_subscriber" action="https://biotechweekly.ongoodbits.com/subscribe" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="iwegLVAorzZfZ3qLm2Gp9F0W3ppmqkX9WK4Lo0Z0mE4E9Ra6wY5qt44ET/xDspMoGfcVhak782x7o1XD4T7rfQ==" />
+
+                    <div class="input string optional subscriber_name form-group"><input class="string optional form-control secondary-text-color secondary-border-color" placeholder="Your Name" type="text" value="" name="subscriber[name]" id="subscriber_name" /></div>
+
+                    <div class="input email optional subscriber_email form-group"><input class="string email optional form-control secondary-text-color secondary-border-color" placeholder="Your Email" type="email" name="subscriber[email]" id="subscriber_email" /></div>
+
+                    <input type="submit" name="commit" value="Subscribe" class="btn btn btn-default btn-subscribe primary-text-color secondary-background-color secondary-border-color" />
+
+</form>                </div>
+              </div>
+
+
+              <div class="social_sharing secondary-background-color">
+                <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://biotechweekly.ongoodbits.com/2015/09/25/14">
+                  <i class="fi icon-facebook primary-text-color"></i>
+</a>                <a target="_blank" href="https://twitter.com/intent/tweet?text=Read+newsletter+Biotech+Weekly+--++%2314+https://biotechweekly.ongoodbits.com/2015/09/25/14">
+                  <i class="fi icon-twitter-bird primary-text-color"></i>
+</a>              </div>
+
+              <div class="archive-link-wrapper text-center">
+                <a class="secondary-text-color" href="../../../archive.html">Browse Previous Issues</a>
+              </div>
+          </div>
+        </div>
+
+        <div id="public-issue-reader">
+    <div class="row">
+      <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6 text-center">
+          <a rel="prev" class="prev-issue primary-text-color" href="../18/13.html">Sep 18</a>
+
+          <a rel="next" class="next-issue primary-text-color" href="../../10/02/15.html">Oct  2</a>
+
+        <h2 class="content-title primary-text-color">
+          <a href="14.html">Sep 25 2015</a>
+        </h2>
+
+          <h3 class="content-subtitle">
+            <a href="14.html"> #14</a>
+          </h3>
+
+        <hr class="content-seperator">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6 text-center landing-site-email-content">
+          
+    <table class="body" border="0" cellpadding="0" cellspacing="0" style='-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;background:#ffffff;color:#565656;font-family:"Helvetica Neue", "Helvetica", "Helvetica", "Arial", sans-serif;font-style:normal;font-weight:300;min-width:100%;margin:25px 0;padding:0;width:94% !important'>
+      <tr>
+        <td class="center" align="center" valign="top">
+
+          <center>
+            <!-- content -->
+            <table class="container" border="0" cellpadding="0" cellspacing="0" width="100%" style="margin:0 auto;width:580px">
+              <tr>
+                <td>
+
+                  <!-- title -->
+                  <table class="row" border="0" cellpadding="0" cellspacing="0" width="100%" style="width:100% !important">
+                    <tr>
+                      <td>
+
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" align="left" class="row subheader-container" style="margin-bottom:20px;width:100% !important">
+                          <tr>
+                            <td>
+                              <!-- left column -->
+                              <table width="100%" border="0" cellspacing="0" cellpadding="0" align="left" class="mobile-center subheader-container-left" style="width:67%">
+                                <tr>
+                                  <td class="mobile-center">
+                                    <h4 class="subheader" style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;margin-top:10px;margin-bottom:10px;font-size:14px;line-height:19px;margin-bottom:4px">Issue #14</h4>
+                                  </td>
+                                </tr>
+                              </table>
+
+                              <!-- right column -->
+                              
+                            </td>
+                          </tr>
+                        </table>
+
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                          <tr>
+                            <td class="alignable-paragraph" style="text-align:left">
+                              
+                                <img id="logo-url" src="https://goodbits-production.s3.amazonaws.com/uploads/newsletter_settings/logo/4013/17c2120b-f57b-4bf9-bd29-aad6719386c3.png" alt="Logo for Biotech Weekly" style="float:none;margin-bottom:4px;width: 100%;">
+                              
+                            </td>
+                          </tr>
+                        </table>
+
+                      </td>
+                    </tr>
+                  </table>
+
+                  <!-- description -->
+                  
+                    <table class="row" border="0" cellpadding="0" cellspacing="0" width="100%" style="width:100% !important">
+                      <tr>
+                        <td>
+                          <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                              <td class="description alignable-paragraph" style="padding-bottom:30px;text-align:left">
+                                <p style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;line-height:26px;margin-top:4px;margin-bottom:21px">This week in biotechnology: lots of research and genetics, with a little bit of industry movement thrown in for good measure. Also, the Internet learned about Martin Shkreli and drug pricing economics. If you haven't heard of the Shkreli story, take a look at the first article in "Notable Longreads" (it's actually not that long). </p>
+
+<p style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;line-height:26px;margin-top:4px;margin-bottom:21px">What do you think of Shkreli's pricing tactics? Hit reply and tell me what you think, I'd love to hear from you.</p>
+
+<p style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;line-height:26px;margin-top:4px;margin-bottom:21px">Have a nice weekend and Happy Sciencing :)</p>
+
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  
+
+                  <!-- links / content -->
+                  
+                    
+                      <table class="row section-content" border="0" cellpadding="0" cellspacing="0" style="width:100% !important">
+                        <tr>
+                          <td>
+                            <table class="full-width" align="left" border="0" cellpadding="0" cellspacing="0" style="width:100%">
+                              <tr>
+                                <td>
+                                  <h2 class="section-title" style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:22px;font-weight:300;margin-bottom:15px;border-bottom:1px solid #e3e3e3;margin-top:30px;padding-bottom:3px;border-color:#C0D7E3 !important;color:#45394D !important">Research and Development</h2>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    
+
+                    
+                      <table width="100%" border="0" cellpadding="0" cellspacing="0" class="w100percent">
+                        <tr>
+                          <td class="align-top link-content" style="vertical-align:top;padding-bottom:20px">
+
+                            <!-- left column -->
+                            
+                            
+                              <table width="140" border="0" cellspacing="0" cellpadding="0" align="left" class="w270">
+                                <tr>
+                                  <td>
+                                    
+                                      <a href="http://www.sciencedaily.com/releases/2015/09/150924143143.htm" target="_blank"><img class="thumbnail" src="https://goodbits-production.s3.amazonaws.com/uploads/link/thumbnail/2641194/150924142514_1_180x120.jpg" alt="'Remote control' of immune cells opens door to safer, more precise cancer therapies // ScienceDaily" style="float:none;max-width:120px;max-height:120px;padding-right:10px;margin-bottom:10px"></a>
+                                    
+                                  </td>
+                                </tr>
+                              </table>
+                            
+                            <!-- end left column -->
+
+                            <!-- right column -->
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="left" class="w270">
+                              <tr>
+                                <td>
+                                  <h3 class="title seriously-break-word" style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:18px;line-height:26px;margin-bottom:10px;word-wrap:break-word;word-break:break-word;white-space:normal;margin-top:0;margin-bottom:0;color:#1FB1D0 !important"><a href="http://www.sciencedaily.com/releases/2015/09/150924143143.htm" style="color:#328EF5;text-decoration:none;color:#1FB1D0 !important" target="_blank">'Remote control' of immune cells opens door to safer, more precise cancer therapies // ScienceDaily</a></h3>
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td>
+                                  <span class="link-description seriously-break-word" style="word-wrap:break-word;word-break:break-word;white-space:normal"><p style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;line-height:26px;margin-top:4px;margin-bottom:21px">A molecular "on switch" that allows tight control over the actions of T cells has been developed by a group of researchers at UCSF. This lays the groundwork for sharply reducing severe side-effects of T cell-based treatments.</p>
+
+<p style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;line-height:26px;margin-top:4px;margin-bottom:21px"><a href="http://www.sciencemag.org/content/early/2015/09/23/science.aab4077" style="color:#1FB1D0 !important" target="_blank">Remote control of therapeutic T cells through a small molecule–gated chimeric receptor</a><br>
+Non-OA</p>
+</span>
+                                </td>
+                              </tr>
+                            </table>
+                            <!-- end right column -->
+
+                          </td>
+                        </tr>
+                      </table>
+                    
+                      <table width="100%" border="0" cellpadding="0" cellspacing="0" class="w100percent">
+                        <tr>
+                          <td class="align-top link-content" style="vertical-align:top;padding-bottom:20px">
+
+                            <!-- left column -->
+                            
+                            
+                              <table width="140" border="0" cellspacing="0" cellpadding="0" align="left" class="w270">
+                                <tr>
+                                  <td>
+                                    
+                                      <a href="http://www.iflscience.com/health-and-medicine/newly-discovered-virus-could-be-transmitted-blood-transfusions" target="_blank"><img class="thumbnail" src="https://goodbits-production.s3.amazonaws.com/uploads/link/thumbnail/2637952/shutterstock_77757421.jpg" alt="Scientists Discover A New Human Virus // IFLScience" style="float:none;max-width:120px;max-height:120px;padding-right:10px;margin-bottom:10px"></a>
+                                    
+                                  </td>
+                                </tr>
+                              </table>
+                            
+                            <!-- end left column -->
+
+                            <!-- right column -->
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="left" class="w270">
+                              <tr>
+                                <td>
+                                  <h3 class="title seriously-break-word" style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:18px;line-height:26px;margin-bottom:10px;word-wrap:break-word;word-break:break-word;white-space:normal;margin-top:0;margin-bottom:0;color:#1FB1D0 !important"><a href="http://www.iflscience.com/health-and-medicine/newly-discovered-virus-could-be-transmitted-blood-transfusions" style="color:#328EF5;text-decoration:none;color:#1FB1D0 !important" target="_blank">Scientists Discover A New Human Virus // IFLScience</a></h3>
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td>
+                                  <span class="link-description seriously-break-word" style="word-wrap:break-word;word-break:break-word;white-space:normal"><p style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;line-height:26px;margin-top:4px;margin-bottom:21px">During the 70s and 80s, thousands of people around the world were infected with HIV and hepatitis C after receiving transfusions of blood containing these viruses. Back then, screening wasn’t so stringent, nor was the assessment of who is eligible to donate. Now we have better techniques to identify such agents, we should be able to avoid catastrophes like these from happening, which is why a team of scientists has been on the hunt for new transfusion-transmissible agents that we might want to know about.</p>
+
+<p style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;line-height:26px;margin-top:4px;margin-bottom:21px"><a href="http://mbio.asm.org/content/6/5/e01466-15" style="color:#1FB1D0 !important" target="_blank">Virome Analysis of Transfusion Recipients Reveals a Novel Human Virus That Shares Genomic Features with Hepaciviruses and Pegiviruses </a><br>
+OA</p>
+</span>
+                                </td>
+                              </tr>
+                            </table>
+                            <!-- end right column -->
+
+                          </td>
+                        </tr>
+                      </table>
+                    
+                      <table width="100%" border="0" cellpadding="0" cellspacing="0" class="w100percent">
+                        <tr>
+                          <td class="align-top link-content" style="vertical-align:top;padding-bottom:20px">
+
+                            <!-- left column -->
+                            
+                            
+                              <table width="140" border="0" cellspacing="0" cellpadding="0" align="left" class="w270">
+                                <tr>
+                                  <td>
+                                    
+                                      <a href="http://www.deepstuff.org/a-barrier-against-brain-stem-cell-aging/" target="_blank"><img class="thumbnail" src="https://goodbits-production.s3.amazonaws.com/uploads/link/thumbnail/2637670/99501_web.jpg" alt="A barrier against brain stem cell aging // Deepstuff.org" style="float:none;max-width:120px;max-height:120px;padding-right:10px;margin-bottom:10px"></a>
+                                    
+                                  </td>
+                                </tr>
+                              </table>
+                            
+                            <!-- end left column -->
+
+                            <!-- right column -->
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="left" class="w270">
+                              <tr>
+                                <td>
+                                  <h3 class="title seriously-break-word" style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:18px;line-height:26px;margin-bottom:10px;word-wrap:break-word;word-break:break-word;white-space:normal;margin-top:0;margin-bottom:0;color:#1FB1D0 !important"><a href="http://www.deepstuff.org/a-barrier-against-brain-stem-cell-aging/" style="color:#328EF5;text-decoration:none;color:#1FB1D0 !important" target="_blank">A barrier against brain stem cell aging // Deepstuff.org</a></h3>
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td>
+                                  <span class="link-description seriously-break-word" style="word-wrap:break-word;word-break:break-word;white-space:normal"><p style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;line-height:26px;margin-top:4px;margin-bottom:21px">Neural stem cells generate new neurons throughout life in the mammalian brain. However, with advancing age the potential for regeneration in the brain...</p>
+
+<p style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;line-height:26px;margin-top:4px;margin-bottom:21px"><a href="http://www.sciencemag.org/content/349/6254/1334" style="color:#1FB1D0 !important" target="_blank">A mechanism for the segregation of age in mammalian neural stem cells</a><br>
+Non-OA</p>
+</span>
+                                </td>
+                              </tr>
+                            </table>
+                            <!-- end right column -->
+
+                          </td>
+                        </tr>
+                      </table>
+                    
+                      <table width="100%" border="0" cellpadding="0" cellspacing="0" class="w100percent">
+                        <tr>
+                          <td class="align-top link-content" style="vertical-align:top;padding-bottom:20px">
+
+                            <!-- left column -->
+                            
+                            
+                              <table width="140" border="0" cellspacing="0" cellpadding="0" align="left" class="w270">
+                                <tr>
+                                  <td>
+                                    
+                                      <a href="http://www.npr.org/sections/health-shots/2015/09/22/441841735/wherever-you-go-your-personal-cloud-of-microbes-follows" target="_blank"><img class="thumbnail" src="https://goodbits-production.s3.amazonaws.com/uploads/link/thumbnail/2641475/dust-cloud_wide-5e09f8b7b515f1f4fda78195d192605f31932fd5.jpg" alt="Wherever You Go, Your Personal Cloud Of Microbes Follows // Health News, NPR" style="float:none;max-width:120px;max-height:120px;padding-right:10px;margin-bottom:10px"></a>
+                                    
+                                  </td>
+                                </tr>
+                              </table>
+                            
+                            <!-- end left column -->
+
+                            <!-- right column -->
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="left" class="w270">
+                              <tr>
+                                <td>
+                                  <h3 class="title seriously-break-word" style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:18px;line-height:26px;margin-bottom:10px;word-wrap:break-word;word-break:break-word;white-space:normal;margin-top:0;margin-bottom:0;color:#1FB1D0 !important"><a href="http://www.npr.org/sections/health-shots/2015/09/22/441841735/wherever-you-go-your-personal-cloud-of-microbes-follows" style="color:#328EF5;text-decoration:none;color:#1FB1D0 !important" target="_blank">Wherever You Go, Your Personal Cloud Of Microbes Follows // Health News, NPR</a></h3>
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td>
+                                  <span class="link-description seriously-break-word" style="word-wrap:break-word;word-break:break-word;white-space:normal"><p style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;line-height:26px;margin-top:4px;margin-bottom:21px">You're not just shedding microbes on every surface you touch. Research suggests you're actually walking around in an airborne plume of bacteria and other microscopic organisms that's unique to you.</p>
+
+<p style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;line-height:26px;margin-top:4px;margin-bottom:21px"><a href="https://peerj.com/articles/1258/" style="color:#1FB1D0 !important" target="_blank">Humans differ in their personal microbial cloud</a><br>
+OA</p>
+</span>
+                                </td>
+                              </tr>
+                            </table>
+                            <!-- end right column -->
+
+                          </td>
+                        </tr>
+                      </table>
+                    
+                      <table width="100%" border="0" cellpadding="0" cellspacing="0" class="w100percent">
+                        <tr>
+                          <td class="align-top link-content" style="vertical-align:top;padding-bottom:20px">
+
+                            <!-- left column -->
+                            
+                            
+                              <table width="140" border="0" cellspacing="0" cellpadding="0" align="left" class="w270">
+                                <tr>
+                                  <td>
+                                    
+                                      <a href="http://www.wired.com/2015/09/stunning-map-shows-pathogens-hopping-species/" target="_blank"><img class="thumbnail" src="https://goodbits-production.s3.amazonaws.com/uploads/link/thumbnail/2641415/Screen-Shot-2015-09-18-at-3.47.33-PM1.jpg" alt="Stunning Map Shows Pathogens Hopping Between Species // WIRED" style="float:none;max-width:120px;max-height:120px;padding-right:10px;margin-bottom:10px"></a>
+                                    
+                                  </td>
+                                </tr>
+                              </table>
+                            
+                            <!-- end left column -->
+
+                            <!-- right column -->
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="left" class="w270">
+                              <tr>
+                                <td>
+                                  <h3 class="title seriously-break-word" style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:18px;line-height:26px;margin-bottom:10px;word-wrap:break-word;word-break:break-word;white-space:normal;margin-top:0;margin-bottom:0;color:#1FB1D0 !important"><a href="http://www.wired.com/2015/09/stunning-map-shows-pathogens-hopping-species/" style="color:#328EF5;text-decoration:none;color:#1FB1D0 !important" target="_blank">Stunning Map Shows Pathogens Hopping Between Species // WIRED</a></h3>
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td>
+                                  <span class="link-description seriously-break-word" style="word-wrap:break-word;word-break:break-word;white-space:normal"><p style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;line-height:26px;margin-top:4px;margin-bottom:21px">You and your adorable cat share not only hugs and kisses but also a few pathogens.</p>
+
+<p style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;line-height:26px;margin-top:4px;margin-bottom:21px"><a href="http://www.nature.com/articles/sdata201549" style="color:#1FB1D0 !important" target="_blank">Database of host-pathogen and related species interactions, and their global distribution</a><br>
+OA</p>
+</span>
+                                </td>
+                              </tr>
+                            </table>
+                            <!-- end right column -->
+
+                          </td>
+                        </tr>
+                      </table>
+                    
+                  
+                    
+                      <table class="row section-content" border="0" cellpadding="0" cellspacing="0" style="width:100% !important">
+                        <tr>
+                          <td>
+                            <table class="full-width" align="left" border="0" cellpadding="0" cellspacing="0" style="width:100%">
+                              <tr>
+                                <td>
+                                  <h2 class="section-title" style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:22px;font-weight:300;margin-bottom:15px;border-bottom:1px solid #e3e3e3;margin-top:30px;padding-bottom:3px;border-color:#C0D7E3 !important;color:#45394D !important">Tools and Tech</h2>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    
+
+                    
+                      <table width="100%" border="0" cellpadding="0" cellspacing="0" class="w100percent">
+                        <tr>
+                          <td class="align-top link-content" style="vertical-align:top;padding-bottom:20px">
+
+                            <!-- left column -->
+                            
+                            
+                              <table width="140" border="0" cellspacing="0" cellpadding="0" align="left" class="w270">
+                                <tr>
+                                  <td>
+                                    
+                                      <a href="http://www.eurekalert.org/pub_releases/2015-03/uoc--bd031115.php" target="_blank"><img class="thumbnail" src="https://goodbits-production.s3.amazonaws.com/uploads/link/thumbnail/2641185/88153_rel.jpg" alt="'Smart bandage' detects bed sores before they are visible to doctors // EurekAlert" style="float:none;max-width:120px;max-height:120px;padding-right:10px;margin-bottom:10px"></a>
+                                    
+                                  </td>
+                                </tr>
+                              </table>
+                            
+                            <!-- end left column -->
+
+                            <!-- right column -->
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="left" class="w270">
+                              <tr>
+                                <td>
+                                  <h3 class="title seriously-break-word" style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:18px;line-height:26px;margin-bottom:10px;word-wrap:break-word;word-break:break-word;white-space:normal;margin-top:0;margin-bottom:0;color:#1FB1D0 !important"><a href="http://www.eurekalert.org/pub_releases/2015-03/uoc--bd031115.php" style="color:#328EF5;text-decoration:none;color:#1FB1D0 !important" target="_blank">'Smart bandage' detects bed sores before they are visible to doctors // EurekAlert</a></h3>
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td>
+                                  <span class="link-description seriously-break-word" style="word-wrap:break-word;word-break:break-word;white-space:normal"><p style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;line-height:26px;margin-top:4px;margin-bottom:21px">UC Berkeley researchers have created a new 'smart bandage' that uses electrical currents to detect early tissue damage from pressure ulcers, or bedsores, before they can be seen by human eyes -- and while recovery is still possible.</p>
+
+<p style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;line-height:26px;margin-top:4px;margin-bottom:21px"><a href="http://www.nature.com/ncomms/2015/150317/ncomms7575/full/ncomms7575.html" style="color:#1FB1D0 !important" target="_blank">Impedance sensing device enables early detection of pressure ulcers <em>in vivo</em></a><br>
+Non-OA</p>
+</span>
+                                </td>
+                              </tr>
+                            </table>
+                            <!-- end right column -->
+
+                          </td>
+                        </tr>
+                      </table>
+                    
+                  
+                    
+                      <table class="row section-content" border="0" cellpadding="0" cellspacing="0" style="width:100% !important">
+                        <tr>
+                          <td>
+                            <table class="full-width" align="left" border="0" cellpadding="0" cellspacing="0" style="width:100%">
+                              <tr>
+                                <td>
+                                  <h2 class="section-title" style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:22px;font-weight:300;margin-bottom:15px;border-bottom:1px solid #e3e3e3;margin-top:30px;padding-bottom:3px;border-color:#C0D7E3 !important;color:#45394D !important">Genetics</h2>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    
+
+                    
+                      <table width="100%" border="0" cellpadding="0" cellspacing="0" class="w100percent">
+                        <tr>
+                          <td class="align-top link-content" style="vertical-align:top;padding-bottom:20px">
+
+                            <!-- left column -->
+                            
+                            
+                              <table width="140" border="0" cellspacing="0" cellpadding="0" align="left" class="w270">
+                                <tr>
+                                  <td>
+                                    
+                                      <a href="http://www.sciencedaily.com/releases/2015/09/150921133837.htm" target="_blank"><img class="thumbnail" src="https://goodbits-production.s3.amazonaws.com/uploads/link/thumbnail/2641401/150921133837_1_540x360.jpg" alt="Targeting DNA: Protein-based sensor could detect viral infection or kill cancer cells // ScienceDaily" style="float:none;max-width:120px;max-height:120px;padding-right:10px;margin-bottom:10px"></a>
+                                    
+                                  </td>
+                                </tr>
+                              </table>
+                            
+                            <!-- end left column -->
+
+                            <!-- right column -->
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="left" class="w270">
+                              <tr>
+                                <td>
+                                  <h3 class="title seriously-break-word" style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:18px;line-height:26px;margin-bottom:10px;word-wrap:break-word;word-break:break-word;white-space:normal;margin-top:0;margin-bottom:0;color:#1FB1D0 !important"><a href="http://www.sciencedaily.com/releases/2015/09/150921133837.htm" style="color:#328EF5;text-decoration:none;color:#1FB1D0 !important" target="_blank">Targeting DNA: Protein-based sensor could detect viral infection or kill cancer cells // ScienceDaily</a></h3>
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td>
+                                  <span class="link-description seriously-break-word" style="word-wrap:break-word;word-break:break-word;white-space:normal"><p style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;line-height:26px;margin-top:4px;margin-bottom:21px">Biological engineers have developed a modular system of proteins that can detect a particular DNA sequence in a cell and then trigger a specific response, such as cell death.</p>
+
+<p style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;line-height:26px;margin-top:4px;margin-bottom:21px"><a href="http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.3585.html" style="color:#1FB1D0 !important" target="_blank">DNA sense-and-respond protein modules for mammalian cells</a><br>
+Non-OA</p>
+</span>
+                                </td>
+                              </tr>
+                            </table>
+                            <!-- end right column -->
+
+                          </td>
+                        </tr>
+                      </table>
+                    
+                      <table width="100%" border="0" cellpadding="0" cellspacing="0" class="w100percent">
+                        <tr>
+                          <td class="align-top link-content" style="vertical-align:top;padding-bottom:20px">
+
+                            <!-- left column -->
+                            
+                            
+                              <table width="140" border="0" cellspacing="0" cellpadding="0" align="left" class="w270">
+                                <tr>
+                                  <td>
+                                    
+                                      <a href="http://www.sciencedaily.com/releases/2015/09/150921133435.htm" target="_blank"><img class="thumbnail" src="https://goodbits-production.s3.amazonaws.com/uploads/link/thumbnail/2641402/150921133435_1_540x360.jpg" alt="Proteins assemble, disassemble on command: Gene sequences may enable control of building bio-structures // ScienceDaily" style="float:none;max-width:120px;max-height:120px;padding-right:10px;margin-bottom:10px"></a>
+                                    
+                                  </td>
+                                </tr>
+                              </table>
+                            
+                            <!-- end left column -->
+
+                            <!-- right column -->
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="left" class="w270">
+                              <tr>
+                                <td>
+                                  <h3 class="title seriously-break-word" style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:18px;line-height:26px;margin-bottom:10px;word-wrap:break-word;word-break:break-word;white-space:normal;margin-top:0;margin-bottom:0;color:#1FB1D0 !important"><a href="http://www.sciencedaily.com/releases/2015/09/150921133435.htm" style="color:#328EF5;text-decoration:none;color:#1FB1D0 !important" target="_blank">Proteins assemble, disassemble on command: Gene sequences may enable control of building bio-structures // ScienceDaily</a></h3>
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td>
+                                  <span class="link-description seriously-break-word" style="word-wrap:break-word;word-break:break-word;white-space:normal"><p style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;line-height:26px;margin-top:4px;margin-bottom:21px">Scientists have deciphered the genetic code that instructs proteins to either self-assemble or disassemble in response to environmental stimuli, such as changes in temperature, salinity or acidity. The discovery provides a new platform for drug delivery systems and an entirely different view of cellular functions.</p>
+
+<p style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;line-height:26px;margin-top:4px;margin-bottom:21px"><a href="http://www.nature.com/nmat/journal/vaop/ncurrent/full/nmat4418.html" style="color:#1FB1D0 !important" target="_blank">Sequence heuristics to encode phase behaviour in intrinsically disordered protein polymers</a><br>
+Non-OA</p>
+</span>
+                                </td>
+                              </tr>
+                            </table>
+                            <!-- end right column -->
+
+                          </td>
+                        </tr>
+                      </table>
+                    
+                  
+                    
+                      <table class="row section-content" border="0" cellpadding="0" cellspacing="0" style="width:100% !important">
+                        <tr>
+                          <td>
+                            <table class="full-width" align="left" border="0" cellpadding="0" cellspacing="0" style="width:100%">
+                              <tr>
+                                <td>
+                                  <h2 class="section-title" style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:22px;font-weight:300;margin-bottom:15px;border-bottom:1px solid #e3e3e3;margin-top:30px;padding-bottom:3px;border-color:#C0D7E3 !important;color:#45394D !important">Industry</h2>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    
+
+                    
+                      <table width="100%" border="0" cellpadding="0" cellspacing="0" class="w100percent">
+                        <tr>
+                          <td class="align-top link-content" style="vertical-align:top;padding-bottom:20px">
+
+                            <!-- left column -->
+                            
+                            
+                              <table width="140" border="0" cellspacing="0" cellpadding="0" align="left" class="w270">
+                                <tr>
+                                  <td>
+                                    
+                                      <a href="http://www.technologyreview.com/news/541446/why-americas-top-mental-health-researcher-joined-alphabet/" target="_blank"><img class="thumbnail" src="https://goodbits-production.s3.amazonaws.com/uploads/link/thumbnail/2641188/Inselx392.jpg" alt="Why Tom Insel Left the NIMH to Join Alphabet // MIT Technology Review" style="float:none;max-width:120px;max-height:120px;padding-right:10px;margin-bottom:10px"></a>
+                                    
+                                  </td>
+                                </tr>
+                              </table>
+                            
+                            <!-- end left column -->
+
+                            <!-- right column -->
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="left" class="w270">
+                              <tr>
+                                <td>
+                                  <h3 class="title seriously-break-word" style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:18px;line-height:26px;margin-bottom:10px;word-wrap:break-word;word-break:break-word;white-space:normal;margin-top:0;margin-bottom:0;color:#1FB1D0 !important"><a href="http://www.technologyreview.com/news/541446/why-americas-top-mental-health-researcher-joined-alphabet/" style="color:#328EF5;text-decoration:none;color:#1FB1D0 !important" target="_blank">Why Tom Insel Left the NIMH to Join Alphabet // MIT Technology Review</a></h3>
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td>
+                                  <span class="link-description seriously-break-word" style="word-wrap:break-word;word-break:break-word;white-space:normal"><p style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;line-height:26px;margin-top:4px;margin-bottom:21px">In this Q&amp;A interview, Tom Insel explains why he’s ready to give Silicon Valley a try. He says "In the future, when we think of the private sector and health research, we may be thinking of Apple and IBM more than Lilly and Pfizer.” </p>
+
+<p style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;line-height:26px;margin-top:4px;margin-bottom:21px"><em>Incase you missed the memo a few weeks ago, "<a href="http://abc.xyz/" style="color:#1FB1D0 !important" target="_blank">Alphabet</a>" is the new parent company of Google.</em></p>
+</span>
+                                </td>
+                              </tr>
+                            </table>
+                            <!-- end right column -->
+
+                          </td>
+                        </tr>
+                      </table>
+                    
+                      <table width="100%" border="0" cellpadding="0" cellspacing="0" class="w100percent">
+                        <tr>
+                          <td class="align-top link-content" style="vertical-align:top;padding-bottom:20px">
+
+                            <!-- left column -->
+                            
+                            
+                              <table width="140" border="0" cellspacing="0" cellpadding="0" align="left" class="w270">
+                                <tr>
+                                  <td>
+                                    
+                                      <a href="http://www.technologyreview.com/news/541516/j-craig-venter-to-sell-dna-data-to-consumers/" target="_blank"><img class="thumbnail" src="https://goodbits-production.s3.amazonaws.com/uploads/link/thumbnail/2641277/longevity.2x299_0.jpg" alt="J. Craig Venter’s Human Longevity to Offer Health Services | MIT Technology Review" style="float:none;max-width:120px;max-height:120px;padding-right:10px;margin-bottom:10px"></a>
+                                    
+                                  </td>
+                                </tr>
+                              </table>
+                            
+                            <!-- end left column -->
+
+                            <!-- right column -->
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="left" class="w270">
+                              <tr>
+                                <td>
+                                  <h3 class="title seriously-break-word" style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:18px;line-height:26px;margin-bottom:10px;word-wrap:break-word;word-break:break-word;white-space:normal;margin-top:0;margin-bottom:0;color:#1FB1D0 !important"><a href="http://www.technologyreview.com/news/541516/j-craig-venter-to-sell-dna-data-to-consumers/" style="color:#328EF5;text-decoration:none;color:#1FB1D0 !important" target="_blank">J. Craig Venter’s Human Longevity to Offer Health Services | MIT Technology Review</a></h3>
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td>
+                                  <span class="link-description seriously-break-word" style="word-wrap:break-word;word-break:break-word;white-space:normal"><p style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;line-height:26px;margin-top:4px;margin-bottom:21px">Venter was the first guy to sequence the human genome, his own. He now plans to sell genetic workups for as little as $250. The operation is part of the Human Longevity Institute (HLI), which Venter co-founded with Dr. Hariri, whom we covered in a <a href="../09/special-edition.html" style="color:#1FB1D0 !important" target="_blank">Special Edition of Biotech Weekly</a>.</p>
+</span>
+                                </td>
+                              </tr>
+                            </table>
+                            <!-- end right column -->
+
+                          </td>
+                        </tr>
+                      </table>
+                    
+                      <table width="100%" border="0" cellpadding="0" cellspacing="0" class="w100percent">
+                        <tr>
+                          <td class="align-top link-content" style="vertical-align:top;padding-bottom:20px">
+
+                            <!-- left column -->
+                            
+                            
+                              <table width="140" border="0" cellspacing="0" cellpadding="0" align="left" class="w270">
+                                <tr>
+                                  <td>
+                                    
+                                      <a href="http://www.nature.com/nbt/journal/v33/n9/full/nbt0915-887.html" target="_blank"><img class="thumbnail" src="https://goodbits-production.s3.amazonaws.com/uploads/link/thumbnail/2641193/nbt0915-887-I1.jpg" alt="Omics-driven startups challenge healthcare model // Nature Biotechnology" style="float:none;max-width:120px;max-height:120px;padding-right:10px;margin-bottom:10px"></a>
+                                    
+                                  </td>
+                                </tr>
+                              </table>
+                            
+                            <!-- end left column -->
+
+                            <!-- right column -->
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="left" class="w270">
+                              <tr>
+                                <td>
+                                  <h3 class="title seriously-break-word" style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:18px;line-height:26px;margin-bottom:10px;word-wrap:break-word;word-break:break-word;white-space:normal;margin-top:0;margin-bottom:0;color:#1FB1D0 !important"><a href="http://www.nature.com/nbt/journal/v33/n9/full/nbt0915-887.html" style="color:#328EF5;text-decoration:none;color:#1FB1D0 !important" target="_blank">Omics-driven startups challenge healthcare model // Nature Biotechnology</a></h3>
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td>
+                                  <span class="link-description seriously-break-word" style="word-wrap:break-word;word-break:break-word;white-space:normal"><p style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;line-height:26px;margin-top:4px;margin-bottom:21px">I actually couldn't read this one because it's <strong>Non-OA</strong> and doesn't have an abstract (<em>damn you, Nature!</em>), but the title makes it sound like an interesting read.</p>
+</span>
+                                </td>
+                              </tr>
+                            </table>
+                            <!-- end right column -->
+
+                          </td>
+                        </tr>
+                      </table>
+                    
+                  
+                    
+                      <table class="row section-content" border="0" cellpadding="0" cellspacing="0" style="width:100% !important">
+                        <tr>
+                          <td>
+                            <table class="full-width" align="left" border="0" cellpadding="0" cellspacing="0" style="width:100%">
+                              <tr>
+                                <td>
+                                  <h2 class="section-title" style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:22px;font-weight:300;margin-bottom:15px;border-bottom:1px solid #e3e3e3;margin-top:30px;padding-bottom:3px;border-color:#C0D7E3 !important;color:#45394D !important">Noteable Longreads</h2>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    
+
+                    
+                      <table width="100%" border="0" cellpadding="0" cellspacing="0" class="w100percent">
+                        <tr>
+                          <td class="align-top link-content" style="vertical-align:top;padding-bottom:20px">
+
+                            <!-- left column -->
+                            
+                            
+                              <table width="140" border="0" cellspacing="0" cellpadding="0" align="left" class="w270">
+                                <tr>
+                                  <td>
+                                    
+                                      <a href="http://www.forbes.com/sites/matthewherper/2015/09/24/my-lunch-with-shkreli-what-we-should-learn-from-pharmas-latest-monster/?ss=pharma-healthcare" target="_blank"><img class="thumbnail" src="https://goodbits-production.s3.amazonaws.com/uploads/link/thumbnail/2641398/0x6001.jpg" alt="My Lunch With Shkreli: What We Should Learn From Pharma's Latest Monster - Forbes" style="float:none;max-width:120px;max-height:120px;padding-right:10px;margin-bottom:10px"></a>
+                                    
+                                  </td>
+                                </tr>
+                              </table>
+                            
+                            <!-- end left column -->
+
+                            <!-- right column -->
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="left" class="w270">
+                              <tr>
+                                <td>
+                                  <h3 class="title seriously-break-word" style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:18px;line-height:26px;margin-bottom:10px;word-wrap:break-word;word-break:break-word;white-space:normal;margin-top:0;margin-bottom:0;color:#1FB1D0 !important"><a href="http://www.forbes.com/sites/matthewherper/2015/09/24/my-lunch-with-shkreli-what-we-should-learn-from-pharmas-latest-monster/?ss=pharma-healthcare" style="color:#328EF5;text-decoration:none;color:#1FB1D0 !important" target="_blank">My Lunch With Shkreli: What We Should Learn From Pharma's Latest Monster - Forbes</a></h3>
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td>
+                                  <span class="link-description seriously-break-word" style="word-wrap:break-word;word-break:break-word;white-space:normal"><p style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;line-height:26px;margin-top:4px;margin-bottom:21px">Surely you've heard of Martin Shkreli by now, the former hedge-fund manager that hiked up the price of an AIDS drug from $13.50 to $750. In lieu of all the Internet-hate, this article nicely puts Shkreli's business practices in context of the larger pharmaceutical industry. "I’m not saying you should get to know Shkreli because you’ll like him in the end. You might hate him more. He is very smart, but also callow and possibly sociopathic."</p>
+</span>
+                                </td>
+                              </tr>
+                            </table>
+                            <!-- end right column -->
+
+                          </td>
+                        </tr>
+                      </table>
+                    
+                      <table width="100%" border="0" cellpadding="0" cellspacing="0" class="w100percent">
+                        <tr>
+                          <td class="align-top link-content" style="vertical-align:top;padding-bottom:20px">
+
+                            <!-- left column -->
+                            
+                            
+                              <table width="140" border="0" cellspacing="0" cellpadding="0" align="left" class="w270">
+                                <tr>
+                                  <td>
+                                    
+                                      <a href="https://www.youtube.com/watch?v=Ub3_K-mhQGg" target="_blank"><img class="thumbnail" src="https://goodbits-production.s3.amazonaws.com/uploads/link/thumbnail/2641478/hqdefault.jpg" alt="Radiolab - Patient Zero [Podcast]" style="float:none;max-width:120px;max-height:120px;padding-right:10px;margin-bottom:10px"></a>
+                                    
+                                  </td>
+                                </tr>
+                              </table>
+                            
+                            <!-- end left column -->
+
+                            <!-- right column -->
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="left" class="w270">
+                              <tr>
+                                <td>
+                                  <h3 class="title seriously-break-word" style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:18px;line-height:26px;margin-bottom:10px;word-wrap:break-word;word-break:break-word;white-space:normal;margin-top:0;margin-bottom:0;color:#1FB1D0 !important"><a href="https://www.youtube.com/watch?v=Ub3_K-mhQGg" style="color:#328EF5;text-decoration:none;color:#1FB1D0 !important" target="_blank">Radiolab - Patient Zero [Podcast]</a></h3>
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td>
+                                  <span class="link-description seriously-break-word" style="word-wrap:break-word;word-break:break-word;white-space:normal"><p style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;line-height:26px;margin-top:4px;margin-bottom:21px">This one is actually a long listen, and it's from last year, but I just listened to this great explanation of the epidemiological detective story of the origin of AIDS and other diseases. I highly recommend listening to it over lunch or a commute, and check out <a href="http://www.radiolab.org/" style="color:#1FB1D0 !important" target="_blank">RadioLab's other podcasts too</a>.</p>
+</span>
+                                </td>
+                              </tr>
+                            </table>
+                            <!-- end right column -->
+
+                          </td>
+                        </tr>
+                      </table>
+                    
+                  
+                    
+                      <table class="row section-content" border="0" cellpadding="0" cellspacing="0" style="width:100% !important">
+                        <tr>
+                          <td>
+                            <table class="full-width" align="left" border="0" cellpadding="0" cellspacing="0" style="width:100%">
+                              <tr>
+                                <td>
+                                  <h2 class="section-title" style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:22px;font-weight:300;margin-bottom:15px;border-bottom:1px solid #e3e3e3;margin-top:30px;padding-bottom:3px;border-color:#C0D7E3 !important;color:#45394D !important">Fun</h2>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    
+
+                    
+                      <table width="100%" border="0" cellpadding="0" cellspacing="0" class="w100percent">
+                        <tr>
+                          <td class="align-top link-content" style="vertical-align:top;padding-bottom:20px">
+
+                            <!-- left column -->
+                            
+                            
+                              <table width="140" border="0" cellspacing="0" cellpadding="0" align="left" class="w270">
+                                <tr>
+                                  <td>
+                                    
+                                      <a href="http://bigthink.com/ideafeed/good-news-science-buddha-agree-theres-no-you" target="_blank"><img class="thumbnail" src="https://goodbits-production.s3.amazonaws.com/uploads/link/thumbnail/2641462/GettyImages-468717244.jpg" alt="Science and Buddhism Agree: There is No 'You' There // Big Think" style="float:none;max-width:120px;max-height:120px;padding-right:10px;margin-bottom:10px"></a>
+                                    
+                                  </td>
+                                </tr>
+                              </table>
+                            
+                            <!-- end left column -->
+
+                            <!-- right column -->
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="left" class="w270">
+                              <tr>
+                                <td>
+                                  <h3 class="title seriously-break-word" style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:18px;line-height:26px;margin-bottom:10px;word-wrap:break-word;word-break:break-word;white-space:normal;margin-top:0;margin-bottom:0;color:#1FB1D0 !important"><a href="http://bigthink.com/ideafeed/good-news-science-buddha-agree-theres-no-you" style="color:#328EF5;text-decoration:none;color:#1FB1D0 !important" target="_blank">Science and Buddhism Agree: There is No 'You' There // Big Think</a></h3>
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td>
+                                  <span class="link-description seriously-break-word" style="word-wrap:break-word;word-break:break-word;white-space:normal"><p style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;line-height:26px;margin-top:4px;margin-bottom:21px">There is no consistent self. Here is why that's really okay.</p>
+
+<p style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;line-height:26px;margin-top:4px;margin-bottom:21px"><em>Also check out this <a href="http://qz.com/506229/neuroscience-backs-up-the-buddhist-belief-that-the-self-isnt-constant-but-ever-changing/" style="color:#1FB1D0 !important" target="_blank">QZ article</a> which covers the same topic and links back to some good studies.</em></p>
+</span>
+                                </td>
+                              </tr>
+                            </table>
+                            <!-- end right column -->
+
+                          </td>
+                        </tr>
+                      </table>
+                    
+                      <table width="100%" border="0" cellpadding="0" cellspacing="0" class="w100percent">
+                        <tr>
+                          <td class="align-top link-content" style="vertical-align:top;padding-bottom:20px">
+
+                            <!-- left column -->
+                            
+                            
+                              <table width="140" border="0" cellspacing="0" cellpadding="0" align="left" class="w270">
+                                <tr>
+                                  <td>
+                                    
+                                      <a href="http://nautil.us/issue/28/2050/five-veteran-scientists-tell-us-what-most-surprised-them" target="_blank"><img class="thumbnail" src="https://goodbits-production.s3.amazonaws.com/uploads/link/thumbnail/2641480/7186_837a7924b8c0aa866e41b2721f66135c.png" alt="Five Veteran Scientists Tell Us What Most Surprised Them" style="float:none;max-width:120px;max-height:120px;padding-right:10px;margin-bottom:10px"></a>
+                                    
+                                  </td>
+                                </tr>
+                              </table>
+                            
+                            <!-- end left column -->
+
+                            <!-- right column -->
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="left" class="w270">
+                              <tr>
+                                <td>
+                                  <h3 class="title seriously-break-word" style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:18px;line-height:26px;margin-bottom:10px;word-wrap:break-word;word-break:break-word;white-space:normal;margin-top:0;margin-bottom:0;color:#1FB1D0 !important"><a href="http://nautil.us/issue/28/2050/five-veteran-scientists-tell-us-what-most-surprised-them" style="color:#328EF5;text-decoration:none;color:#1FB1D0 !important" target="_blank">Five Veteran Scientists Tell Us What Most Surprised Them</a></h3>
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td>
+                                  <span class="link-description seriously-break-word" style="word-wrap:break-word;word-break:break-word;white-space:normal"><p style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;line-height:26px;margin-top:4px;margin-bottom:21px"><em>Back to the Future!</em> Rita Colwell, Mary Gaillard, Edwin Krupp, Harrison Schmitt, and Ian Tattersall Reflect on what scientific developments surprised them the most over the course of their careers.</p>
+</span>
+                                </td>
+                              </tr>
+                            </table>
+                            <!-- end right column -->
+
+                          </td>
+                        </tr>
+                      </table>
+                    
+                  
+                  
+
+                  <!-- footer -->
+                  
+                    <table class="row" border="0" cellpadding="0" cellspacing="0" width="100%" style="width:100% !important">
+                      <tr>
+                        <td>
+                          <table class="row" border="0" cellpadding="0" cellspacing="0" width="100%" style="width:100% !important">
+                            <tr>
+                              <td class="description alignable-paragraph" style="padding-bottom:30px;text-align:left">
+                                <p style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;line-height:26px;margin-top:4px;margin-bottom:21px"><em>Thanks for reading!  Do you know someone that would like Biotech Weekly? Share the science by forwarding them this email.</em></p>
+
+<p style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;line-height:26px;margin-top:4px;margin-bottom:21px"><em>If you like the newsletter or have suggestions on how to improve, hit reply and start a conversation!</em></p>
+
+<p style="color:#565656;font-family:'Roboto', Helvetica, Helvetica, Arial, sans-serif;font-style:normal;font-weight:300;letter-spacing:0.04em;font-size:15px;line-height:26px;margin-top:4px;margin-bottom:21px"><em>—Kate, <a href="https://twitter.com/KaatieLyn" style="color:#1FB1D0 !important" target="_blank">@kaatielyn</a></em></p>
+
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  
+
+                  <!-- social links -->
+                  
+                  <table cellspacing="0" cellpadding="0" width="100%" class="w290">
+                    
+                  </table>
+                  
+
+                  <br>
+                  <br>
+                  
+                    
+                  
+
+                  
+                    
+                  
+
+                  
+                    
+                  
+
+                </td>
+              </tr>
+            </table>
+            <!-- end content -->
+
+          </center>
+
+        </td>
+      </tr>
+    </table>
+  <style type="text/css">
+  @media only screen and (max-width: 580px) {
+        table[class="body"] table[class="container"] {
+          width: 90% !important;
+        }
+        table[class*="w100percent"] {
+          width: 100% !important;
+        }
+        table[class*="w270"] {
+          float: none;
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+          width: 270px !important;
+        }
+        table[class*="mobile-center"] {
+          text-align: center !important;
+          width: 100% !important;
+        }
+        h4[class*="right"] {
+          text-align: center !important;
+        }
+        table[class="row subheader-container"] {
+          margin-bottom: 20px !important;
+        }
+        h4[class*="subheader"] {
+          margin-top: 8px !important;
+          margin-bottom: 6px !important;
+          margin-left: 0 !important;
+          margin-right: 0 !important;
+
+          font-size: 13px !important;
+          line-height: 20px !important;
+          text-align: center !important;
+        }
+      }
+</style>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6 text-center">
+          <a rel="prev" class="prev-issue primary-text-color" href="../18/13.html">Sep 18</a>
+
+        <a class="all-issues primary-text-color" href="../../../archive.html">Archive</a>
+
+          <a rel="next" class="next-issue primary-text-color" href="../../10/02/15.html">Oct  2</a>
+      </div>
+    </div>
+</div>
+
+      </div>
+
+        <footer>
+          <div class="row">
+            <div class="col-xs-offset-1 col-xs-10 col-md-offset-2 col-md-8 text-center">
+                <p>© 2015-2018 Biotech Weekly</p>
+
+            </div>
+          </div>
+        </footer>
+    </div>
+
+    <script src="https://assets.goodbits.io/assets/landing_sites_manifest-a9ba3b95c04e1aa54c3376074d57d994.js"></script>
+      <script data-turbolinks-eval="false">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', "UA-66903227-1", 'auto');
+    ga('send', 'pageview');
+</script>
+
+  </body>
+
+<!-- Mirrored from biotechweekly.ongoodbits.com/2015/09/25/14 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 10 May 2018 17:28:35 GMT -->
+</html>

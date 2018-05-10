@@ -1,0 +1,52 @@
+HTTrack3.49-2 launched on Thu, 10 May 2018 10:26:42 at https://biotechweekly.ongoodbits.com/
+(winhttrack https://biotechweekly.ongoodbits.com/ -O "/home/ben/src/biotech-weekly/archive/biotechweekly.ongoodbits.com" -%v )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+10:29:10	Error: 	"Not Found" (404) at link https://biotechweekly.ongoodbits.com/2015/12/18/10.1182/blood-2015-09-667923 (from https://biotechweekly.ongoodbits.com/2015/12/18/24)
+10:29:10	Error: 	"Not Found" (404) at link https://biotechweekly.ongoodbits.com/2015/10/16/www.sciencemag.org/content/350/6258/274 (from https://biotechweekly.ongoodbits.com/2015/10/16/16)
+10:29:10	Error: 	"Not Found" (404) at link https://biotechweekly.ongoodbits.com/2015/10/02/www.cell.com/cell-metabolism/abstract/S1550-4131(15)00458-1 (from https://biotechweekly.ongoodbits.com/2015/10/02/15)
+10:29:10	Error: 	"Not Found" (404) at link https://biotechweekly.ongoodbits.com/2015/10/02/www.cell.com/cell-stem-cell/fulltext/S1934-5909(15)00418-X (from https://biotechweekly.ongoodbits.com/2015/10/02/15)
+10:29:10	Error: 	"Not Found" (404) at link https://biotechweekly.ongoodbits.com/2015/09/04/www.nature.com/ng/journal/vaop/ncurrent/full/ng.3393.html (from https://biotechweekly.ongoodbits.com/2015/09/04/10)
+10:29:10	Error: 	"Not Found" (404) at link https://biotechweekly.ongoodbits.com/2015/09/04/www.nature.com/nature/journal/vaop/ncurrent/full/nature14897.html (from https://biotechweekly.ongoodbits.com/2015/09/04/10)
+10:29:10	Error: 	"Not Found" (404) at link https://biotechweekly.ongoodbits.com/2015/08/27/www.beam.vt.edu/sunnyjsh/publications/srep13148.pdf (from https://biotechweekly.ongoodbits.com/2015/08/27/9)
+10:29:10	Error: 	"Not Found" (404) at link https://biotechweekly.ongoodbits.com/2015/08/27/www.intel.com/content/www/us/en/healthcare-it/collaborations/ohsu-intel-collaboration-video.html (from https://biotechweekly.ongoodbits.com/2015/08/27/9)
+10:29:10	Error: 	"Not Found" (404) at link https://biotechweekly.ongoodbits.com/2015/08/27/10.1126/scitranslmed.aab0021 (from https://biotechweekly.ongoodbits.com/2015/08/27/9)
+10:29:10	Error: 	"Not Found" (404) at link https://biotechweekly.ongoodbits.com/2015/08/20/iopscience.iop.org/1741-2552/12/5/056009/ (from https://biotechweekly.ongoodbits.com/2015/08/20/8)
+10:29:10	Error: 	"Not Found" (404) at link https://biotechweekly.ongoodbits.com/2015/07/30/pubs.acs.org/doi/abs/10.1021/acssynbio.5b00064 (from https://biotechweekly.ongoodbits.com/2015/07/30/biotech-weekly)
+10:29:10	Error: 	"Not Found" (404) at link https://biotechweekly.ongoodbits.com/2015/07/30/www.sciencedirect.com/science/article/pii/S1097276515004992 (from https://biotechweekly.ongoodbits.com/2015/07/30/biotech-weekly)
+10:29:10	Error: 	"Not Found" (404) at link https://biotechweekly.ongoodbits.com/2015/07/30/www.jbc.org/content/290/22/13935.abstract?sid=3efc6e89-66ce-4e84-b97b-8baef9306223 (from https://biotechweekly.ongoodbits.com/2015/07/30/biotech-weekly)
+10:29:10	Error: 	"Not Found" (404) at link https://biotechweekly.ongoodbits.com/2015/07/30/www.pnas.org/content/early/2015/07/27/1509047112 (from https://biotechweekly.ongoodbits.com/2015/07/30/biotech-weekly)
+10:29:10	Error: 	"Not Found" (404) at link https://biotechweekly.ongoodbits.com/2015/07/30/www.sciencedirect.com/science/article/pii/S0092867415008284 (from https://biotechweekly.ongoodbits.com/2015/07/30/biotech-weekly)
+10:29:10	Error: 	"Not Found" (404) at link https://biotechweekly.ongoodbits.com/2015/07/30/pubs.acs.org/doi/abs/10.1021/acsnano.5b03203 (from https://biotechweekly.ongoodbits.com/2015/07/30/biotech-weekly)
+10:29:10	Error: 	"Not Found" (404) at link https://biotechweekly.ongoodbits.com/2015/07/30/research.vuse.vanderbilt.edu/MEDlab/sites/default/files/YorkWristICRA15.pdf (from https://biotechweekly.ongoodbits.com/2015/07/30/biotech-weekly)
+10:29:10	Error: 	"Not Found" (404) at link https://biotechweekly.ongoodbits.com/2015/07/30/www.nature.com/articles/nmat4342.epdf?referrer_access_token=MFYVAF6lkDp2wDPVLc65R9RgN0jAjWel9jnR3ZoTv0MwzipMEZgDEL9Au27246PgXFjjbqqvVMF134sphKw8CLGAp4v8J3oXULiIPgV6HhHARvhWfk8h167neeFVn1SpkgsxZXVHy0Jd3KF_BA6wM7lGxZUMtDjfKJwL2uF_2pi2bJo3D2AcWjrC1jhgposkXF_gocu3FtmzKRNve-MRiU-zZgWyg9U-rdTHZ_ty0z4%3D&tracking_referrer=www.rsc.org (from https://biotechweekly.ongoodbits.com/2015/07/30/biotech-weekly)
+10:29:10	Error: 	"Not Found" (404) at link https://biotechweekly.ongoodbits.com/2015/07/30/www.nature.com/nature/journal/vaop/ncurrent/full/nature14862.html (from https://biotechweekly.ongoodbits.com/2015/07/30/biotech-weekly)
+10:29:10	Error: 	"Not Found" (404) at link https://biotechweekly.ongoodbits.com/2015/07/30/online.liebertpub.com/doi/10.1089/ten.tea.2014.0411 (from https://biotechweekly.ongoodbits.com/2015/07/30/biotech-weekly)
+10:29:10	Error: 	"Not Found" (404) at link https://biotechweekly.ongoodbits.com/2015/07/23/www.jimmunol.org/content/early/2015/07/08/jimmunol.1501168.abstract (from https://biotechweekly.ongoodbits.com/2015/07/23/4)
+10:29:10	Error: 	"Not Found" (404) at link https://biotechweekly.ongoodbits.com/2015/07/23/www.nature.com/ncomms/2015/150722/ncomms8866/full/ncomms8866.html (from https://biotechweekly.ongoodbits.com/2015/07/23/4)
+10:29:10	Error: 	"Not Found" (404) at link https://biotechweekly.ongoodbits.com/2015/07/23/www.pnas.org/content/early/2015/07/17/1506823112 (from https://biotechweekly.ongoodbits.com/2015/07/23/4)
+10:29:10	Error: 	"Not Found" (404) at link https://biotechweekly.ongoodbits.com/2015/07/23/jcm.asm.org/content/53/8/2641.full (from https://biotechweekly.ongoodbits.com/2015/07/23/4)
+10:29:10	Error: 	"Not Found" (404) at link https://biotechweekly.ongoodbits.com/2015/07/23/www.nature.com/ncomms/2014/140225/ncomms4329/full/ncomms4329.html (from https://biotechweekly.ongoodbits.com/2015/07/23/4)
+10:29:10	Error: 	"Not Found" (404) at link https://biotechweekly.ongoodbits.com/2015/07/23/appft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&u=%2Fnetahtml%2FPTO%2Fsearch-adv.html&r=65&f=G&l=50&d=PG01&s1=Google.AS.&p=2&OS=AN/Google&RS=AN/Google (from https://biotechweekly.ongoodbits.com/2015/07/23/4)
+10:29:10	Error: 	"Not Found" (404) at link https://biotechweekly.ongoodbits.com/2015/07/23/www.organox.com/products/ (from https://biotechweekly.ongoodbits.com/2015/07/23/4)
+10:29:10	Error: 	"Not Found" (404) at link https://biotechweekly.ongoodbits.com/2015/07/23/www.cell.com/immunity/fulltext/S1074-7613(15)00254-X (from https://biotechweekly.ongoodbits.com/2015/07/23/4)
+10:29:10	Error: 	"Not Found" (404) at link https://biotechweekly.ongoodbits.com/2015/07/23/onlinelibrary.wiley.com/wol1/doi/10.1002/adma.201501351/full (from https://biotechweekly.ongoodbits.com/2015/07/23/4)
+10:29:10	Error: 	"Not Found" (404) at link https://biotechweekly.ongoodbits.com/2015/07/23/www.nature.com/ncomms/2015/150706/ncomms8413/full/ncomms8413.html (from https://biotechweekly.ongoodbits.com/2015/07/23/4)
+10:29:10	Error: 	"Not Found" (404) at link https://biotechweekly.ongoodbits.com/2015/07/23/www.cell.com/cell-reports/abstract/S2211-1247(15)00686-5?_returnURL=http%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS2211124715006865%3Fshowall%3Dtrue (from https://biotechweekly.ongoodbits.com/2015/07/23/4)
+10:29:10	Error: 	"Not Found" (404) at link https://biotechweekly.ongoodbits.com/2015/07/23/stemcellstm.alphamedpress.org/content/early/2015/07/16/sctm.2015-0050 (from https://biotechweekly.ongoodbits.com/2015/07/23/4)
+10:29:10	Error: 	"Not Found" (404) at link https://biotechweekly.ongoodbits.com/2015/07/16/jem.rupress.org/content/212/7/991.short (from https://biotechweekly.ongoodbits.com/2015/07/16/3)
+10:29:10	Error: 	"Not Found" (404) at link https://biotechweekly.ongoodbits.com/2015/07/16/www.impactjournals.com/oncotarget/index.php?journal=oncotarget&page=article&op=view&path%5B%5D=4458&path%5B%5D=11018 (from https://biotechweekly.ongoodbits.com/2015/07/16/3)
+10:29:10	Error: 	"Not Found" (404) at link https://biotechweekly.ongoodbits.com/2015/07/16/www.nature.com/nature/journal/vaop/ncurrent/full/nature14546.html (from https://biotechweekly.ongoodbits.com/2015/07/16/3)
+10:29:10	Error: 	"Not Found" (404) at link https://biotechweekly.ongoodbits.com/2015/07/16/www.sciencedirect.com/science/article/pii/S0142961215003543 (from https://biotechweekly.ongoodbits.com/2015/07/16/3)
+10:29:10	Error: 	"Not Found" (404) at link https://biotechweekly.ongoodbits.com/2015/07/16/onlinelibrary.wiley.com/doi/10.1002/adma.201501803/abstract (from https://biotechweekly.ongoodbits.com/2015/07/16/3)
+10:29:10	Error: 	"Not Found" (404) at link https://biotechweekly.ongoodbits.com/2015/07/16/www.glucosense.net (from https://biotechweekly.ongoodbits.com/2015/07/16/3)
+10:29:10	Error: 	"Not Found" (404) at link https://biotechweekly.ongoodbits.com/2015/07/16/www.nature.com/ncomms/2015/150706/ncomms8413/full/ncomms8413.html (from https://biotechweekly.ongoodbits.com/2015/07/16/3)
+10:29:10	Error: 	"Not Found" (404) at link https://biotechweekly.ongoodbits.com/2015/07/16/www.nature.com/nm/journal/vaop/ncurrent/full/nm.3889.html (from https://biotechweekly.ongoodbits.com/2015/07/16/3)
+10:29:10	Error: 	"Not Found" (404) at link https://biotechweekly.ongoodbits.com/2015/07/09/www.sciencedirect.com/science/article/pii/S0956566315300610 (from https://biotechweekly.ongoodbits.com/2015/07/09/2)
+
+HTTrack Website Copier/3.49-2 mirror complete in 2 minutes 28 seconds : 150 links scanned, 108 files written (7490465 bytes overall) [1957804 bytes received at 13228 bytes/sec], 7448126 bytes transferred using HTTP compression in 146 files, ratio 19%, 37.5 requests per connection
+(41 errors, 0 warnings, 0 messages)
