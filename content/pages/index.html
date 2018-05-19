@@ -7,27 +7,14 @@
     <h2 id="description">
       <p>A weekly email of the best news and articles on all things biotech. Stories are picked by hand from popular biotech sites.</p>
       <br/>
-      <p>Delivered every Friday.</p>
+      <p id="delivered">Delivered every Friday.</p>
     </h2>
   </div><!-- #welcome -->
 </div><!-- #cells -->
 
 <div id="main-page" class="container">
   <div id="signup">
-    <h2>Signup</h2>
+    <h2>Sign up</h2>
     $partial("templates/form.html")$
-  </div>
-
-  <div id="archives">
-    <h2>Browse the archives:</h2>
-    <div class="m-x-auto">
-      <ul>
-	$for(issues)$
-	<li>
-	  $isoDate$: <a href="$url$">$title$</a>
-	</li>
-	$endfor$
-      </ul>
-    </div>
   </div>
 </div>
