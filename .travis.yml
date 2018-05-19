@@ -13,9 +13,9 @@ before_install:
 install:
   - stack setup
   - stack build --only-dependencies
-script:
-  - stack build
-  - stack sdist --pvp-bounds both
-  - stack exec biotech-weekly rebuild
-after_success:
-  - stack bin/deploy.hs
+#script:
+#  - stack build
+#  - stack sdist --pvp-bounds both
+#  - stack exec biotech-weekly rebuild
+#after_success:
+#  - stack bin/deploy.hs
