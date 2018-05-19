@@ -1,7 +1,7 @@
 #!/usr/bin/env stack
 {-
   stack
-  --resolver lts-11.9
+  --resolver lts-8.23
   script
   --package directory
   --package filepath
