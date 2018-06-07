@@ -23,8 +23,8 @@ rules :: Rules ()
 rules = do
   match "templates/*" templateRules
   match "images/*" imageRules
-  match "issues/*" issueRules
-  match "archive/*" archiveRules
+  -- match "issues/*" issueRules
+  -- match "archive/*" archiveRules
   create ["biotech-weekly.atom"] (feedRules renderAtom)
   create ["biotech-weekly.rss"] (feedRules renderRss)
   match "pages/index.html" indexRules
@@ -71,13 +71,13 @@ feedRules render = do
 indexRules :: Rules ()
 indexRules = do
   route (constRoute "index.html")
-  compile (do
+  compile $ do
     issues <- loadIssues Nothing
     let context = indexContext issues
     getResourceBody
       >>= applyAsTemplate context
       >>= loadAndApplyTemplate "templates/base.html" context
-      >>= relativizeUrls)
+      >>= relativizeUrls
 
 
 baseContext :: Context String
