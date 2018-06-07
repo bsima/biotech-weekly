@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>Biotech Weekly</title>
+    <link href="https://biotechweekly.com/biotech-weekly.atom" rel="self" />
+    <link href="https://biotechweekly.com" />
+    <id>https://biotechweekly.com/biotech-weekly.atom</id>
+    <author>
+        <name>Biotech Weekly</name>
+        <email>info@biotechweekly.com</email>
+    </author>
+    <updated>Unknown</updated>
+    
+</feed>

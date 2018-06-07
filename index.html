@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta name="viewport" content="initial-scale = 1, width = device-width">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@biotechweekly">
+    <meta name="twitter:title" content="Biotech Weekly">
+    <meta name="twitter:description" content="A weekly email of the best news and articles on all things biotech. Stories are picked by hand from popular biotech sites. Delivered every Friday. Sign up First Name Last Name Email">
+    <meta name="twitter:image" content="https://biotechweekly.com/images/twitter-card.png">
+    <meta name="og:image" content="https://biotechweekly.com/images/twitter-card.png">
+
+
+    <title>Biotech Weekly</title>
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+
+    <style>@charset "utf-8";
+@import "normalize";
+
+
+body 
+{ font-family: 'Roboto Condensed', sans-serif
+; font-size: 1em
+}
+
+body, main
+{ background: #222
+; color: #ccc
+}
+
+/*
+Image sources:
+
+1 https://moodle.kent.ac.uk/external/course/view.php?id=172
+2 http://www.elsacker.org/2014/05/the-biology-of-cancer-stem-cells-cscs.html
+3 https://resources.oncourse.iu.edu/access/content/user/jefflmil/Biology_X.htm
+4 https://www.bumc.bu.edu/busm-pm/research/laboratories/lccb/
+5 https://botany.biology.ufl.edu/courses/undergrad/bot-3023-essential-cell-biology/
+6 https://www.ucl.ac.uk/lmcb/users/alison-lloyd
+7 http://www.mwrif.org/82/reproductive-physiology-gonadal-biology-fertility
+8 https://www.google.com/search?tbm=isch&q=biology%20cells&tbs=imgo:1#q=biology+cells&tbs=imgo:1,isz:l&tbm=isch&imgrc=9EqlbIRUCIzc_M%3A
+9 https://commons.wikimedia.org/wiki/File:Skeletal_striated_muscle.jpg
+ */
+#cells
+{ background: url("/images/bkgd.jpg") transparent no-repeat center/cover
+; border-bottom: 3px solid rgba(15,25,50, 1)
+}
+
+
+#welcome 
+{ background-color: rgba(15,25,50,0.6)
+; border-radius: 30px
+; display: flex
+; flex-direction: column
+; flex-wrap: nowrap
+; justify-content: space-around
+; align-items: center
+; padding: 2em 1em
+; width: 60%
+}
+
+#logo img 
+{ max-width: 100%
+; margin: 30px 0
+}
+
+h2#description 
+{ color: rgba(255,255,255,1)
+; font-family: 'Roboto Condensed', sans-serif
+; text-align: center
+; font-size: 1.8rem
+; line-height: 2.3rem
+; font-weight: 400
+; margin: 0 
+; max-width: 770px
+}
+
+#delivered
+{ font-size: 2.5rem;
+}
+
+#main-page
+{ display: flex
+; flex-direction: column
+; flex-wrap: wrap
+; justify-content: space-around
+; align-items: flex-start
+; align-content: space-around
+}
+
+/* Portable device styles */
+@media only screen
+  and (max-device-width: 568px)
+  and (min-device-width: 320px)
+{
+    #welcome
+    { flex-direction: column
+    }
+
+    #logo img
+    { margin-bottom: 2rem
+    }
+
+    #main-page
+    { justify-content: center
+    }
+}
+
+#signup
+{ font-family: 'Roboto Condensed', sans-serif
+; font-size: 1.1em
+; font-weight: 300
+; margin-bottom: 2rem
+}
+
+
+#signup a
+{ border: 1px solid white
+; border-radius: 3px
+; padding: 0.75em 0.7em
+; color: white
+; text-decoration: none
+; transition: color 0.1s linear
+}
+
+
+#signup a:hover
+{ background: rgba(0,0,0,0.2)
+; color: white
+; transition: all 0.15s linear
+}
+</style>
+    <link href="./biotech-weekly.atom" rel="alternate" title="Biotech Weekly" type="application/atom+xml">
+    <link href="./images/favicon.ico" rel="shortcut icon">
+    <link href="./index.html" rel="canonical">
+  </head>
+
+  <body>
+    <main>
+      <div id="cells" class="jumbotron">
+  <div id="welcome" class="container">
+    <div id="logo">
+      <img src="./images/BWlogoWhite.png" />
+    </div>
+
+    <h2 id="description">
+      <p>A weekly email of the best news and articles on all things biotech. Stories are picked by hand from popular biotech sites.</p>
+      <br />
+      <p id="delivered">Delivered every Friday.</p>
+    </h2>
+  </div><!-- #welcome -->
+</div><!-- #cells -->
+
+<div id="main-page" class="container">
+  <div id="signup">
+    <h2>Sign up</h2>
+    <form id="signup" method="post" action="https://biotechweekly.us18.list-manage.com/subscribe/post?u=56a120861c49eaa22cd45e758&id=c539317160">
+  <div class="form-group">
+    <label class="sr-only" for="fname">First Name</label>
+    <input id="fname" class="form-control form-control-lg" type="text" name="FNAME" placeholder="First Name" />
+  </div>
+  <div class="form-group">
+    <label class="sr-only" for="lname">Last Name</label>
+    <input id="lname" class="form-control form-control-lg" type="text" name="LNAME" placeholder="Last Name" />
+  </div>
+  <div class="form-group">
+    <label class="sr-only" for="email">Email</label>
+    <input id="email" class="form-control form-control-lg" type="text" name="EMAIL" placeholder="Email" />
+  </div>
+  <button type="submit" class="btn btn-lg btn-secondary">Subscribe</button>
+</form>
+
+  </div>
+
+  <div id="contact">
+    <h2>Contact</h2>
+    <p>The Chief Editor of Biotech Weekly can be reached at <a href="mailto:katelyn@biotechweekly.com">katelyn@biotechweekly.com</a></p>
+  </div>
+</div>
+
+    </main>
+
+    <footer class="container">
+      <p>
+        <small>
+        Content on this site is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International license</a>.
+        The source code for this site is available <a href="https://github.com/bsima/biotech-weekly">on GitHub</a>.
+</small>
+      </p>
+    </footer>
+
+    <!-- boostrap javascripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    <script>window.ga = function(){ ga.q.push(arguments) }
+ga.l = +new Date
+ga.q = [['create', 'UA-66903227-1', 'auto'], ['send', 'pageview']]
+
+
+function rand(min, max)
+{
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+
+var i = rand(1, 8);
+var img = 'images/cells.' + i + '.jpg';
+
+
+window.onload = function()
+{
+  document.getElementById("cells").style.backgroundImage = "url('" + img +"')";
+}
+</script>
+  </body>
+</html>

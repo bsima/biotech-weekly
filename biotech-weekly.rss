@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
+    xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <channel>
+        <title>Biotech Weekly</title>
+        <link>https://biotechweekly.com</link>
+        <description><![CDATA[A weekly newsletter of the best news and articles on all things biotech. Stories are picked by hand from popular biotech sites. Delivered every week.]]></description>
+        <atom:link href="https://biotechweekly.com/biotech-weekly.rss" rel="self"
+                   type="application/rss+xml" />
+        <lastBuildDate>Unknown</lastBuildDate>
+        
+    </channel>
+</rss>
