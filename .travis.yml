@@ -9,7 +9,7 @@ cache:
     - $HOME/.local/bin
     - $HOME/.stack
 before_install:
-  - sh bin/install-stack.sh
+  - sh script/install-stack.sh
 install:
   - stack setup
   - stack build --only-dependencies
@@ -18,4 +18,4 @@ script:
   - stack sdist --pvp-bounds both
   - stack exec biotech-weekly rebuild
 after_success:
-  - stack bin/deploy.hs
+  - stack script/deploy.hs

@@ -19,7 +19,7 @@ library:
     - HTTP
     - flow
     - async
-  source-dirs: lib
+  source-dirs: src
 
 executables:
   biotech-weekly:
@@ -29,4 +29,4 @@ executables:
       - -threaded
       - -with-rtsopts=-N
     main: biotech-weekly.hs
-    source-dirs: exe
+    source-dirs: app
